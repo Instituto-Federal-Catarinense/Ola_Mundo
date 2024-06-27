@@ -1,9 +1,9 @@
 var express = require('express');
 var router = express.Router();
 
-/* GET users listing. */
+/* Grêmio. */
 router.get('/', function(req, res, next) {
-  res.send('Usuário é psicológico');
+  res.send('Grêmio ta ruim');
 });
 
 module.exports = router;
