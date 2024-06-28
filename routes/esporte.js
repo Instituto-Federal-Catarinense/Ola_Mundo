@@ -5,5 +5,10 @@ var router = express.Router();
 router.get('/', function(req, res, next) {
   res.render('index', { title: 'jodio' });
 });
-
+router.get('/volei', function(req, res, next) {
+  res.render('index', { title: 'jodio' });
+})
+router.get('/basket', function(req, res, next) {
+  res.render('index', { title: 'jodio' });
+})
 module.exports = router;
