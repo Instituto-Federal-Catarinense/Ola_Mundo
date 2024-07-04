@@ -1,0 +1,57 @@
+doctype html
+html(lang="pt-BR")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title= title
+    link(rel="stylesheet", href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css")
+    //- Se houver estilos adicionais
+    //- link(rel="stylesheet", href="styles.css")
+  body
+    header.navbar.navbar-expand-lg.navbar-dark.bg-dark
+      .container
+        a.navbar-brand(href="#") Aplicativo de Esportes
+        button.navbar-toggler(type="button", data-toggle="collapse", data-target="#navbarNav", aria-controls="navbarNav", aria-expanded="false", aria-label="Toggle navigation")
+          span.navbar-toggler-icon
+        #navbarNav.collapse.navbar-collapse
+          ul.navbar-nav.ml-auto
+            li.nav-item
+              a.nav-link(href="#") Início
+            li.nav-item
+              a.nav-link(href="#") Sobre
+            li.nav-item
+              a.nav-link(href="#") Contato
+    main.container
+      .carousel.slide(data-ride="carousel", id="carouselExampleIndicators")
+        ol.carousel-indicators
+          li(data-target="#carouselExampleIndicators", data-slide-to="0", class="active")
+          li(data-target="#carouselExampleIndicators", data-slide-to="1")
+          li(data-target="#carouselExampleIndicators", data-slide-to="2")
+        .carousel-inner
+          .carousel-item.active
+            img.d-block.w-100(src="https://blog.fritzdobbert.com.br/wp-content/uploads/2018/03/tom-jobim.jpg", alt="Primeiro slide")
+            .carousel-caption.d-none.d-md-block
+              h5 Título do Slide 1
+              p Descrição do Slide 1
+          .carousel-item
+            img.d-block.w-100(src="https://akamai.sscdn.co/uploadfile/letras/fotos/5/b/5/5/5b5590d0dbc624f44bd6d707de3c1c27.jpg", alt="Segundo slide")
+            .carousel-caption.d-none.d-md-block
+              h5 Título do Slide 2
+              p Descrição do Slide 2
+          .carousel-item
+            img.d-block.w-100(src="https://specialistsubjectrecords.co.uk/cdn/shop/products/ripcord-live-at-parkhof-alkmaar-10-vinyl-295896_grande.jpg?v=1700780448", alt="Terceiro slide")
+            .carousel-caption.d-none.d-md-block
+              h5 Título do Slide 3
+              p Descrição do Slide 3
+        a.carousel-control-prev(href="#carouselExampleIndicators", role="button", data-slide="prev")
+          span.carousel-control-prev-icon(aria-hidden="true")
+          span.sr-only Previous
+        a.carousel-control-next(href="#carouselExampleIndicators", role="button", data-slide="next")
+          span.carousel-control-next-icon(aria-hidden="true")
+          span.sr-only Next
+    footer.footer.bg-dark.text-light.py-4
+      .container
+        p.text-center Copyright © 2024 - Aplicativo de Esportes
+    script(src="https://code.jquery.com/jquery-3.5.1.slim.min.js")
+    script(src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js")
+    script(src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js")
