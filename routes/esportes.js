@@ -3,7 +3,7 @@ var router = express.Router();
 
 /* GET users listing. */
 router.get('/', function(req, res, next) {
-  res.send('Aqui estarão os melhores esportes na minha opinião.');
+  res.render('esportes');
 });
 
 router.get('/Volêi', function(req, res, next) {
