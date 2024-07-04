@@ -3,12 +3,12 @@ var router = express.Router();
 
 /* GET users listing. */
 router.get('/', function(req, res, next) {
-  res.send('respond with a resource');
+  res.send('Você está na página de esportes');
 });
 
 /* GET users listing. */
-router.get('/fotos', function(req, res, next) {
-  res.send('Aqui estão as fotos do usuário');
+router.get('/futebol', function(req, res, next) {
+  res.send('Você esta na página de futebol');
 });
 
 module.exports = router;
