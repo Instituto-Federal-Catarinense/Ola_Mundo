@@ -1,9 +1,13 @@
-var express = require('express');
-var router = express.Router();
 
-/* GET users listing. */
+const express = require('express');
+const router = express.Router();
+
+/* GET carro listing. */
 router.get('/', function(req, res, next) {
-  res.send('EU SOU A IRÁAÁÁÁÁ´AÁÁÁ´AÁÁ´AÁÁÁÁÁÁÁÁÁÁÁ´AÁÁÁ´A');
+  res.render('carro', { 
+    title: 'Página de Carros',
+    imageUrl: './foto/images (1).jpeg' // Caminho para a imagem
+  });
 });
 
 module.exports = router;
