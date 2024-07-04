@@ -3,7 +3,7 @@ var router = express.Router();
 
 /* GET users listing. */
 router.get('/', function(req, res, next) {
-  res.send('voce esta na pagina de esportes');
+  res.render('esportes');
 });
 
 router.get('/futebol', function(req, res, next) {
