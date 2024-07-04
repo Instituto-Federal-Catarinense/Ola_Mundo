@@ -2,6 +2,41 @@ doctype html
 html
   head
     title= title
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
     link(rel='stylesheet', href='/stylesheets/style.css')
+
+    // Incluindo Bootstrap CSS
+    link(rel="stylesheet", href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css")
+
   body
-    block content
+    // Navbar
+    nav.navbar.navbar-expand-lg.navbar-dark.bg-dark
+      .container
+        a.navbar-brand(href="#") Meu Site
+        button.navbar-toggler(type="button", data-toggle="collapse", data-target="#navbarNav", aria-controls="navbarNav", aria-expanded="false", aria-label="Toggle navigation")
+          span.navbar-toggler-icon
+        #navbarNav.collapse.navbar-collapse
+          ul.navbar-nav.ml-auto
+            li.nav-item
+              a.nav-link(href="#") Home
+            li.nav-item
+              a.nav-link(href="#") Sobre
+            li.nav-item
+              a.nav-link(href="#") Serviços
+            li.nav-item
+              a.nav-link(href="#") Contato
+
+    // Conteúdo principal
+    .container.mt-4
+      block content
+
+    // Rodapé
+    footer.bg-dark.text-white.py-3
+      .container.text-center
+        p Copyright © 2024. Todos os direitos reservados.
+
+    // Incluindo Bootstrap JavaScript (jQuery + Popper.js + Bootstrap)
+    script(src="https://code.jquery.com/jquery-3.5.1.slim.min.js", integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj", crossorigin="anonymous")
+    script(src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js", integrity="sha384-k5F3gp4lTvshK3+HsKk5U0rEZu1xK0ymy4z9U4T85WtJ4l/rfiW6hwg5L2yyG9n2", crossorigin="anonymous")
+    script(src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js", integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z", crossorigin="anonymous")
