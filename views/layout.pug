@@ -1,7 +1,14 @@
 doctype html
-html
+html(lang="pt-br")
   head
-    title= title
-    link(rel='stylesheet', href='/stylesheets/style.css')
-  body
-    block content
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Minha Biblioteca
+    link(rel="stylesheet", href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css")
+  body(class="bg-gray-100")
+    header(class="bg-blue-500 text-white text-center py-4")
+      h1(class="text-2xl font-bold") Minha Biblioteca
+    main(class="container mx-auto my-4")
+      block content
+    footer(class="bg-blue-500 text-white text-center py-2 mt-4")
+      p Direitos Autorais © 2024 Minha Biblioteca
