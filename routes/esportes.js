@@ -35,3 +35,10 @@ router.get('/skate', function(req, res, next) {
   });
   
   module.exports = router;
+
+   /* GET users listing. */
+router.get('/polo aquático', function(req, res, next) {
+    res.send('Vocẽ está na página de polo aquático');
+  });
+  
+  module.exports = router;
