@@ -16,6 +16,10 @@ router.get('/futebol', function(req, res, next) {
   
   router.get('/basquete', function(req, res, next) {
     res.send('Página de basquete.');
+  });  
+
+  router.get('/xadrez', function(req, res, next) {
+    res.send('Página de xadrez.');
   });
 
 module.exports = router;
