@@ -3,7 +3,7 @@ var router = express.Router();
 
 /* GET users listing. */
 router.get('/', function(req, res, next) {
-    res.send('Voce está na página de esportes');
+    res.render('esportes');
   });
 
 /* GET home page. */

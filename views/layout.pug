@@ -1,7 +1,29 @@
 doctype html
-html
+html(lang='en')
   head
-    title= title
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(name='description', content='Descrição da sua página')
+    meta(name='keywords', content='palavra-chave1, palavra-chave2, palavra-chave3')
+    title #{title} - My Website
     link(rel='stylesheet', href='/stylesheets/style.css')
+    // Incluir outros metadados como autor, data de criação, etc., conforme necessário
   body
+    header
+      nav
+        ul
+          li
+            a(href='#home') Home
+          li
+            a(href='#about') About
+          li
+            a(href='#contact') Contact
     block content
+  
+
+    footer
+      p Copyright © #{new Date().getFullYear()} My Website. All rights reserved.
+
+    script(src='/javascripts/script.js')
+    // Incluir outros scripts JavaScript conforme necessário
+
