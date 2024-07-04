@@ -13,5 +13,13 @@ router.get('/surf', function(req, res, next) {
   router.get('/futebol', function(req, res, next) {
     res.send('futebol');
   });
+  router.get('/jiu-jitsu', function(req, res, next) {
+    res.send('jiu-jitsu');
+  });
+  router.get('/rugby', function(req, res, next) {
+    res.send('rugby');
+  });
+
+
 
 module.exports = router;
