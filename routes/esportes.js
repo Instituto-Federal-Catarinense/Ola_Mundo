@@ -14,8 +14,8 @@ router.get('/volei', function(req, res, next) {
   router.get('/futsal', function(req, res, next) {
     res.send('Aqui é a página de futsal');
   });
-  router.get('/handebol', function(req, res, next) {
-    res.send('Aqui é a página de handebol');
+  router.get('/basquete', function(req, res, next) {
+    res.send('Aqui é a página de basquete');
   });
 
 module.exports = router;
