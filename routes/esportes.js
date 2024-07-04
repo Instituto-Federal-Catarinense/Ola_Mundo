@@ -14,5 +14,13 @@ router.get('/futebol', function (req, res, next) {
     res.send('aba de esportes de futebol');
 });
 
+router.get('/volei', function (req, res, next) {
+    res.send('aba de esportes de volei');
+});
+
+router.get('/basquete', function (req, res, next) {
+    res.send('aba de esportes de basquete');
+});
+
 
 module.exports = router;
