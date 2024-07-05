@@ -1,7 +1,42 @@
 doctype html
-html
+html(lang='en')
   head
-    title= title
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    title #{title}
+    link(rel='stylesheet', href='https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css')
     link(rel='stylesheet', href='/stylesheets/style.css')
   body
-    block content
+    nav.navbar.navbar-expand-lg.navbar-light.bg-light
+      .container
+        a.navbar-brand(href='#') Navbar Brand
+        button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarSupportedContent', aria-controls='navbarSupportedContent', aria-expanded='false', aria-label='Toggle navigation')
+          span.navbar-toggler-icon
+        #navbarSupportedContent.collapse.navbar-collapse
+          ul.navbar-nav.mr-auto
+            li.nav-item.active
+              a.nav-link(href='#') Home
+            li.nav-item
+              a.nav-link(href='#') Link
+            li.nav-item.dropdown
+              a.nav-link.dropdown-toggle(href='#', id='navbarDropdown', role='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false') Dropdown
+              .dropdown-menu(aria-labelledby='navbarDropdown')
+                a.dropdown-item(href='#') Action
+                a.dropdown-item(href='#') Another action
+                .dropdown-divider
+                a.dropdown-item(href='#') Something else here
+          form.form-inline.my-2.my-lg-0
+            input.form-control(type='search', placeholder='Search', aria-label='Search')
+            button.btn.btn-outline-success.my-2.my-sm-0(type='submit') Search
+    
+    .container.mt-4
+      block content
+        img.img-fluid(src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqqMLUlt_Obpo1iZBqAkDXD1DKjndDiOWoYQ&s')
+
+    footer.footer.bg-light.text-center.text-muted.py-3
+      .container
+        p © 2024 Your Website Name
+
+  script(src='https://code.jquery.com/jquery-3.5.1.slim.min.js')
+  script(src='https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js')
+  script(src='https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js')
