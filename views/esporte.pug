@@ -1,0 +1,54 @@
+doctype html
+html
+  head
+    title Carrossel de Imagens
+    link(rel='stylesheet', href='https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css')
+    script(src='https://code.jquery.com/jquery-3.5.1.slim.min.js')
+    script(src='https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js')
+    script(src='https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js')
+  body
+    nav.navbar.navbar-expand-lg.navbar-dark.bg-dark
+      .container
+        a.navbar-brand(href='#') Carrossel de Imagens
+        button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarNav', aria-controls='navbarNav', aria-expanded='false', aria-label='Toggle navigation')
+          span.navbar-toggler-icon
+        #navbarNav.collapse.navbar-collapse
+          ul.navbar-nav.ml-auto
+            li.nav-item
+              a.nav-link(href='#') Página Inicial
+            li.nav-item
+              a.nav-link(href='#') Sobre
+            li.nav-item
+              a.nav-link(href='#') Contatos
+
+    .container.mt-5
+      .row
+        .col-md-8.mx-auto
+          .carousel.slide(data-ride='carousel', id='imageCarousel')
+            .carousel-inner
+              .carousel-item.active
+                img.d-block.w-100(src='https://uploads.metroimg.com/wp-content/uploads/2024/06/26143958/Jogo-do-Tigrinho0.jpg', alt='Segunda imagem')
+                .carousel-caption
+                  h5 tigrinho triste pq foi preso
+                  p soltou mt carta
+              .carousel-item
+                img.d-block.w-100(src='https://atribunarj.com.br/uploads/FILES/destacadas/05-07-2024-jogotigrinhoreproducao.jpg', alt='Primeira imagem')
+                .carousel-caption
+                  h5 TEGRE SOLTANDO A CARTA
+                  p TIGRINHO
+              .carousel-item
+                img.d-block.w-100(src='https://static.politize.com.br/2024/06/capa_jogodotigrinho_260624-1024x665.webp', alt='Terceira imagem')
+                .carousel-caption
+                  h5 tigrinho liberado pra soltar carta
+                  p aposta de 10k no minimo
+
+            a.carousel-control-prev(href='#imageCarousel', role='button', data-slide='prev')
+              span.carousel-control-prev-icon(aria-hidden='true')
+              span.sr-only Previous
+            a.carousel-control-next(href='#imageCarousel', role='button', data-slide='next')
+              span.carousel-control-next-icon(aria-hidden='true')
+              span.sr-only Next
+
+    footer.footer.bg-dark.text-white.py-4
+      .container.text-center
+        p sdfghjklçxcvbnm,xcvbnm,xcvbnm,.zotoṕia
