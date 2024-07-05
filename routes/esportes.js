@@ -1,25 +1,25 @@
 var express = require('express');
 var router = express.Router();
 
-/* GET users listing. */
+
 router.get('/', function (req, res, next) {
-    res.send('Lista');
+    res.render('esportes');
 });
 
 router.get('/volei', function (req, res, next) {
-    res.send('volei');
+    res.render('esportes');
 });
 
 router.get('/futvolei', function (req, res, next) {
-    res.send('futebol');
+    res.render('esportes');
 });
 
 router.get('/basquete', function (req, res, next) {
-    res.send('basquete');
+    res.render('esportes');
 });
 
 router.get('/futebol', function (req, res, next) {
-    res.send('futebol');
+    res.render('esportes');
 });
 
 module.exports = router;
