@@ -2,6 +2,27 @@ doctype html
 html
   head
     title= title
+    link(rel='stylesheet', href='https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css')
     link(rel='stylesheet', href='/stylesheets/style.css')
   body
+    nav.navbar.navbar-expand-lg.navbar-light.bg-light
+      a.navbar-brand(href='#') Meu Site
+      button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarSupportedContent', aria-controls='navbarSupportedContent', aria-expanded='false', aria-label='Toggle navigation')
+        span.navbar-toggler-icon
+      div#navbarSupportedContent.collapse.navbar-collapse
+        ul.navbar-nav.mr-auto
+          li.nav-item.active
+            a.nav-link(href='#') Home
+          li.nav-item
+            a.nav-link(href='#') Link
+          li.nav-item
+            a.nav-link.disabled(href='#', tabindex='-1', aria-disabled='true') Disabled
+        form.form-inline.my-2.my-lg-0
+          input.form-control.mr-sm-2(type='search', placeholder='Search', aria-label='Search')
+          button.btn.btn-outline-success.my-2.my-sm-0(type='submit') Search
+    
     block content
+
+    footer.footer.bg-dark.text-light.text-center.py-3
+      p Copyright © 2024 site da yasmari. Todos os direitos reservados.
+
