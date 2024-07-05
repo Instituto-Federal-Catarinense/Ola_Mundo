@@ -7,7 +7,7 @@ router.get('/', function(req, res, next) {
 });
 
 router.get('/Volêi', function(req, res, next) {
-    res.send('Volêi é o melhor esporte.');
+    res.send('Volêi é o melhor esporte do mundo.');
   });
   
   router.get('/Volêi de areia', function(req, res, next) {
