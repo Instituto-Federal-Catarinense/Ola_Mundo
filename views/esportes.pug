@@ -27,7 +27,27 @@ html(lang='en')
             a.nav-link(href='#') Services
           li.nav-item
             a.nav-link(href='#') Contact
-            
+
+    // Carrossel de imagens
+    .carousel.slide(id='carouselExampleIndicators', data-ride='carousel')
+      ol.carousel-indicators
+        li(data-target='#carouselExampleIndicators', data-slide-to='0', class='active')
+        li(data-target='#carouselExampleIndicators', data-slide-to='1')
+        li(data-target='#carouselExampleIndicators', data-slide-to='2')
+      .carousel-inner
+        .carousel-item.active
+          img.d-block.w-100(src='https://i.ytimg.com/vi/wec7wEhDTNw/maxresdefault.jpg', alt='First slide')
+        .carousel-item
+          img.d-block.w-100(src='https://m.extra.globo.com/incoming/23766063-a53-30a/w640h360-PROP/473a0130.png', alt='Second slide')
+        .carousel-item
+          img.d-block.w-100(src='https://istoe.com.br/wp-content/uploads/2020/08/cr7.jpg', alt='Third slide')
+      a.carousel-control-prev(href='#carouselExampleIndicators', role='button', data-slide='prev')
+        span.carousel-control-prev-icon(aria-hidden='true')
+        span.sr-only Previous
+      a.carousel-control-next(href='#carouselExampleIndicators', role='button', data-slide='next')
+        span.carousel-control-next-icon(aria-hidden='true')
+        span.sr-only Next
+
     // Conteúdo principal
     block content
 

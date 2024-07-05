@@ -27,7 +27,27 @@ html(lang='en')
             a.nav-link(href='#') Services
           li.nav-item
             a.nav-link(href='#') Contact
-            
+
+    // Carrossel de imagens
+    .carousel.slide(id='carouselExampleIndicators', data-ride='carousel')
+      ol.carousel-indicators
+        li(data-target='#carouselExampleIndicators', data-slide-to='0', class='active')
+        li(data-target='#carouselExampleIndicators', data-slide-to='1')
+        li(data-target='#carouselExampleIndicators', data-slide-to='2')
+      .carousel-inner
+        .carousel-item.active
+          img.d-block.w-100(src='https://i0.wp.com/prdnetshoes.wpcomstaging.com/wp-content/uploads/2021/09/curiosidadesgremio20210902.jpeg?fit=1256%2C500&ssl=1', alt='First slide')
+        .carousel-item
+          img.d-block.w-100(src='https://st2.depositphotos.com/2124563/8893/i/450/depositphotos_88938870-stock-illustration-flag-football-club-barcelona-spain.jpg', alt='Second slide')
+        .carousel-item
+          img.d-block.w-100(src='https://i.pinimg.com/736x/bd/00/d4/bd00d439f6674699983157d0ec76ca3e.jpg', alt='Third slide')
+      a.carousel-control-prev(href='#carouselExampleIndicators', role='button', data-slide='prev')
+        span.carousel-control-prev-icon(aria-hidden='true')
+        span.sr-only Previous
+      a.carousel-control-next(href='#carouselExampleIndicators', role='button', data-slide='next')
+        span.carousel-control-next-icon(aria-hidden='true')
+        span.sr-only Next
+
     // Conteúdo principal
     block content
 
