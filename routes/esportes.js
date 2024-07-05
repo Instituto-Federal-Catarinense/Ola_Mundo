@@ -3,15 +3,15 @@ var router = express.Router();
 
 /* GET users listing. */
 router.get('/', function(req, res, next) {
-  res.send('respond with a resource');
+  res.render('esportes');
 });
 router.get('/volei', function(req, res, next) {
-    res.send('página de vôlei');
+    res.render('esportes');
   });
   router.get('/futebol', function(req, res, next) {
-    res.send('página de futebol');
+    res.render('esportes');
   });
   router.get('/futsal', function(req, res, next) {
-    res.send('página de futsal');
+    res.render('esportes');
   });
 module.exports = router;
