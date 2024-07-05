@@ -3,19 +3,19 @@ var router = express.Router();
 
 /* GET users listing. */
 router.get('/', function(req, res, next) {
-  res.send('respond with a resource');
+  res.render('Aqui voce encontrara diversos esportes');
 });
 
 router.get('/surf', function(req, res, next) {
-    res.send('respond with a resource');
+    res.send('Surf');
   });
 
   router.get('/futebol', function(req, res, next) {
-    res.send('respond with a resource');
+    res.send('Futebol');
   });
 
   router.get('/volei', function(req, res, next) {
-    res.send('respond with a resource');
+    res.send('Volei');
   });
 
 module.exports = router;
