@@ -3,23 +3,23 @@ var router = express.Router();
 
 /* GET users listing. */
 router.get('/', function(req, res, next) {
-  res.send('pagina de esportes');
+  res.render('esportes');
 });
 
 router.get('/futebol', function(req, res, next) {
-    res.send('Esse é o esporte futebol');
+    res.render('futebol');
   });
 
   router.get('/surf', function(req, res, next) {
-    res.send('Esse é o esporte surf');
+    res.render('surf');
   });
 
   router.get('/basquete', function(req, res, next) {
-    res.send('Esse é o esporte basquete');
+    res.render('basquete');
   });
 
   router.get('/corrida', function(req, res, next) {
-    res.send('Esse é o esporte corrida');
+    res.render('corrida');
   });
 
 module.exports = router;
