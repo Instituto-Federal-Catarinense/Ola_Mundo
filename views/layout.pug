@@ -1,7 +1,27 @@
 doctype html
-html
+html(lang="pt-br")
   head
+    meta(charset="UTF-8")
     title= title
     link(rel='stylesheet', href='/stylesheets/style.css')
+
   body
-    block content
+    header
+      nav
+        ul
+          li
+            a(href="#") Início
+          li
+            a(href="#") Notícias
+          li
+            a(href="#") Calendário
+          li
+            a(href="#") Equipes
+          li
+            a(href="#") Contato
+
+    main
+      block content
+
+    footer
+      p © 2024 Site de Esportes. Todos os direitos reservados.
