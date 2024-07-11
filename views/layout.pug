@@ -1,7 +1,142 @@
 doctype html
-html
+html(lang="pt-br")
   head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
     title= title
-    link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css')
+    script(src='https://code.jquery.com/jquery-3.6.0.min.js', defer)
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js', defer)
+    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css')
+    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css')
+    script.
+      $(document).ready(function(){
+        $('.carousel').slick({
+          dots: true,
+          infinite: true,
+          speed: 500,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          autoplay: true,
+          autoplaySpeed: 3000,
+          arrows: true
+        });
+      });
+    style.
+      /* /stylesheets/style.css */
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        background-color: #f4f4f4;
+      }
+
+      header {
+        background-color: #333;
+        color: white;
+        padding: 20px 0;
+      }
+
+      header .container {
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      header h1 {
+        margin: 0;
+      }
+
+      nav ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+      }
+
+      nav ul li {
+        margin: 0 15px;
+      }
+
+      nav ul li a {
+        color: white;
+        text-decoration: none;
+      }
+
+      nav ul li a:hover {
+        text-decoration: underline;
+      }
+
+      .carousel {
+        width: 80%;
+        margin: 20px auto;
+      }
+
+      .carousel-item img {
+        width: 100%;
+        height: auto;
+      }
+
+      main .container {
+        width: 80%;
+        margin: 20px auto;
+      }
+
+      footer {
+        background-color: #333;
+        color: white;
+        padding: 20px;
+        text-align: center;
+      }
+
+      footer .container {
+        width: 80%;
+        margin: 0 auto;
+      }
+
+      footer a {
+        color: #ddd;
+        text-decoration: none;
+        margin: 0 10px;
+      }
+
+      footer a:hover {
+        text-decoration: underline;
+      }
   body
-    block content
+    header
+      .container
+        h1 My Website
+        nav
+          ul
+            li: a(href='/') Home
+            li: a(href='/about') About
+            li: a(href='/services') Services
+            li: a(href='/contact') Contact
+
+    .carousel
+      .carousel-item
+        img(src='/images/slide1.jpg', alt='Slide 1')
+      .carousel-item
+        img(src='/images/slide2.jpg', alt='Slide 2')
+      .carousel-item
+        img(src='/images/slide3.jpg', alt='Slide 3')
+
+    main
+      .container
+        block content
+
+    footer
+      .container
+        p © 2024 My Website | 
+        a(href='/privacy') Privacy Policy |
+        a(href='/terms') Terms of Service |
+        a(href='https://www.facebook.com' target='_blank') Facebook
+        a(href='https://www.twitter.com' target='_blank') Twitter
+        a(href='https://www.instagram.com' target='_blank') Instagram
+        a(href='mailto:contact@mywebsite.com') contact@mywebsite.com
+
+    script(src='/javascripts/main.js', defer)

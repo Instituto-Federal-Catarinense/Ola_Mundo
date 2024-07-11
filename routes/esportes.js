@@ -7,15 +7,15 @@ router.get('/', function(req, res, next) {
 });
 
 router.get('/futebol', function(req, res, next) {
-    res.send('voce esta na pagina de futebol');
+    res.render('futebol');
   });
 
   router.get('/boxe', function(req, res, next) {
-    res.send('voce esta na pagina de boxe');
+    res.render('boxe');
   });
 
   router.get('/surfe', function(req, res, next) {
-    res.send('voce esta na pagina de surfe');
+    res.render('surfe');
   });
 
 
