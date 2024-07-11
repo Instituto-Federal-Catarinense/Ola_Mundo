@@ -1,6 +1,19 @@
-extends layout
-
-block content
-  h1= message
-  h2= error.status
-  pre #{error.stack}
+doctype html
+html(lang="pt-br")
+  head
+    title Erro
+    meta(charset="utf-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    link(rel="stylesheet" href="/stylesheets/style.css")
+  body
+    header
+      h1 Erro
+    main
+      h2 Ocorreu um erro
+      p= message
+      if error.status
+        p Status: #{error.status}
+      if error.stack
+        pre #{error.stack}
+    footer
+      p &copy; 2024 Todos os direitos reservados.

@@ -1,0 +1,54 @@
+doctype html
+html(lang="pt-br")
+  head
+    title= title
+    meta(charset="utf-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    link(rel="stylesheet" href="/stylesheets/style.css")
+  body
+    header
+      h1= title
+    main
+      h2 Bem-vindo à Sinuca!
+      p A sinuca é um jogo de mesa que envolve habilidades de precisão e estratégia. O objetivo é acertar as bolas em buracos usando um taco.
+      
+      // Seção com imagens e descrições
+      section.images
+        h3 Imagens da Sinuca
+        .image-gallery
+          figure
+            img(src="/images/sinuca-mesa.jpg" alt="Mesa de Sinuca" width="600")
+            figcaption A mesa de sinuca onde o jogo acontece
+          figure
+            img(src="/images/bola-sinuca.jpg" alt="Bolas de Sinuca" width="300")
+            figcaption Bolas de sinuca preparadas para o jogo
+          figure
+            img(src="/images/taco-sinuca.jpg" alt="Taco de Sinuca" width="300")
+            figcaption O taco de sinuca usado para acertar as bolas
+          figure
+            img(src="/images/jogador-sinuca.jpg" alt="Jogador de Sinuca" width="600")
+            figcaption Um jogador de sinuca em ação
+      
+      // Seção com mais informações
+      section.info
+        h3 História da Sinuca
+        p A sinuca, ou bilhar, tem uma longa história que remonta ao século XV, com versões antigas do jogo surgindo na Europa. A versão moderna que conhecemos hoje se consolidou na Inglaterra no século XIX. O jogo é apreciado por sua combinação de habilidade e estratégia.
+
+      section.rules
+        h3 Regras Básicas da Sinuca
+        ul
+          li O jogo é jogado em uma mesa retangular com seis buracos em cada canto e no meio dos lados mais longos.
+          li O objetivo é fazer com que as bolas sejam acertadas nos buracos usando um taco.
+          li Existem diferentes variações da sinuca, incluindo a sinuca inglesa e a americana, cada uma com suas próprias regras.
+          li As principais infrações incluem faltas ao não acertar a bola alvo e deixar a mesa em condições irregulares.
+
+      ul
+        li
+          a(href="/") Voltar para a Página Inicial
+        li
+          a(href="/esportes/futebol") Ir para o Futebol
+        li
+          a(href="/esportes/volei") Ir para o Vôlei
+
+    footer
+      p &copy; 2024 Todos os direitos reservados.
