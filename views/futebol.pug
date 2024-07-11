@@ -12,6 +12,10 @@ html(lang='en')
       /* Estilos adicionais personalizados */
       /* Aqui você pode adicionar estilos específicos se necessário */
   body
+    // texto
+    h1.text-center.mt-5 Aqui falamos sobre futebol
+    // Parágrafo abaixo do H1
+    p.text-center Aqui você encontrará informações interessantes sobre diversos jogos de futebol. Acompanhe nossos artigos para ficar por dentro das últimas notícias e eventos do imortal grebio.
     // Navbar
     nav.navbar.navbar-expand-lg.navbar-dark.bg-dark
       a.navbar-brand(href='#') Logo
@@ -20,13 +24,17 @@ html(lang='en')
       div.collapse.navbar-collapse#navbarNav
         ul.navbar-nav.ml-auto
           li.nav-item.active
-            a.nav-link(href='#') Home
+            a.nav-link(href='/') Inicio
           li.nav-item
-            a.nav-link(href='#') About
+            a.nav-link(href='/esportes/surf') Surf
           li.nav-item
-            a.nav-link(href='#') Services
+            a.nav-link(href='/esportes/futebol') Futebol
           li.nav-item
-            a.nav-link(href='#') Contact
+            a.nav-link(href='/esportes/corrida') Corrida
+            li.nav-item.active
+            a.nav-link(href='/esportes/basquete') Basquete
+          li.nav-item
+            a.nav-link(href='/esportes') Esportes
 
     // Carrossel de imagens
     .carousel.slide(id='carouselExampleIndicators', data-ride='carousel')
@@ -36,11 +44,11 @@ html(lang='en')
         li(data-target='#carouselExampleIndicators', data-slide-to='2')
       .carousel-inner
         .carousel-item.active
-          img.d-block.w-100(src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQip99j_Vkys4xl5OeLtszf8HxrTNLNPmKHLA&s', alt='First slide')
+          img.d-block.w-100(src='https://i0.wp.com/prdnetshoes.wpcomstaging.com/wp-content/uploads/2021/09/curiosidadesgremio20210902.jpeg?fit=1256%2C500&ssl=1', alt='First slide')
         .carousel-item
-          img.d-block.w-100(src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKwm_aYkZjV67l3y7MI-Roj8lZRm1moCpgJg&s', alt='Second slide')
+          img.d-block.w-100(src='https://st2.depositphotos.com/2124563/8893/i/450/depositphotos_88938870-stock-illustration-flag-football-club-barcelona-spain.jpg', alt='Second slide')
         .carousel-item
-          img.d-block.w-100(src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4yKDIX4tUCoqvH1ihPHaq1vqdQlIgnjpV1Q&s', alt='Third slide')
+          img.d-block.w-100(src='https://i.pinimg.com/736x/bd/00/d4/bd00d439f6674699983157d0ec76ca3e.jpg', alt='Third slide')
       a.carousel-control-prev(href='#carouselExampleIndicators', role='button', data-slide='prev')
         span.carousel-control-prev-icon(aria-hidden='true')
         span.sr-only Previous
@@ -54,7 +62,7 @@ html(lang='en')
     // Footer
     footer.footer.mt-auto.py-3.bg-light
       .container.text-center
-        span.text-muted Numero de contato de Bauer é 9999999999.
+        span.text-muted Numero de contato de miguel é 9999999999.
 
     // JavaScript e bibliotecas
     // jQuery, Popper.js e Bootstrap JS para o carrossel
