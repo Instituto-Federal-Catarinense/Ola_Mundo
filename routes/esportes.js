@@ -22,7 +22,7 @@ router.get('/basquete', function(req, res, next) {
   });
 
   /* GET users listing. */
-router.get('/Bocha', function(req, res, next) {
+router.get('/bocha', function(req, res, next) {
     res.render('bocha');
   });
 
