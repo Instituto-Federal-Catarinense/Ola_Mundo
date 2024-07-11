@@ -1,46 +1,19 @@
 doctype html
 html
+html(lang="pt-br")
   head
     title= title
-    link(rel='stylesheet', href='https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css')
     link(rel='stylesheet', href='/stylesheets/style.css')
-    script(src='https://code.jquery.com/jquery-3.5.1.slim.min.js', integrity='sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj', crossorigin='anonymous')
-    script(src='https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js', integrity='sha384-o3nZw3+J3lM4zMiGRxkVv9hD03KvzH7LnjilG2SeVq0RtpV9azb3d7DAZNzCwQz1', crossorigin='anonymous')
-    script(src='https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js', integrity='sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk', crossorigin='anonymous')
-    style.
-      body {
-        background-color: #f0f0f0; /* Cor de fundo para a página */
-        color: #333; /* Cor do texto padrão */
-        padding-top: 60px; /* Ajusta o padding do corpo para evitar que o conteúdo fique escondido sob o cabeçalho */
-        padding-bottom: 60px; /* Ajusta o padding do corpo para evitar que o conteúdo fique escondido sob o rodapé */
-        position: relative; /* Permite que o rodapé se posicione corretamente no contexto do corpo */
-        min-height: 100vh; /* Garante que o corpo ocupe pelo menos a altura da viewport */
-      }
-      header {
-        background-color: #343a40; /* Cor de fundo do cabeçalho */
-        color: #fff; /* Cor do texto no cabeçalho */
-        padding: 10px 0; /* Espaçamento interno do cabeçalho */
-        position: fixed; /* Fixa o cabeçalho no topo da página */
-        width: 100%; /* Largura total */
-        z-index: 1000; /* Z-index elevado para estar acima do conteúdo */
-      }
-      footer {
-        background-color: #343a40; /* Cor de fundo do rodapé */
-        color: #fff; /* Cor do texto no rodapé */
-        padding: 10px 0; /* Espaçamento interno do rodapé */
-        position: absolute; /* Posiciona o rodapé de forma absoluta */
-        width: 100%; /* Largura total */
-        bottom: 0; /* Alinha o rodapé no fundo da página */
-      }
   body
-    header.navbar.navbar-dark.fixed-top
-      .container
-        a.navbar-brand(href='#') Atividade de View
-
-    .container-fluid.mt-5.mb-5
+    block content
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Minha Biblioteca
+    link(rel="stylesheet", href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css")
+  body(class="bg-gray-100")
+    header(class="bg-blue-500 text-white text-center py-4")
+      h1(class="text-2xl font-bold") Minha Biblioteca
+    main(class="container mx-auto my-4")
       block content
-
-    // Inclua o conteúdo da página aqui
-
-    footer
-      p.text-center Copyright © #{new Date().getFullYear()} My Website
+    footer(class="bg-blue-500 text-white text-center py-2 mt-4")
+      p Direitos Autorais © 2024 Minha Biblioteca

@@ -1,0 +1,10 @@
+extends layout
+
+block content
+  div(class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4")
+    each livro in livros
+      div(class="bg-white p-4 rounded-lg shadow-md")
+        h2(class="text-xl font-semibold mb-2") #{livro.titulo}
+        p(class="text-gray-700 mb-2") Autor: #{livro.autor}
+        p(class="text-gray-500 text-sm") Gênero: #{livro.genero}
+        p(class="text-gray-500 text-sm") Ano: #{livro.ano}
