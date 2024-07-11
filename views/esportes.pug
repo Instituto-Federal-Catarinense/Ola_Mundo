@@ -1,85 +1,21 @@
-doctype html
-html(lang="pt-br")
-  head
-    meta(charset="UTF-8")
-    meta(name="viewport", content="width=device-width, initial-scale=1.0")
-    title Mundial de Clubes FIFA 2006
+extends layout
 
-    // Estilos internos para exemplo
-    style.
-      body {
-        font-family: Arial, sans-serif;
-        padding-top: 60px;
-      }
-      .container {
-        max-width: 960px;
-        margin: 0 auto;
-      }
-      header {
-        background-color: #f8f9fa;
-        padding: 10px 0;
-      }
-      nav ul {
-        list-style-type: none;
-        padding: 0;
-      }
-      nav ul li {
-        display: inline-block;
-        margin-right: 10px;
-      }
-      .card {
-        margin-bottom: 20px;
-      }
-      footer {
-        background-color: #f8f9fa;
-        padding: 20px 0;
-        text-align: center;
-      }
+block content
+  h1= title
+  p Bem-vindo(a) ao Site de Esportes. Aqui você encontrará informações detalhadas sobre vários esportes populares.
 
-  body
-    header
-      .container
-        nav
-          ul
-            li
-              a(href="#") Home
-            li
-              a(href="#") Internacional
-            li
-              a(href="#") Campanha
-            li
-              a(href="#") Conquista
+  .cards
+    .card
+      h2 Futebol
+      p O futebol é um dos esportes mais populares do mundo.
+      a(href="/esportes/futebol") Saiba mais
 
-    main.container.mt-4
-      .row
-        .col-md-12.text-center
-        .col-md-12.text-center
-          h1 Mundial de Clubes FIFA 2006
-          img(src="https://s2.glbimg.com/fJyfH30i6gZlR3mg0ffW-FXv5KM=/0x86:1500x934/690x390/s.glbimg.com/es/ge/f/original/2013/12/10/internacional_campeaomundial_2006_get_95.jpg", alt="Foto do Mundial de Clubes FIFA 2006", style="max-width: 100%; height: auto;")
-          p O Internacional, representando o Brasil, conquistou o Mundial de Clubes FIFA em 2006, realizado no Japão.
+    .card
+      h2 UFC
+      p Conheça os lutadores brasileiros Alex "Poatan" Pereira e Charles Oliveira.
+      a(href="/esportes/ufc") Saiba mais
 
-    section.container.mt-4
-      .row
-        .col-md-4
-          .card
-            .card-body
-              h5.card-title Campanha do Internacional
-              p.card-text O Internacional venceu o Al-Ahly nas semifinais por 2 a 1 e na final derrotou o Barcelona por 1 a 0, com gol de Adriano Gabiru.
-
-        .col-md-4
-          .card
-            .card-body
-              h5.card-title Artilheiro
-              p.card-text No Mundial de 2006, o artilheiro foi o argentino Lionel Messi, do Barcelona, com 2 gols.
-
-        .col-md-4
-          .card
-            .card-body
-              h5.card-title Melhor Jogador
-              p.card-text O goleiro Renan foi eleito o melhor jogador da competição.
-
-    footer.footer.mt-4
-      .container
-        p Copyright © 2024 Site de Esportes. Todos os direitos reservados.
-        p Desenvolvido por
-          a(href="#") Seu Nome
+    .card
+      h2 Surfe
+      p O surfe é um esporte aquático em que o surfista desliza sobre as ondas do mar.
+      a(href="/esportes/surfe") Saiba mais
