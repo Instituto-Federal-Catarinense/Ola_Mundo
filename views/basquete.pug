@@ -12,6 +12,10 @@ html(lang='en')
       /* Estilos adicionais personalizados */
       /* Aqui você pode adicionar estilos específicos se necessário */
   body
+    // texto
+    h1.text-center.mt-5 Aqui falamos sobre Basquete
+    // Parágrafo abaixo do H1
+    p.text-center Aqui você encontrará informações interessantes sobre diversos basquete. Acompanhe nossos artigos para ficar por dentro das últimas notícias e eventos do esporte.
     // Navbar
     nav.navbar.navbar-expand-lg.navbar-dark.bg-dark
       a.navbar-brand(href='#') Logo
@@ -20,13 +24,17 @@ html(lang='en')
       div.collapse.navbar-collapse#navbarNav
         ul.navbar-nav.ml-auto
           li.nav-item.active
-            a.nav-link(href='#') Home
+            a.nav-link(href='/') Inicio
           li.nav-item
-            a.nav-link(href='#') About
+            a.nav-link(href='/esportes/surf') Surf
           li.nav-item
-            a.nav-link(href='#') Services
+            a.nav-link(href='/esportes/futebol') Futebol
           li.nav-item
-            a.nav-link(href='#') Contact
+            a.nav-link(href='/esportes/corrida') Corrida
+            li.nav-item.active
+            a.nav-link(href='/esportes/basquete') Basquete
+          li.nav-item
+            a.nav-link(href='/esportes') Esportes
 
     // Carrossel de imagens
     .carousel.slide(id='carouselExampleIndicators', data-ride='carousel')
