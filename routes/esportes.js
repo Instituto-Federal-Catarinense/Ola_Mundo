@@ -14,8 +14,8 @@ router.get('/futebol', function (req, res, next) {
   res.render('futebol', { title: 'Futebol' });
 });
 
-router.get('/volei', function (req, res, next) {
-  res.render('volei', { title: 'Volei' });
+router.get('/jiujitsu', function (req, res, next) {
+  res.render('jiujitsu', { title: 'jiujitsu' });
 });
 
 router.get('/basquete', function (req, res, next) {
