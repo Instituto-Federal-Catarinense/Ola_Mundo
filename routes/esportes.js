@@ -7,19 +7,19 @@ router.get('/', function(req, res, next) {
 });
 
 router.get('/futebol', function(req, res, next) {
-    res.render('Página de futebol.');
+    res.render('futebol');
   });
 
   router.get('/volei', function(req, res, next) {
-    res.render('Página de volei.');
+    res.render('volei');
   });
   
   router.get('/basquete', function(req, res, next) {
-    res.render('Página de basquete.');
+    res.render('basquete');
   });  
 
   router.get('/xadrez', function(req, res, next) {
-    res.render('Página de xadrez.');
+    res.render('xadrez');
   });
 
 module.exports = router;
