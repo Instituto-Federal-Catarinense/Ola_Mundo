@@ -7,18 +7,18 @@ router.get('/', function(req, res, next) {
 });
 
 router.get('/futebol', function(req, res, next) {
-    res.send('você está na página sobre futebol');
+  res.render('futebol');
   });
 
   router.get('/volei', function(req, res, next) {
-    res.send('você está na página sobre vôlei');
+    res.render('volei');
   });
 
   router.get('/basquete', function(req, res, next) {
-    res.send('você está na página sobre basquete');
+    res.render('basquete');
   });
 
   router.get('/handbol', function(req, res, next) {
-    res.send('você está na página sobre handbol');
+    res.render('handbol');
   });
 module.exports = router;
