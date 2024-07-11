@@ -6,4 +6,4 @@ router.get('/', function(req, res, next) {
   res.render('users', { title: 'Página de Usuários' });
 });
 
-module.exports = router;
+module.exports = router; 
