@@ -6,12 +6,12 @@ router.get('/', function(req, res, next) {
   res.render('esportes');
 });
 router.get('/volei', function(req, res, next) {
-    res.render('esportes');
+    res.render('volei');
   });
   router.get('/futebol', function(req, res, next) {
-    res.render('esportes');
+    res.render('futebol');
   });
   router.get('/futsal', function(req, res, next) {
-    res.render('esportes');
+    res.render('futsal');
   });
 module.exports = router;
