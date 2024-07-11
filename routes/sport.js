@@ -16,8 +16,8 @@ router.get('/surf', function(req, res, next) {
   router.get('/jiujitsu', function(req, res, next) {
     res.render('jiujitsu');
   });
-  router.get('/rugby', function(req, res, next) {
-    res.send('rugby');
+  router.get('/basquete', function(req, res, next) {
+    res.render('basquete');
   });
 
 
