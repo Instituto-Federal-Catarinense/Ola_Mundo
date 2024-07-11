@@ -1,0 +1,54 @@
+doctype html
+html(lang="pt-br")
+  head
+    title= title
+    meta(charset="utf-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    link(rel="stylesheet" href="/stylesheets/style.css")
+  body
+    header
+      h1= title
+    main
+      h2 Bem-vindo ao Vôlei!
+      p O vôlei é um esporte coletivo em que duas equipes de seis jogadores cada tentam marcar pontos ao passar uma bola sobre uma rede.
+      
+      // Seção com imagens e descrições
+      section.images
+        h3 Imagens do Vôlei
+        .image-gallery
+          figure
+            img(src="/images/voleibol.jpg" alt="Imagem de uma partida de vôlei" width="600")
+            figcaption Uma partida de vôlei em ação
+          figure
+            img(src="/images/bola-volei.jpg" alt="Bola de Vôlei" width="300")
+            figcaption A bola de vôlei utilizada no jogo
+          figure
+            img(src="/images/quadra-volei.jpg" alt="Quadra de Vôlei" width="600")
+            figcaption A quadra de vôlei com a rede no centro
+          figure
+            img(src="/images/jogador-volei.jpg" alt="Jogador de Vôlei" width="300")
+            figcaption Um jogador de vôlei realizando um ataque
+
+      // Seção com mais informações
+      section.info
+        h3 História do Vôlei
+        p O vôlei foi criado em 1895 por William G. Morgan como uma alternativa ao basquete. O esporte rapidamente ganhou popularidade e se espalhou pelo mundo, tornando-se um dos esportes coletivos mais praticados. A primeira federação internacional de vôlei foi formada em 1947, e o esporte tornou-se olímpico em 1964.
+
+      section.rules
+        h3 Regras Básicas do Vôlei
+        ul
+          li O jogo é jogado entre duas equipes de seis jogadores cada, com o objetivo de marcar pontos ao passar a bola sobre a rede e fazer com que ela toque o chão do lado adversário.
+          li Cada equipe pode tocar a bola até três vezes antes de passar para o lado adversário.
+          li O jogo é dividido em sets, geralmente jogados até 25 pontos, com a necessidade de vencer por pelo menos dois pontos de diferença.
+          li As principais infrações incluem tocar na rede, ultrapassar a linha de ataque e cometer falta de rotatividade.
+
+      ul
+        li
+          a(href="/") Voltar para a Página Inicial
+        li
+          a(href="/esportes/futebol") Ir para o Futebol
+        li
+          a(href="/esportes/sinuca") Ir para a Sinuca
+
+    footer
+      p &copy; 2024 Todos os direitos reservados.
