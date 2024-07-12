@@ -3,42 +3,42 @@ var router = express.Router();
 
 /* GET users listing. */
 router.get('/', function(req, res, next) {
-  res.send('Vocẽ está na página de esportes');
+  res.render('esportes');
 });
 
 module.exports = router;
 
 /* GET users listing. */
 router.get('/esportes', function(req, res, next) {
-    res.send('Vocẽ está na página de esportes');
+    res.render('esportes');
   });
   
   module.exports = router;
 
   /* GET users listing. */
 router.get('/futebol', function(req, res, next) {
-    res.send('Vocẽ está na página de futebol');
+    res.render('futebol');
   });
   
   module.exports = router;
 
   /* GET users listing. */
 router.get('/basquete', function(req, res, next) {
-    res.send('Vocẽ está na página de basquete');
+    res.render('basquete');
   });
   
   module.exports = router;
 
    /* GET users listing. */
 router.get('/skate', function(req, res, next) {
-    res.send('Vocẽ está na página de skate');
+    res.render('skate');
   });
   
   module.exports = router;
 
    /* GET users listing. */
-router.get('/polo aquático', function(req, res, next) {
-    res.send('Vocẽ está na página de polo aquático');
+router.get('/poloaquatico', function(req, res, next) {
+    res.render('poloaquatico');
   });
   
   module.exports = router;
