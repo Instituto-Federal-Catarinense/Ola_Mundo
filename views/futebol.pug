@@ -3,19 +3,18 @@ html(lang="pt-br")
   head
     meta(charset="UTF-8")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
-    title Meu App Node.js com Pug
-
-    // Adicione aqui seus links para folhas de estilo, scripts, etc.
+    title Futebol - Meu App Node.js com Pug e Bootstrap
+    link(rel="stylesheet", href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css")
+    link(rel="stylesheet", href="styles.css")
 
   body
-    // Barra de navegação
     nav.navbar.navbar-expand-lg.navbar-light.bg-light
       .container
         a.navbar-brand(href="#") Meu App Node.js
         button.navbar-toggler(type="button", data-toggle="collapse", data-target="#navbarSupportedContent", aria-controls="navbarSupportedContent", aria-expanded="false", aria-label="Toggle navigation")
           span.navbar-toggler-icon
         .collapse.navbar-collapse(id="navbarSupportedContent")
-          ul.navbar-nav.mr-auto
+          ul.navbar-nav.ml-auto
             li.nav-item
               a.nav-link(href="#") Início
             li.nav-item
@@ -23,15 +22,21 @@ html(lang="pt-br")
             li.nav-item
               a.nav-link(href="#") Contato
 
-    // Conteúdo principal
     .container.mt-4
-      block content
+      .row
+        .col-md-12
+          section#futebol.text-center
+            h2 Futebol
+            p
+              | O futebol é o esporte mais popular do mundo, jogado entre duas equipes de 11
+              | jogadores cada, que tentam marcar gols no gol adversário com uma bola.
+            img(src="https://respostas.sebrae.com.br/wp-content/uploads/2021/07/soccer-1457988_640-959x615.jpg", alt="Imagem de Futebol", class="img-fluid rounded")
 
-    // Rodapé sobre esportes
     footer.footer.bg-dark.text-white.py-4
       .container
         p.text-center
           | Este é um rodapé sobre esportes. Aqui você pode colocar informações adicionais, links úteis, etc.
 
-    // Scripts
-    // Adicione aqui seus scripts ao final do body, se necessário
+    script(src="https://code.jquery.com/jquery-3.5.1.slim.min.js")
+    script(src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js")
+    script(src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js")
