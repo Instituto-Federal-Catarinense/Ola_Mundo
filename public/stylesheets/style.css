@@ -1,8 +1,37 @@
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-family: Arial, sans-serif;
+  background-color:blanchedalmond;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #e664ab;
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+}
+
+main {
+  padding: 20px;
+}
+
+footer {
+  background-color: #e664ab;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 
 a {
-  color: #00B7FF;
+  color: #ff60dc;
+  text-decoration: none;
+  font-family:'Franklin Gothic Medium';
+}
+
+a:hover {
+  text-decoration: underline;
 }
