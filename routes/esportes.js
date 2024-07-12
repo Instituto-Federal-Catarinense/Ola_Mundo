@@ -6,20 +6,20 @@ router.get('/', function (req, res, next) {
     res.render('esportes');
 });
 
-router.get('/volei', function (req, res, next) {
-    res.render('esportes');
+router.get('/espovolei', function (req, res, next) {
+    res.render('esportes/volei');
 });
 
 router.get('/futvolei', function (req, res, next) {
-    res.render('esportes');
+    res.render('futvolei');
 });
 
 router.get('/basquete', function (req, res, next) {
-    res.render('esportes');
+    res.render('basquete');
 });
 
 router.get('/futebol', function (req, res, next) {
-    res.render('esportes');
+    res.render('futebol');
 });
 
 module.exports = router;
