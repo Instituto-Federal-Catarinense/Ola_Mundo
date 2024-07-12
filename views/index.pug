@@ -1,5 +1,29 @@
-extends layout
-
-block content
-  h1= title
-  p Welcome to #{title}
+doctype html
+html
+  head
+    title Página de Esportes
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    link(rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css")
+  body
+    header.bg-dark.text-white.py-4
+      div.container
+        h1.text-center Página de Esportes
+        nav.navbar.navbar-expand-lg.navbar-dark
+          button.navbar-toggler(type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation")
+            span.navbar-toggler-icon
+          div.collapse.navbar-collapse#navbarNav
+            ul.navbar-nav.mr-auto
+              li.nav-item
+                a.nav-link(href="/esportes/futebol") Futebol
+              li.nav-item
+                a.nav-link(href="/esportes/volei") Vôlei
+              li.nav-item
+                a.nav-link(href="/esportes/judo") Judô
+              li.nav-item
+                a.nav-link(href="/esportes/basquete") Basquete
+    section.py-5
+      div.container
+        h2.text-center Bem-vindo à Página de Esportes
+        p.text-center Aqui você encontra informações sobre diversos esportes.
+        img.img-fluid.mx-auto.d-block(src="imagens/esportes.jpg" alt="Imagem de esportes")

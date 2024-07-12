@@ -1,26 +1,29 @@
 var express = require('express');
 var router = express.Router();
 
-/* GET esportes listing. */
+/* GET users listing. */
 router.get('/', function(req, res, next) {
-  res.send('esportes');
+  res.render('esporte', {title: "Página de Esporte"});
 });
 
 router.get('/futebol', function(req, res, next) {
-  res.send('futebol');
+  res.render('futebol', {title: "Futebol"});
 });
 
-router.get('/boxe', function(req, res, next) {
-  res.send('boxe');
+router.get('/volei', function(req, res, next) {
+  res.render('volei', {title: "Volei"});
 });
 
-router.get('/natacao', function(req, res, next) {
-  res.send('natação');
+router.get('/judo', function(req, res, next) {
+  res.render('judo', {title: "Judo"});
 });
 
-router.get('/ciclismo', function(req, res, next) {
-  res.send('ciclismo');
+router.get('/handebol', function(req, res, next) {
+  res.render('handebol', {title: "handebol"});
 });
 
+router.get('/basquete', function(req, res, next) {
+  res.render('basquete', {title: "basquete"});
+});
 
 module.exports = router;
