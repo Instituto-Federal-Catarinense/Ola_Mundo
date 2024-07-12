@@ -7,11 +7,11 @@ router.get('/', function(req, res, next) {
 });
 
 router.get('/futebol', function(req, res, next) {
-  res.send('futebol');
+  res.render('futebol');
 });
 
 router.get('/boxe', function(req, res, next) {
-  res.send('boxe');
+  res.render('boxe');
 });
 
 router.get('/surf', function(req, res, next) {

@@ -1,47 +1,16 @@
 doctype html
 html
   head
-    title Sports Hub
-    meta(charset='utf-8')
-    meta(name='viewport', content='width=device-width, initial-scale=1.0')
-    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css')
+    title Confronto entre Inter e Grêmio
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css")
     style.
       body {
         font-family: Arial, sans-serif;
-        background-color: #f8f9fa;
-        
-      }
-      .navbar {
-        background-color: #007bff;
-      }
-      .navbar-brand, .navbar-nav .nav-link {
-        color: #fff;
-      }
-      .hero {
-        background: url('') no-repeat center center;
-        background-size: cover;
-        height: 400px;
-        color: black;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-      }
-      .hero h1 {
-        font-size: 3rem;
-      }
-      .content {
-        margin: 20px;
-      }
-      .card {
-        margin-bottom: 20px;
-      }
-      .footer {
-        background-color: #007bff;
-        color: white;
-        text-align: center;
-        padding: 10px;
-        margin-top: 20px;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 20px;
       }
       .header {
         text-align: center;
@@ -82,7 +51,7 @@ html
       .collapse.navbar-collapse#navbarNav
         ul.navbar-nav.ml-auto
           li.nav-item
-            a.nav-link(href='#') Home
+            a.nav-link(href='/index') Home
           li.nav-item
             a.nav-link(href='/esportes/futebol') futubol
           li.nav-item
@@ -98,3 +67,23 @@ html
     script(src='https://code.jquery.com/jquery-3.2.1.slim.min.js')
     script(src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js')
     script(src='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js')
+    .header
+      h1 Confronto entre Inter e Grêmio
+      p O clássico Gre-Nal
+    block content
+      .content
+        .team
+          h2 Internacional
+          img(src="https://upload.wikimedia.org/wikipedia/en/thumb/3/35/SC_Internacional_crest.svg/1200px-SC_Internacional_crest.svg.png" alt="Internacional logo")
+          p Fundado em: 1909
+          p Estádio: Beira-Rio
+        .team
+          h2 Grêmio
+          img(src="https://upload.wikimedia.org/wikipedia/en/thumb/1/10/Gremio_logo.svg/1200px-Gremio_logo.svg.png" alt="Grêmio logo")
+          p Fundado em: 1903
+          p Estádio: Arena do Grêmio
+      .match-info
+        h2 Próximo Confronto
+        p Data: 25 de Julho de 2024
+        p Local: Estádio Beira-Rio
+        p Horário: 16:00

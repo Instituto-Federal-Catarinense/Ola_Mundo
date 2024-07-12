@@ -1,5 +1,28 @@
+
+extends layout
+
+
 block content
-  h1= title
-  p Welcome to #{title}
-  p Bem-vindo ao meu site improvissado e sem graça.
-  a(href="/esportes" class="text-500 hover:underline") Acessa ao esportes.
+  h2 Latest News
+  .row
+    .col-md-4
+      .card
+        img.card-img-top.image-standard(src='https://img.nsctotal.com.br/wp-content/uploads/2023/10/internacional-x-gremio-1.jpg', alt='News Image 1')
+        .card-body
+          h5.card-title Partida de Grêmio X Inter
+          p.card-text VEJA A GRANDE PARTIDA DE GRANDES RIVAIS
+          a.btn.btn-primary(href='/esportes/futebol') Leia mais
+    .col-md-4
+      .card
+        img.card-img-top.image-standard(src='https://s2-ge.glbimg.com/IQThuT6cF69peJES22-ouf9B0Eg=/0x0:1080x1350/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2022/y/k/tncBWhSUSQFf0ik7Bbqw/whatsapp-image-2022-07-22-at-18.44.47.jpeg', alt='News Image 2')
+        .card-body
+          h5.card-title Contra Shakur Stevenson, Robson Conceição disputará título mundial de boxe no dia 23 de setembro
+          p.card-text VEJA A GRANDE PARTIDA DE GRANDES RIVAIS
+          a.btn.btn-primary(href='/esportes/boxe') Leia mais
+    .col-md-4
+      .card
+        img.card-img-top.image-standard(src='https://s2-ge.glbimg.com/4iv1djnQaSfYItdEv9NCrCDCIkE=/0x0:1200x800/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2023/f/M/FjD0JwSEif04oxLxHbHQ/bc4ac1df-b960-afa8-4417-23319c053200.jpg', alt='News Image 3')
+        .card-body
+          h5.card-title Balneário Camboriú recebe última etapa do circuito CBSurf Master na próxima semana
+          p.card-text VEJA ESSA COMPETIÇÃO INCRIVEL
+          a.btn.btn-primary(href='/esportes/surf') Leia mais
