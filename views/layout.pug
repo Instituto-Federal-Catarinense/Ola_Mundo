@@ -1,7 +1,32 @@
 doctype html
-html
+html(lang="pt-br")
   head
-    title= title
-    link(rel='stylesheet', href='/stylesheets/style.css')
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Meu Aplicativo
+    link(rel="stylesheet", href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css")
+    link(rel="stylesheet", href="/stylesheets/style.css")
   body
+    header
+      nav.navbar.navbar-expand-lg.navbar-light.bg-light
+        .container
+          a.navbar-brand(href="#") Meu Aplicativo
+          button.navbar-toggler(type="button", data-toggle="collapse", data-target="#navbarNav", aria-controls="navbarNav", aria-expanded="false", aria-label="Toggle navigation")
+            span.navbar-toggler-icon
+          #navbarNav.collapse.navbar-collapse
+            ul.navbar-nav.ml-auto
+              li.nav-item
+                a.nav-link(href="/") Home
+              li.nav-item
+                a.nav-link(href="/sobre") Sobre
+              li.nav-item
+                a.nav-link(href="/servicos") Serviços
+              li.nav-item
+                a.nav-link(href="/contato") Contato
     block content
+    footer.footer.bg-light.text-center
+      .container
+        p © 2024 Meu Aplicativo. Todos os direitos reservados.
+  script(src="https://code.jquery.com/jquery-3.5.1.slim.min.js", integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj", crossorigin="anonymous")
+  script(src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js", integrity="sha384-3NtAdMk3w4k6T6owtMkfg7b/xyV4YVp6w+NJnBMz2XqUZtZy4JxzkFkhu+fx1D5v", crossorigin="anonymous")
+  script(src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js", integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z", crossorigin="anonymous")
