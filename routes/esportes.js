@@ -17,7 +17,7 @@ router.get('/futebol', function (req, res, next) {
 
 router.get('/basquete', function (req, res, next) {
     res.render('basquete', { title: 'Basquete' });
-});
+}); 
 
 router.get('/ping-pong', function (req, res, next) {
     res.render('ping-pong', { title: 'Ping-Pong' });
