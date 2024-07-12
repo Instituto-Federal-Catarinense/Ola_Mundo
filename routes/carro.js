@@ -19,7 +19,7 @@ router.get('/supra', function(req, res, next) {
 router.get('/bmw', function(req, res, next) {
   res.render('carro', { 
     title: 'O BMW M3 Competition, combina as proporções robustas e distintas do seu design de três seções e 4 portas com o estilo esportivo típico de um veículo M. Com os seus impressionantes 510 cv de potência e um torque de 650 Nm.',
-    imageUrl: '/foto/bmw.jpg'
+    imageUrl: '/foto/bmw2.jpeg'
   });
 });
 
