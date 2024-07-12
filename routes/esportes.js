@@ -3,22 +3,27 @@ var router = express.Router();
 
 /* GET users listing. */
 router.get('/', function(req, res, next) {
-  res.send('Esta é uma página de esportes');
+  res.render('esporte', {title: "Página de Esporte"});
 });
 
 router.get('/futebol', function(req, res, next) {
-    res.send('Esta é uma página de FUTEBOL');
-  });
+  res.render('futebol', {title: "Futebol"});
+});
 
-  router.get('/volei', function(req, res, next) {
-    res.send('Esta é uma página de VÔLEI');
-  });
+router.get('/volei', function(req, res, next) {
+  res.render('volei', {title: "Volei"});
+});
 
-  router.get('/judo', function(req, res, next) {
-    res.send('Esta é uma página de JUDÔ');
-  });
+router.get('/judo', function(req, res, next) {
+  res.render('judo', {title: "Judo"});
+});
 
-  router.get('/handebol', function(req, res, next) {
-    res.send('Esta é uma página de HANDEBOL');
-  });
+router.get('/handebol', function(req, res, next) {
+  res.render('handebol', {title: "handebol"});
+});
+
+router.get('/basquete', function(req, res, next) {
+  res.render('basquete', {title: "basquete"});
+});
+
 module.exports = router;
