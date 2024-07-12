@@ -4,7 +4,7 @@ const router = express.Router();
 /* GET carro listing. */
 router.get('/', function(req, res, next) {
   res.render('carro', { 
-    title: 'Página de Carros',
+    title: 'Em 1948, Ferdinand Porsche Júnior (filho de Ferdinand), e conhecido carinhosamente como Ferry, construiu a partir do Volkswagen um carro esportivo em Gmünd na Áustria, com o nome de Cisitalia. Nascia assim o primeiro carro esportivo do mundo, o 356, um roadster extremamente leve produzido em alumínio.',
     imageUrl: '/foto/porsche.jpg'
   });
 });
