@@ -1,29 +1,29 @@
 doctype html
 html
   head
-    title Página de Esportes
+    title Basquete
     meta(charset="UTF-8")
     meta(name="viewport" content="width=device-width, initial-scale=1.0")
     link(rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css")
   body
     header.bg-dark.text-white.py-4
       div.container
-        h1.text-center Página de Esportes
+        h1.text-center Basquete
         nav.navbar.navbar-expand-lg.navbar-dark
           button.navbar-toggler(type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation")
             span.navbar-toggler-icon
           div.collapse.navbar-collapse#navbarNav
             ul.navbar-nav.mr-auto
               li.nav-item
-                a.nav-link(href="/esportes/futebol") Futebol
+                a.nav-link(href="/") Página Principal
               li.nav-item
-                a.nav-link(href="/esportes/volei") Vôlei
+                a.nav-link(href="futebol") Futebol
               li.nav-item
-                a.nav-link(href="/esportes/judo") Judô
+                a.nav-link(href="volei") Vôlei
               li.nav-item
-                a.nav-link(href="/esportes/basquete") Basquete
+                a.nav-link(href="judo") Judô
     section.py-5
       div.container
-        h2.text-center Bem-vindo à Página de Esportes
-        p.text-center Aqui você encontra informações sobre diversos esportes.
-        img.img-fluid.mx-auto.d-block(src="imagens/esportes.jpg" alt="Imagem de esportes")
+        h2.text-center Sobre o Basquete
+        p.text-center O basquete é um esporte jogado por duas equipes de cinco jogadores cada em uma quadra retangular.
+        img.img-fluid.mx-auto.d-block(src="../imagens/basquete.webp" alt="Imagem de basquete")
