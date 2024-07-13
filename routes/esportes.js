@@ -6,15 +6,15 @@ router.get('/', function(req, res, next) {
   res.render('esporte');
 });
 router.get('/futebol', function(req, res, next) {
-    res.render('index', { title: 'Futebol' });
+    res.render('futebol');
   });
 
   router.get('/surf', function(req, res, next) {
-    res.render('index', { title: 'Surf' });
+    res.render('surf');
   });
 
   router.get('/volei', function(req, res, next) {
-    res.render('index', { title: 'Volei' });
+    res.render('volei');
   });
   
 
