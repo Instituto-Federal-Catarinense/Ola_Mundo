@@ -1,9 +1,9 @@
 var express = require('express');
 var router = express.Router();
 
-/* GET home page. */
+// Rota para a página inicial
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'The Man of the World' });
+  res.render('index', { title: 'Tela de Inicio' });
 });
 
 module.exports = router;
