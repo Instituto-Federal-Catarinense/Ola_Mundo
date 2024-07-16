@@ -22,4 +22,8 @@ router.get('/Futebol', function(req, res, next) {
   res.render('futebol', { title: 'Futebol' });
 });
 
+router.get('/Resumo', function(req, res, next) {
+  res.render('Resumo', { title: 'Resumo' });
+});
+
 module.exports = router;
