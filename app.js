@@ -13,7 +13,7 @@ var app = express();
 
 // Configuração do motor de visualização
 app.set('views', path.join(__dirname, 'views'));
-app.set('view engine', 'pug');
+app.set('view engine', 'ejs'); // Alterado para EJS
 
 // Configurações de middleware
 app.use(logger('dev'));
@@ -38,9 +38,9 @@ app.use(function(err, req, res, next) {
   res.locals.message = err.message;
   res.locals.error = req.app.get('env') === 'development' ? err : {};
 
-  // Renderiza a página de erro
+  // Renderiza a página de erro usando o template EJS
   res.status(err.status || 500);
-  res.render('error');
+  res.render('error'); // Renderiza o template 'error.ejs'
 });
 
 module.exports = app;
