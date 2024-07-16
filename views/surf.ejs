@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Confronto entre Inter e Grêmio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 20px;
+    }
+    .navbar {
+      margin-bottom: 20px;
+    }
+    .header {
+      text-align: center;
+      padding: 20px;
+      background-color: #333;
+      color: #fff;
+    }
+    .content {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+    }
+    .team {
+      flex: 1;
+      padding: 20px;
+      margin: 10px;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .team h2 {
+      text-align: center;
+    }
+    .team img {
+      display: block;
+      margin: 0 auto 20px;
+      width: 100px;
+      height: auto;
+    }
+    .match-info {
+      text-align: center;
+      margin-top: 40px;
+    }
+    .footer {
+      text-align: center;
+      padding: 10px;
+      background-color: #333;
+      color: #fff;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Sports Hub</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="http://localhost:3000/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/esportes/futebol">Futebol</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/esportes/boxe">Boxe</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/esportes/surf">Surf</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="header">
+    <h1>Confronto entre Inter e Grêmio</h1>
+    <p>O clássico Gre-Nal</p>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="team">
+          <h2>Gabriel Medina</h2>
+          <img src="https://img.freepik.com/fotos-gratis/homem-jovem-com-tabua-surf-ligado-rocha-perto-agua_23-2148021626.jpg?size=626&ext=jpg&ga=GA1.1.2008272138.1721001600&semt=ais_user" alt="Internacional logo">
+          <p>Fundado em: 1909</p>
+          <p>Estádio: Beira-Rio</p>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="team">
+          <h2>Outro cara</h2>
+          <img src="https://surfguru.space/2011/12/ruda-carvalho-no-radical-wave-apresenta-10-ftc-contest-foto-gabriella-simoes-111205160355.jpg" alt="Grêmio logo">
+          <p>Fundado em: 1903</p>
+          <p>Na praia</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="match-info">
+      <h2>Próximo Confronto</h2>
+      <p>Data: 25 de Julho de 2024</p>
+      <p>Local: Estádio Beira-Rio</p>
+      <p>Horário: 16:00</p>
+    </div>
+  </div>
+
+  <div class="footer">
+    <p>© 2024 Sports Hub. All rights reserved.</p>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+</html>

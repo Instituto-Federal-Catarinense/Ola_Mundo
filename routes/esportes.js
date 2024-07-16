@@ -15,7 +15,7 @@ router.get('/boxe', function(req, res, next) {
 });
 
 router.get('/surf', function(req, res, next) {
-  res.send('surf');
+  res.render('surf');
 });
 
 
