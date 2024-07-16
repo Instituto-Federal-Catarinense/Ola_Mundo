@@ -1,27 +1,23 @@
-var express = require('express');
-var router = express.Router();
+const express = require('express');
+const router = express.Router();
 
-/* GET página inicial de carros. */
-router.get('/', function(req, res, next) {
+// Exemplo de dados sobre carros
+const carros = [
+  { id: 1, modelo: 'Fusca', imagem: 'URL_FUSCA' },
+  { id: 2, modelo: 'Civic', imagem: 'URL_CIVIC' }
+];
+
+// Rota para a página do carro
+router.get('/', (req, res) => {
   res.render('carro', {
-    title: 'Página de Carros',
-    imageUrl: '/fotos/ayrtonsenna.jpg'  // caminho relativo ao diretório 'public'
+    title: 'Informações sobre Carros',
+    imageUrl: 'URL_DA_IMAGEM' // Substitua pela URL da imagem real
   });
 });
 
-/* GET página de Formula 1. */
-router.get('/formula1', function(req, res, next) {
-  res.render('carro', {
-    title: 'Formula 1',
-    imageUrl: '/fotos/fernandoalonso.webp'  // caminho relativo ao diretório 'public'
-  });
+// Rota para listar todos os carros
+router.get('/lista', (req, res) => {
+  res.render('listaCarros', { carros });
 });
-
-router.get('/formulaum', function(req, res, next) {
-    res.render('carro', {
-      title: 'Formula 1',
-      imageUrl: '/fotos/lewishamilton.webp'  // caminho relativo ao diretório 'public'
-    });
-  });
 
 module.exports = router;

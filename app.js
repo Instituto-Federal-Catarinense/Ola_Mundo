@@ -1,7 +1,6 @@
 var createError = require('http-errors');
 var express = require('express');
 var path = require('path');
-var app = express();
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 var indexRouter = require('./routes/index');
@@ -9,11 +8,12 @@ var usersRouter = require('./routes/users');
 var carroRouter = require('./routes/carro');
 
 var app = express();
-// view engine setup
-app.set('views', path.join(__dirname, 'views'));
-app.set('view engine', 'pug');
 
-// Rota para renderizar carro.pug
+// Configuração do motor de visualização
+app.set('views', path.join(__dirname, 'views'));
+app.set('view engine', 'ejs');
+
+// Rota para renderizar carro.ejs
 app.get('/carro', (req, res) => {
   res.render('carro', { title: 'Informações sobre Carros' }); // Passa o título como variável para o template
 });
@@ -27,17 +27,17 @@ app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/carro', carroRouter);
 
-// catch 404 and forward to error handler
+// Captura 404 e encaminha para o manipulador de erros
 app.use(function(req, res, next) {
   next(createError(404));
 });
-// error handler
+
+// Manipulador de erros
 app.use(function(err, req, res, next) {
-  // set locals, only providing error in development
   res.locals.message = err.message;
   res.locals.error = req.app.get('env') === 'development' ? err : {};
-  // render the error page
   res.status(err.status || 500);
   res.render('error');
 });
+
 module.exports = app;
