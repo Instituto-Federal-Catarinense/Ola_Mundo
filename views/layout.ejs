@@ -1,7 +1,16 @@
-doctype html
-html
-  head
-    title= title
-    link(rel='stylesheet', href='/stylesheets/style.css')
-  body
-    block content
+<!DOCTYPE html>
+<html>
+<head>
+  <title><%= title %></title>
+</head>
+<body>
+  <header>
+    <h1>Meu Site de Esportes</h1>
+  </header>
+  <%- include('partials/header') %>
+  <%- body %>
+  <footer>
+    <p>© 2024 Meu Site de Esportes</p>
+  </footer>
+</body>
+</html>
