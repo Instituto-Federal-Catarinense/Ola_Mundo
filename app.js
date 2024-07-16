@@ -13,7 +13,7 @@ var app = express();
 
 // Configuração do motor de visualização
 app.set('views', path.join(__dirname, 'views'));
-app.set('view engine', 'pug');
+app.set('view engine', 'ejs'); // Oia o ejs ai fei.
 
 // Configurações de middleware
 app.use(logger('dev'));
@@ -28,7 +28,7 @@ app.use('/users', usersRouter);
 app.use('/esportes', esportesRouter);
 
 // Captura 404 e encaminha para o manipulador de erros
-app.use(function(req, res, next) {
+app.use(function(req, res, next) {  
   next(createError(404));
 });
 
