@@ -10,7 +10,7 @@ router.get('/futebol', function(req, res, next) {
 });
 
 router.get('/surf', function(req, res, next) {
-  res.render('surf');  // Renderiza a página Pug para Sinuca
+  res.render('surf');  // Renderiza a página Pug para Surf
 });
 
 router.get('/volei', function(req, res, next) {
