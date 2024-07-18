@@ -6,6 +6,7 @@ html(lang='pt-br')
     title #{title}
     link(rel='stylesheet', href='https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css')
     link(rel='stylesheet', href='/stylesheets/style.css')
+
   body
     header.header
       .container
@@ -16,11 +17,19 @@ html(lang='pt-br')
             nav
               ul.nav.justify-content-end
                 li.nav-item
-                  a.nav-link(href='#') Home
+                  a.nav-link(href='/') Home
                 li.nav-item
-                  a.nav-link(href='#') Sobre
+                  a.nav-link(href='/esportes') Esportes
                 li.nav-item
-                  a.nav-link(href='#') Contato
+                  a.nav-link(href='/esportes/surf') Surf
+                li.nav-item
+                  a.nav-link(href='/esportes/futebol') Futebol
+                li.nav-item
+                  a.nav-link(href='/esportes/volei') Vôlei
+                li.nav-item
+                  a.nav-link(href='/esportes/basquete') Basquete
+                li.nav-item
+                  a.nav-link(href='/esportes/handebol') Handebol
 
     main.container
       block content
