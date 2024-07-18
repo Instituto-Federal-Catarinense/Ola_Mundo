@@ -18,5 +18,13 @@ router.get('/surf', function(req, res, next) {
   res.render('surf');
 });
 
+router.get('/volei', function(req, res, next) {
+  res.render('volei');
+});
+
+router.get('/bocha', function(req, res, next) {
+  res.render('bocha');
+});
+
 
 module.exports = router;
