@@ -5,92 +5,66 @@ html(lang="en")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
     title Maldivas
     style.
-      /* Estilos CSS */
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
-
       body {
-        font-family: Arial, sans-serif;
-        line-height: 1.6;
-        background-color: #f0f0f0;
-        color: #333;
-        margin: 20px;
+          font-family: Arial, sans-serif;
+          line-height: 1.6;
+          background-color: #f2f2f2;
+          color: #333;
+          margin: 0 auto;
+          max-width: 800px;
+          padding: 20px;
       }
-
       header {
-        text-align: center;
-        margin-bottom: 20px;
+          background-color: #4CAF50;
+          color: white;
+          padding: 10px 0;
+          text-align: center;
       }
-
-      header h1 {
-        font-size: 2.5em;
-        margin-bottom: 10px;
-        color: #333;
-      }
-
       main {
-        display: flex;
-        flex-direction: column;
-        gap: 40px;
+          background-color: white;
+          padding: 20px;
+          margin-top: 20px;
+          border-radius: 5px;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
       }
-
       section {
-        background-color: #fff;
-        padding: 20px;
-        border-radius: 8px;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+          margin-bottom: 20px;
       }
-
-      section h2 {
-        font-size: 2em;
-        margin-bottom: 10px;
-        color: #333;
+      h1 {
+          color: white;
+          margin-bottom: 10px;
       }
-
-      section p {
-        font-size: 1.2em;
-        color: #666;
+      h2 {
+          color: #4CAF50;
+          margin-bottom: 10px;
       }
-
-      footer {
-        margin-top: 40px;
-        text-align: center;
-        color: #666;
+      p {
+          margin-bottom: 10px;
       }
-
-      footer p {
-        font-size: 0.8em;
+      img {
+        display: block; 
+        margin: 0 auto; 
+        max-width: 100%; 
+        border-radius: 10px; 
+        
       }
-
-      address {
-        font-style: normal;
-      }
-
   body
     header
       h1 Maldivas
+      img(src="https://cdn6.campograndenews.com.br/uploads/noticias/2020/12/28/44f1b87df61dfaecb4141a236286342c44bff37d.jpg", width="500" height="250")
       p Descubra o paraíso nas Maldivas
 
+    button(onclick="window.history.back()") Voltar
     main
       section#praias
         h2 Praias de Areia Branca
         p As Maldivas são famosas por suas praias de areia branca e águas azul-turquesa cristalinas. Relaxe sob o sol tropical ou mergulhe para explorar os recifes de coral.
-
       section#luxo
         h2 Experiência de Luxo
         p Os resorts nas Maldivas oferecem hospedagem de luxo em vilas sobre a água, proporcionando privacidade e vistas deslumbrantes do oceano.
-
       section#mergulho
         h2 Mergulho e Snorkeling
         p Explore a vida marinha única das Maldivas através de atividades como mergulho e snorkeling. Descubra coloridos recifes de coral e uma variedade de peixes tropicais.
-
       section#cultura
         h2 Cultura e Hospitalidade
         p Conheça a cultura local das Maldivas, conhecida por sua hospitalidade calorosa e rica tradição. Explore vilas de pescadores e participe de cerimônias culturais.
-
-    footer
-      p © 2024 Maldivas. Todos os direitos reservados.
-      address Informações de contato: contato@maldivasparaiso.com

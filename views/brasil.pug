@@ -5,92 +5,71 @@ html(lang="en")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
     title Brasil
     style.
-      /* Estilos CSS */
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
-
       body {
         font-family: Arial, sans-serif;
         line-height: 1.6;
-        background-color: #f0f0f0;
+        background-color: #f2f2f2;
         color: #333;
-        margin: 20px;
-      }
+        margin: 0 auto;
+        max-width: 800px;
+        padding: 20px;
 
+      }
       header {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px 0;
         text-align: center;
+        border-radius: 5px;
+      }
+      main {
+        background-color: white;
+        padding: 20px;
+        margin-top: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      section {
         margin-bottom: 20px;
       }
-
-      header h1 {
-        font-size: 2.5em;
+      h1 {
+        color: white;
         margin-bottom: 10px;
-        color: #333;
       }
-
-      main {
-        display: flex;
-        flex-direction: column;
-        gap: 40px;
-      }
-
-      section {
-        background-color: #fff;
-        padding: 20px;
-        border-radius: 8px;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-      }
-
-      section h2 {
-        font-size: 2em;
+      h2 {
+        color: #4CAF50;
         margin-bottom: 10px;
-        color: #333;
       }
-
-      section p {
-        font-size: 1.2em;
-        color: #666;
+      p {
+        margin-bottom: 10px;
       }
-
-      footer {
-        margin-top: 40px;
-        text-align: center;
-        color: #666;
+      img {
+       
+        display: block; 
+        margin: 0 auto; 
+        max-width: 100%; 
+        border-radius: 10px; 
       }
-
-      footer p {
-        font-size: 0.8em;
-      }
-
-      address {
-        font-style: normal;
-      }
-
   body
     header
       h1 Brasil
+      img(src="https://s2-g1.glbimg.com/NyT4OPVTZaAl57I35heDC3PrXJo=/0x0:4096x3072/1008x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2018/p/P/40NwnARvKvu6NBTfipRg/copa-do-mundo.jpg", width="500" height="250")
       p Descubra a diversidade do Brasil
 
+    button(onclick="window.history.back()") Voltar
     main
       section#praias
         h2 Praias Deslumbrantes
         p O Brasil é famoso por suas praias deslumbrantes, como Copacabana no Rio de Janeiro e Jericoacoara no Ceará, ideais para relaxar e aproveitar o sol.
-
+      
       section#amazonia
         h2 Floresta Amazônica
         p Explore a maior floresta tropical do mundo, lar de uma biodiversidade incrível e rica cultura indígena. Faça passeios de barco, trilhas e conheça comunidades locais.
-
+      
       section#carnaval
         h2 Carnaval
         p O Carnaval do Brasil é uma festa popular conhecida mundialmente pela música, dança e desfiles de escolas de samba. Celebre essa festividade vibrante e colorida.
-
+      
       section#diversidade
         h2 Diversidade Cultural
         p Descubra a diversidade cultural do Brasil através de sua culinária, música, dança e festividades regionais que refletem a mistura de influências étnicas.
-
-    footer
-      p © 2024 Brasil. Todos os direitos reservados.
-      address Informações de contato: contato@brasildiverso.com
