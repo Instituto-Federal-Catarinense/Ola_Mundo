@@ -1,0 +1,62 @@
+extends layout
+
+block content
+  h1(style="background-color: #f0f0f0; padding: 10px;") Aba de Games
+
+  .container.mt-5(style="background-color: #fff; padding: 20px;")
+    h1.text-center(style="color: #333;") Valorant
+    p(style="color: #555;") Um ótimo FPS multijogador feito para PC
+
+    #carouselExampleIndicators.carousel.slide(data-ride="carousel")
+      ol.carousel-indicators
+        li(data-target="#carouselExampleIndicators", data-slide-to="0", class="active")
+        li(data-target="#carouselExampleIndicators", data-slide-to="1")
+        li(data-target="#carouselExampleIndicators", data-slide-to="2")
+
+      .carousel-inner
+        .carousel-item.active
+          img.d-block.w-100(src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/277821605a920bc7ce76f12538d800098a37f033-1920x1080.jpg", alt="tela")
+        .carousel-item
+          img.d-block.w-100(src="https://cdn.folhape.com.br/upload/dn_arquivo/2020/05/reveal-reactora-valorant.jpg", alt="tela mirando")
+        .carousel-item
+          img.d-block.w-100(src="https://img.redbull.com/images/c_limit,w_1500,h_1000,f_auto,q_auto/redbullcom/2020/4/17/hhfpmjhqmoihnvtn454t/games-valorant", alt="tela ingame")
+
+      a.carousel-control-prev(href="#carouselExampleIndicators", role="button", data-slide="prev")
+        span.carousel-control-prev-icon(aria-hidden="true")
+        span.sr-only Anterior
+
+      a.carousel-control-next(href="#carouselExampleIndicators", role="button", data-slide="next")
+        span.carousel-control-next-icon(aria-hidden="true")
+        span.sr-only Próximo
+
+block backButton
+  a(href='/esportes') Voltar
+
+
+  meta(charset="UTF-8")
+  meta(name="viewport", content="width=device-width, initial-scale=1.0")
+  title Surf
+
+  // Adicionando Bootstrap para o carrossel
+  link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css")
+
+  // Estilos personalizados
+  style.
+    body
+      background-color: #f8f9fa;
+    
+    .container
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      padding: 20px;
+      margin-top: 20px;
+
+    .carousel-item img
+      width: 100%;
+      height: auto;
+
+  // Scripts do Bootstrap
+  script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js")
+  script(src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js")
+  script(src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js")
