@@ -1,0 +1,32 @@
+doctype html
+html
+  head
+    title= title
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+    link(rel='stylesheet', href='https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css')
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body
+    nav.navbar.navbar-expand-lg.navbar-light.bg-light
+    a.navbar-brand(href='#') 
+    button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarNav', aria-controls='navbarNav', aria-expanded='false', aria-label='Toggle navigation')
+      span.navbar-toggler-icon
+    div.collapse.navbar-collapse#navbarNav
+      ul.navbar-nav.ml-auto
+        li.nav-item
+          a.nav-link(href='#') Futebol
+        li.nav-item
+          a.nav-link(href='#') Basquete
+        li.nav-item
+          a.nav-link(href='#') Tênis
+        li.nav-item
+          a.nav-link(href='#') Natação
+          
+    block content 
+
+    script(src='https://code.jquery.com/jquery-3.5.1.slim.min.js')
+    script(src='https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js')
+    script(src='https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js')
+
+footer.footer.bg-dark.text-white.text-center.py-3
+  p © 2024 Esportes Inc. Todos os direitos reservados.
