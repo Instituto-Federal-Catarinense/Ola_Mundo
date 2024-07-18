@@ -1,7 +1,18 @@
-<%- include('layout') %>
+<!DOCTYPE html>
+<html>
+<head>
+  <title><title></title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <h1><title></h1>
+  <p>Bem-vindo à página do <title>. Aqui você encontrará informações sobre Carros.</p>
+  <img src="<%= imageUrl %>" alt="Imagem de carros" class="img-fluid">
 
-<div class="content">
-  <h1><%= title %></h1>
-  <p>Bem-vindo à página do <%= title %>. Aqui você encontrará informações sobre Carros.</p>
-  <img src="<%= imageUrl %>" alt="Imagem de carros" class="img-fluid" />
-</div>
+  <div>
+    <a href="/" class="btn">Início</a>
+    <a href="/moto" class="btn">Moto</a>
+    <a href="/pista" class="btn">Pista</a>
+  </div>
+</body>
+</html>

@@ -1,13 +1,41 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html>
 <head>
-  <meta charset="UTF-8">
   <title><%= title %></title>
-  <link rel="stylesheet" href="/path/to/bootstrap.css">
+  <style>
+    .btn {
+      padding: 10px 20px;
+      margin: 5px;
+      border: none;
+      border-radius: 5px;
+      background-color: #007bff;
+      color: white;
+      cursor: pointer;
+      text-decoration: none;
+      font-size: 16px;
+    }
+    .btn:hover {
+      background-color: #0056b3;
+    }
+    .content {
+      padding: 20px;
+    }
+  </style>
 </head>
 <body>
-  <div class="container">
-    <%- body %>
+  <%- include('layout') %>
+
+  <div class="content">
+    <h1><%= message %></h1>
+    <h2><%= error.status %></h2>
+    <pre><%= error.stack %></pre>
+  </div>
+
+  <div>
+    <a href="/" class="btn">Início</a>
+    <a href="/carro" class="btn">Carro</a>
+    <a href="/moto" class="btn">Moto</a>
+    <a href="/pista" class="btn">Pista</a>
   </div>
 </body>
 </html>

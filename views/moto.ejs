@@ -7,22 +7,21 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <!-- Incluindo o layout, se necessário -->
-  <%- include('layout') %>
 
-  <div>
+  <block content>
     <h1><%= title %></h1>
     <p>Bem-vindo à página do <%= title %>. Escolha uma das opções abaixo:</p>
     <div>
+      <button onclick="navigate('/')">Início</button>
       <button onclick="navigate('carro')">Carro</button>
-     <!-- <button onclick="navigate('moto')">Moto</button>
+      <button onclick="navigate('moto')">Moto</button>
       <button onclick="navigate('pista')">Pista</button>
-      <button onclick="navigate('mecanica')">Mecânica</button> -->
+      <button onclick="navigate('mecanica')">Mecânica</button>
     </div>
     <div id="content">
       <!-- Conteúdo será carregado dinamicamente aqui -->
     </div>
-  </div>
+  </block>
 
   <script>
     function navigate(section) {
@@ -34,5 +33,6 @@
         .catch(error => console.error('Erro ao carregar conteúdo', error));
     }
   </script>
+
 </body>
 </html>
