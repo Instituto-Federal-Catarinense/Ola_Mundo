@@ -7,23 +7,23 @@ router.get('/', function(req, res, next) {
 });
 
 router.get('/volei', function(req, res, next) {
-  res.send('Página de Vôlei');
+  res.render('volei');
 });
 
 router.get('/volei-de-areia', function(req, res, next) {
-  res.send('Página de Vôlei de Areia');
+  res.render('volei-de-areia');
 });
 
 router.get('/basquete', function(req, res, next) {
-  res.send('Página de Basquete');
+  res.render('basquete');
 });
 
 router.get('/futebol', function(req, res, next) {
-  res.send('Página de Futebol');
+  res.render('futebol');
 });
 
 router.get('/futebol-de-salao', function(req, res, next) {
-  res.send('Página de Futebol de Salão');
+  res.render('futebol-de-salao');
 });
 
 module.exports = router;
