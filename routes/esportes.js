@@ -14,4 +14,7 @@ router.get('/volei', function(req, res, next) {
   router.get('/futsal', function(req, res, next) {
     res.render('futsal');
   });
+  router.get('/surf', function(req, res, next) {
+    res.render('surf');
+  });
 module.exports = router;
