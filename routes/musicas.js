@@ -18,8 +18,8 @@ router.get('/funk', function(req, res, next) {
     res.render('bossanova');
   });
 
-  router.get('/POPinternacional', function(req, res, next) {
-    res.render('POPinternacional');
+  router.get('/pop', function(req, res, next) {
+    res.render('pop');
   });
 
 module.exports = router;
