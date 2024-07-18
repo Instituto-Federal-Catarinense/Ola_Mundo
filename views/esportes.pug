@@ -1,21 +1,94 @@
-extends layout
+doctype html
+html(lang="pt-br")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Esportes
 
-block content
-  .players-container
-    h1(style="font-family: Arial, sans-serif; color: #333; text-align: center; margin-bottom: 20px;") Lista de Jogadores de Futebol com Imagens
-    ul(style="list-style-type: none; padding: 0; display: flex; flex-wrap: wrap; justify-content: center;")
-      each player in [
-        { name: 'Cristiano Ronaldo', sport: 'Futebol', color: '#F44336', image: 'futebol.png' },
-        { name: 'Bruno Fernandes', sport: 'Basquete', color: '#03A9F4', image: 'basquete.png' },
-        { name: 'João Félix', sport: 'Tênis', color: '#4CAF50', image: 'tenis.png' },
-        { name: 'Rúben Dias', sport: 'Vôlei', color: '#FFEB3B', image: 'volei.png' },
-        { name: 'Bernardo Silva', sport: 'Natação', color: '#9C27B0', image: 'natacao.png' },
-        { name: 'Diogo Jota', sport: 'Atletismo', color: '#FF9800', image: 'atletismo.png' },
-        { name: 'Rui Patrício', sport: 'Boxe', color: '#795548', image: 'boxe.png' },
-        { name: 'Pepe', sport: 'Golfe', color: '#00BCD4', image: 'golfe.png' },
-        { name: 'João Cancelo', sport: 'Rugby', color: '#E91E63', image: 'rugby.png' }
-      ]
-        li(style="font-family: Arial, sans-serif; color: #333; margin: 10px; padding: 10px; border-radius: 5px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); transition: all 0.3s ease; width: 200px; position: relative;")
-          img(src=`/images/${player.image}`, alt=`${player.sport}`, style="width: 50px; height: auto; margin-bottom: 10px;")
-          span(style=`font-family: Arial, sans-serif; color: ${player.color}; display: block; margin-bottom: 5px; text-align: center;`) #{player.name}
-          span(style=`font-size: 12px; background-color: ${player.color}; color: white; padding: 3px 6px; border-radius: 5px; position: absolute; top: 5px; left: 5px;`) #{player.sport}
+    style.
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 0;
+        background-color: #f0f0f0;
+        color: #333;
+      }
+      header {
+        background-color: #2AD5DB ;
+        color: #fff;
+        text-align: center;
+        padding: 1rem 0;
+        margin-bottom: 20px;
+      }
+      main {
+        width: 80%;
+        margin: 0 auto;
+        background-color: #fff;
+        padding: 20px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+      }
+      h1, h2 {
+        color: #333;
+        text-align: center;
+        margin-bottom: 15px;
+      }
+      h2 {
+        border-bottom: 2px solid #333;
+        padding-bottom: 5px;
+      }
+      p {
+        margin-bottom: 10px;
+      }
+      ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+      }
+      li {
+        margin-bottom: 5px;
+      }
+      footer {
+        text-align: center;
+        margin-top: 20px;
+        color: #777;
+      }
+
+  body
+    header
+      h1 Esportes
+      p Bem-vindo ao mundo dos esportes!
+
+    main
+      section
+        h2 O que são esportes?
+        p Esportes são atividades físicas que envolvem competição e habilidade. Eles podem ser praticados individualmente ou em equipe, promovendo saúde e bem-estar.
+
+      section
+        h2 Tipos de esportes
+        ul
+          li 
+            <a href="esportes/futebol"> Futebol</a>
+          li 
+            <a href="esportes/basquete"> Basquete</a>
+          li 
+            <a href="esportes/volei"> Vôlei</a>
+          li 
+            <a href="esportes/xadrez"> Xadrez</a>
+         
+      section
+        h2 Benefícios dos esportes
+        ul
+          li Melhora da saúde física e mental
+          li Desenvolvimento de habilidades sociais
+          li Fomento ao trabalho em equipe
+          li Diversão e entretenimento
+          li Redução do estresse
+
+      section
+        h2 Importância da prática esportiva
+        p A prática regular de esportes é essencial para manter um estilo de vida saudável e ativo. Além dos benefícios físicos, os esportes promovem valores como disciplina, superação e respeito às regras.
+    footer
+      p Feito por Nicoly e Camila ❤️ 
+   
