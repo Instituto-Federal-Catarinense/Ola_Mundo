@@ -1,39 +1,40 @@
 extends layout
 
 block content
-    doctype html
-    html(lang='pt-br')
-    head
-        meta(charset='UTF-8')
-        meta(name='viewport', content='width=device-width, initial-scale=1.0')
-        title Esportes no Brasil
-        link(rel='stylesheet', href='https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css')
-        link(rel='stylesheet', href='/stylesheets/style.css')
-    body
-        .container.mt-4
-        h1.text-center Esportes Populares no Brasil
-        ul.list-group
-            li.list-group-item Futebol
-            li.list-group-item Vôlei
-            li.list-group-item Basquete
-            li.list-group-item Futsal
-            li.list-group-item Surf
-            li.list-group-item Jiu-Jitsu
-            li.list-group-item Capoeira
-            li.list-group-item Tênis de Mesa
-            li.list-group-item Natação
-            li.list-group-item Skate
-            li.list-group-item Judô
-            li.list-group-item Atletismo
-            li.list-group-item MMA
-            li.list-group-item Handebol
-            li.list-group-item Ginástica Olímpica
-            li.list-group-item Ciclismo
-            li.list-group-item Automobilismo
-            li.list-group-item Tênis
-            li.list-group-item Rugby
 
-        footer.footer.bg-light.text-center.text-muted.py-3
+    nav.navbar.navbar-expand-lg.navbar-dark.bg-dark
+        .container
+            a.navbar-brand(href="#") Seu Aplicativo
+            button.navbar-toggler(type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation")
+                span.navbar-toggler-icon
+            #navbarNav.collapse.navbar-collapse
+                ul.navbar-nav.ml-auto
+                    li.nav-item
+                        a.nav-link(href="/") Página Inicial
+                    li.nav-item
+                        a.nav-link(href="/sobre") Sobre
+                    li.nav-item
+                        a.nav-link(href="/contato") Contato
+
+    .jumbotron.jumbotron-fluid.bg-light.text-center
+        .container
+            h1.display-4 Esportes Populares no Brasil
+            p.lead Selecione um esporte para mais informações.
+
+    .container.mt-4
+        ul.list-group
+            li.list-group-item
+                a(href="/esportes/futebol") Futebol
+            li.list-group-item
+                a(href="/esportes/volei") Vôlei
+            li.list-group-item
+                a(href="/esportes/futsal") Futsal
+            li.list-group-item
+                a(href="/esportes/tenis-de-mesa") Tênis de Mesa
+            li.list-group-item
+                a(href="/esportes/natacao") Natação
+
+    footer.footer.bg-light.text-center.text-muted.py-3
         .container
             p © 2024 Seu Nome de Site
 
