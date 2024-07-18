@@ -7,35 +7,39 @@ var logger = require('morgan');
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var sportsRouter = require('./routes/esportes');
+var gamesRouter = require('./routes/videogames');
 
 var app = express();
 
-// view engine setup 
+// Configuração do motor de visualização
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'pug');
 
+// Middleware
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+// Definindo rotas
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/esportes', sportsRouter);
+app.use('/videogames', gamesRouter);
 
-// catch 404 and forward to error handler
+// Tratamento de erro 404 e encaminhamento para o manipulador de erros
 app.use(function(req, res, next) {
   next(createError(404));
 });
 
-// error handler
+// Manipulador de erros
 app.use(function(err, req, res, next) {
-  // set locals, only providing error in development
+  // Configuração local, fornecendo erro apenas em desenvolvimento
   res.locals.message = err.message;
   res.locals.error = req.app.get('env') === 'development' ? err : {};
 
-  // render the error page
+  // Renderizar a página de erro
   res.status(err.status || 500);
   res.render('error');
 });

@@ -41,6 +41,11 @@ html(lang="pt-BR")
         color: white;
         padding: 20px 0;
       }
+      .img-size {
+        width: 100%;
+        height: 200px; /* Altura desejada para as imagens */
+        object-fit: cover; /* Ajusta o tamanho mantendo a proporção */
+      }
   body
     // Cabeçalho com Navbar
     header.navbar-custom
@@ -55,6 +60,8 @@ html(lang="pt-BR")
                 a.nav-link(href="/users") Usuários
               li.nav-item
                 a.nav-link(href="/esportes") Esportes
+              li.nav-item
+                a.nav-link(href="/videogames") Video Games
 
     // Conteúdo Principal
     main.main-content
