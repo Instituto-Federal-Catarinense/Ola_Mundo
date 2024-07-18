@@ -1,0 +1,42 @@
+extends layout
+
+block content
+  h1= title
+  p Bem-vindo à página #{title}
+
+  // Conteúdo Principal
+  main.main-content
+    .container.text-center
+      // Primeira Linha de Quadrados
+      .row.row-cols-1.row-cols-md-2.row-cols-lg-3.g-4
+        // Quadrado - Blush
+        .col.mb-4
+          a(href="/maquiagem/blush")
+            .border.text-center.p-4
+              img.img-fluid(src="https://m.media-amazon.com/images/I/61fvBCr70DL._AC_UF1000,1000_QL80_.jpg", alt="Blush", style="max-width: 100%;")
+              h5.text-dark Blush
+              p.text-muted Clique no Blush...
+
+        // Quadrado - Batom
+        .col.mb-4
+          a(href="/maquiagem/batom")
+            .border.text-center.p-4
+              img.img-fluid(src="https://acdn.mitiendanube.com/stores/001/407/886/products/5afa89a4-b318-4174-bb9a-2c7e45ef88211-afba7b172036b3e59d16825404869993-640-0.png", alt="Batom", style="max-width: 100%;")
+              h5.text-dark Batom
+              p.text-muted Clique no batom...
+
+        // Quadrado - Iluminador
+        .col.mb-4
+          a(href="/maquiagem/iluminador")
+            .border.text-center.p-4
+              img.img-fluid(src="https://oceane.vtexassets.com/arquivos/ids/205696/AP2001174CO005F_iluminador_em_bastao_bronze_highlight_stick_oceane_edition_3.jpg?v=638477672627400000", alt="Iluminador", style="max-width: 100%;")
+              h5.text-dark Iluminador
+              p.text-muted Clique no Iluminador...
+
+        // Quadrado - Rimel
+        .col.mb-4
+          a(href="/maquiagem/rimel")
+            .border.text-center.p-4
+              img.img-fluid(src="https://media.istockphoto.com/id/485201410/pt/foto/maquilhagem-de-olho-azul-com-longa-lashes-com-r%C3%ADmel-preto.jpg?s=612x612&w=0&k=20&c=N7qq5RerFpRS6QWMArFS14_8QTaLBOSsrvgZaHrmBrM=", alt="Rimel", style="max-width: 100%;")
+              h5.text-dark Rimel
+              p.text-muted Clique no Rimel...
