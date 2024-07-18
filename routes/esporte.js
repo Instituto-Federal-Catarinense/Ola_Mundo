@@ -6,11 +6,11 @@ router.get('/', function(req, res, next) {
   res.render('esporte');
 });
 
-router.get('/volei', function(req, res, next) {
-  res.render('respond with a resource');
+router.get('/handball', function(req, res, next) {
+  res.render('handball');
 })
 
-router.get('/basket', function(req, res, next) {
+router.get('/polo', function(req, res, next) {
   res.render('respond with a resource');
 })
 
