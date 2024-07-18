@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Esportes</title>
+</head>
+<body>
+  <%- include('layout') %>
+
+  <%- content %>
+    <h1><%= title %></h1>
+    <p>Bem-vindo(a) ao Site de Esportes. Aqui você encontrará informações detalhadas sobre vários esportes populares.</p>
+
+    <div class="cards">
+      <div class="card">
+        <h2>Futebol</h2>
+        <p>O futebol é um dos esportes mais populares do mundo.</p>
+        <a href="/esportes/futebol">Saiba mais</a>
+      </div>
+
+      <div class="card">
+        <h2>UFC</h2>
+        <p>Conheça os lutadores brasileiros Alex "Poatan" Pereira e Charles Oliveira.</p>
+        <a href="/esportes/ufc">Saiba mais</a>
+      </div>
+
+      <div class="card">
+        <h2>Surfe</h2>
+        <p>O surfe é um esporte aquático em que o surfista desliza sobre as ondas do mar.</p>
+        <a href="/esportes/surfe">Saiba mais</a>
+      </div>
+    </div>
+  </%- content %>
+</body>
+</html>

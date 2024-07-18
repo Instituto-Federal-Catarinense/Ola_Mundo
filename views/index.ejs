@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Índice</title>
+</head>
+<body>
+  <%- include('layout') %>
+
+  <%- content %>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 offset-md-2">
+          <h1><%= title %></h1>
+          <p class="varmengo">Varmengo todos títulos comprados</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Exemplo de uso de cards do Bootstrap para mostrar informações adicionais -->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Notícia 1</h5>
+              <p class="card-text">Descrição da primeira notícia.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Notícia 2</h5>
+              <p class="card-text">Descrição da segunda notícia.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Notícia 3</h5>
+              <p class="card-text">Descrição da terceira notícia.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </%- content %>
+</body>
+</html>
