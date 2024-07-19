@@ -6,14 +6,17 @@ body {
 }
 
 header {
+  font-family: Impact;
   background-color: #e664ab;
-  color: white;
+  color: #fff6d8;
   padding: 10px 0;
   text-align: center;
 }
 
 main {
   padding: 20px;
+  background-color: pink; /* Cor de fundo do corpo */
+  font-family: Impact;
 }
 
 footer {
@@ -21,7 +24,7 @@ footer {
   color: white;
   text-align: center;
   padding: 10px 0;
-  position: absolute;
+  position: flex;
   bottom: 0;
   width: 100%;
 }
@@ -35,3 +38,39 @@ a {
 a:hover {
   text-decoration: underline;
 }
+
+img {
+  width: 40%;
+  height: 50%;
+}
+
+/* Container para centralizar o menu */
+.menu-container {
+  text-align: center; /* Alinha os elementos ao centro */
+}
+
+/* Estilos para o menu de navegação */
+.menu-list {
+  list-style-type: none; /* Remove os marcadores padrão de lista */
+  padding: 0; /* Remove o preenchimento padrão da lista */
+  margin: 0; /* Remove as margens padrão da lista */
+}
+
+.menu-list li {
+  display: inline-block; /* Exibe os itens da lista em linha */
+  margin-right: 10px; /* Espaçamento entre os itens */
+}
+
+.menu-list li a {
+  text-decoration: none; /* Remove sublinhado dos links */
+  color: #333; /* Cor do texto dos links */
+  padding: 5px 10px; /* Preenchimento interno dos links */
+  border: 1px solid #ccc; /* Borda dos links */
+  border-radius: 5px; /* Borda arredondada */
+}
+
+.menu-list li a:hover {
+  background-color: #85ff8f; /* Cor de fundo ao passar o mouse */
+}
+
+

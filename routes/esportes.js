@@ -6,15 +6,24 @@ router.get('/', function(req, res, next) {
 });
 
 router.get('/futebol', function(req, res, next) {
-  res.render('futebol');  // Renderiza a página Pug para Futebol
+  res.render('futebol');  
 });
 
 router.get('/surf', function(req, res, next) {
-  res.render('surf');  // Renderiza a página Pug para Surf
+  res.render('surf');  
 });
 
 router.get('/volei', function(req, res, next) {
-  res.render('volei');  // Renderiza a página Pug para Vôlei
+  res.render('volei');  
 });
+
+router.get('/peteca', function(req, res, next) {
+  res.render('peteca');  
+});
+
+router.get('/hoquei', function(req, res, next) {
+  res.render('hoquei');  
+});
+
 
 module.exports = router;

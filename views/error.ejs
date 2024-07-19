@@ -10,19 +10,33 @@
   <header>
     <h1>Erro</h1>
   </header>
-    <main>
-        <h2>Ocorreu um erro</h2>
-        <p><%= message %></p>
-        <% if (error && error.status) { %>
-        <p>Status: <%= error.status %></p>
-        <% } %>
-        <% if (error && error.stack) { %>
-        <pre><%= error.stack %></pre>
-        <% } %>
-    </main>
+  <main>
+    <h2>Ocorreu um erro</h2>
+    <p id="message">message</p>
+    <p id="status"></p>
+    <pre id="stack"></pre>
+  </main>
   <footer>
     <p>&copy; 2024 Todos os direitos reservados.</p>
   </footer>
+
+  <script>
+    // Supondo que 'error' seja uma variável JavaScript que contém informações sobre o erro
+    var error = {
+      status: 404,
+      stack: "Erro na linha 42: Função não definida"
+    };
+
+    // Verifica se 'error' está definido e exibe as informações se disponíveis
+    if (error && error.status) {
+      document.getElementById('status').textContent = 'Status: ' + error.status;
+    }
+
+    if (error && error.stack) {
+      document.getElementById('stack').textContent = error.stack;
+    }
+  </script>
 </body>
 </html>
+
 
