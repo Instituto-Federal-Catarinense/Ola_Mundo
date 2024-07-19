@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/stylesheets/style.css" rel="stylesheet">
     <title><%= title %></title>
 </head>
 <style>
@@ -67,6 +68,12 @@ p {
 }
 </style>
 <body>
+    <header>
+        <div class="header-content">
+            <h1>Site de Carros</h1>
+        </div>
+    </header>
+
     <div class="container">
         <div class="car-info">
             <h1>Ford-GT</h1>
@@ -78,5 +85,11 @@ p {
     <div class="caixa">
         <a href="/carro" class="bot01">Outros</a>
     </div>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; <%= new Date().getFullYear() %> Site de Carros. Todos os direitos reservados.</p>
+        </div>
+    </footer>
 </body>
 </html>

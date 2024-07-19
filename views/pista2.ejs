@@ -22,7 +22,7 @@
     align-items: center;
 }
 
-.car-image {
+.pista-image {
     width: 70%;
     height: 70%;
     border: 5px solid black; /* Black border around the image */
@@ -30,7 +30,7 @@
     margin-right: 20px; /* Space between image and text */
 }
 
-.car-info {
+.pista-info {
     flex: 1; /* Take remaining space */
 }
 
@@ -52,6 +52,7 @@ p {
     background-color: grey;
 }
 .caixa a {
+    color: white;
     display: inline-block; /* Transforma em bloco e mantém em linha */
     margin: 5px; /* Espaçamento entre os botões */
     border: 2px solid black;
@@ -61,32 +62,28 @@ p {
     padding: 5px;
     border-radius: 5px; /* Borda arredondada para os botões */
     align-items: center;
-    background-color: black; /* Cor de fundo preta */
-    color: white; /* Cor do texto branca */
-}
-
-.caixa a:last-child {
+    background-color: black; /*  <h1>Porsche 911 carrera</h1>
+    <p>Em 1948, Ferdinand Porsche Júnior (filho de Ferdinand), e conhecido carinhosamente como Ferry, construiu a partir do Volkswagen um carro esportivo em Gmünd na Áustria, com o nome de Cisitalia. Nascia assim o primeiro carro esportivo do mundo, o 356, um roadster extremamente leve produzido em alumínio.</p>
     margin-bottom: 0; /* Remove o espaço abaixo do último botão */
 }
 </style>
 <body>
     <header>
         <div class="header-content">
-            <h1>Site de Carros</h1>
+            <h1>Pistas de Corrida</h1>
         </div>
     </header>
 
     <div class="container">
-        <div class="car-info">
-            <h1>impala-67 de Supernatural</h1>
-                <p>Jensen Ackles revela ter ficado com o Impala da série ... O ator Jensen Ackles, que vive Dean Winchester na série "Supernatural", revelou que vai levar para casa o icônico Chevrolet Impala 1967 preto que ele dirigiu durante 15 temporadas da série.</p>
-                    <img src="/foto/Impala-67.jpg" alt="impala-67 Imagem" class="car-image">
-
+        <div class="pista-info">
+            <h1>Nurburgring</h1>
+                <p>Foi inaugurado em 1927 e o traçado original da pista tinha aproximadamente 28 km, posteriormente foi criado um novo traçado de 22 km de extensão e era utilizado pela Fórmula 1 na década de 1960.</p>
+                    <img src="/foto/nurb.jpeg" alt="Nurburgring" class="pista-image">
         </div>
     </div>
-    
+
     <div class="caixa">
-        <a href="/carro" class="bot01">Outros</a>
+        <a href="/pista" class="bot01">Outros</a>
     </div>
 
     <footer>

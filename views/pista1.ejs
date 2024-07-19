@@ -22,7 +22,7 @@
     align-items: center;
 }
 
-.car-image {
+.pista-image {
     width: 70%;
     height: 70%;
     border: 5px solid black; /* Black border around the image */
@@ -30,7 +30,7 @@
     margin-right: 20px; /* Space between image and text */
 }
 
-.car-info {
+.pista-info {
     flex: 1; /* Take remaining space */
 }
 
@@ -46,7 +46,7 @@ p {
 .caixa {
     margin-top: 20px;
     padding: 10px;
-    border: 2px solid black; /* Borda ao redor da caixa de botões */
+    border: 2px solid rgb(0, 0, 0); /* Borda ao redor da caixa de botões */
     border-radius: 5px; /* Borda arredondada */
     text-align: center; /* Centraliza o conteúdo dos botões */
     background-color: grey;
@@ -61,32 +61,29 @@ p {
     padding: 5px;
     border-radius: 5px; /* Borda arredondada para os botões */
     align-items: center;
-    background-color: black; /* Cor de fundo preta */
-    color: white; /* Cor do texto branca */
-}
-
-.caixa a:last-child {
+    background-color: black;
+    color: white; /*  <h1>Porsche 911 carrera</h1>
+    <p>Em 1948, Ferdinand Porsche Júnior (filho de Ferdinand), e conhecido carinhosamente como Ferry, construiu a partir do Volkswagen um carro esportivo em Gmünd na Áustria, com o nome de Cisitalia. Nascia assim o primeiro carro esportivo do mundo, o 356, um roadster extremamente leve produzido em alumínio.</p>
     margin-bottom: 0; /* Remove o espaço abaixo do último botão */
 }
 </style>
 <body>
     <header>
         <div class="header-content">
-            <h1>Site de Carros</h1>
+            <h1>Pistas de Corrida</h1>
         </div>
     </header>
 
     <div class="container">
-        <div class="car-info">
-            <h1>impala-67 de Supernatural</h1>
-                <p>Jensen Ackles revela ter ficado com o Impala da série ... O ator Jensen Ackles, que vive Dean Winchester na série "Supernatural", revelou que vai levar para casa o icônico Chevrolet Impala 1967 preto que ele dirigiu durante 15 temporadas da série.</p>
-                    <img src="/foto/Impala-67.jpg" alt="impala-67 Imagem" class="car-image">
-
+        <div class="pista-info">
+            <h1>Le Mans</h1>
+                <p>O Circuito de la Sarthe, também conhecido como Circuito de Le Mans, é um circuito semi-permanente que abriga desde 1923 a corrida de resistência 24 Horas de Le Mans, nos arredores da cidade de Le Mans, França.</p>
+                    <img src="/foto/lemans.jpg" alt="Le Mans" class="pista-image">
         </div>
     </div>
-    
+
     <div class="caixa">
-        <a href="/carro" class="bot01">Outros</a>
+        <a href="/pista" class="bot01">Outros</a>
     </div>
 
     <footer>
