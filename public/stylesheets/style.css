@@ -1,45 +1,75 @@
 
-a {
-  color: #00B7FF;
+ 
+
+
+/* Reset default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-  font-family: 'Arial', sans-serif;
-  text-align: center;
-  margin-top: 50px;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f0f0f0; /* Cor de fundo do corpo da página */
 }
+
+header {
+  background-color: #333; /* Cor de fundo do cabeçalho */
+  color: white; /* Cor do texto do cabeçalho */
+  padding: 10px 0;
+  text-align: center;
+}
+
+.header-content {
+  max-width: 800px; /* Largura máxima do conteúdo do cabeçalho */
+  margin: 0 auto; /* Centraliza o conteúdo horizontalmente */
+}
+
+.main-content {
+  text-align: center;
+  max-width: 800px; /* Largura máxima do conteúdo principal */
+  margin: 20px auto; /* Centraliza o conteúdo principal com margens */
+  padding: 20px; /* Espaçamento interno do conteúdo principal */
+  background-color: #fff; /* Cor de fundo do conteúdo principal */
+  border: 1px solid #ddd; /* Borda ao redor do conteúdo principal */
+  border-radius: 5px; /* Borda arredondada */
+}
+
 .btn-container {
   margin-top: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  text-align: center; /* Centraliza os botões */
 }
+
 .btn-container a {
-  margin-bottom: 10px;
-  border: 2px solid black;
-  width: 200px; /* Ajuste conforme necessário */
-  text-align: center;
-}
-.btn-container a:last-child {
-  margin-bottom: 0;
+  display: inline-block;
+  margin: 5px;
+  padding: 10px 20px;
+  text-decoration: none;
+  background-color: #000000; /* Cor de fundo do botão */
+  color: white; /* Cor do texto do botão */
+  border: 1px solid #007bff; /* Borda do botão */
+  border-radius: 5px; /* Borda arredondada do botão */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Transição suave */
 }
 
-.header, .footer {
-  background-color: #343a40;
-  color: white;
+.btn-container a:hover {
+  background-color: #0056b3; /* Cor de fundo do botão ao passar o mouse */
+  color: #fff; /* Cor do texto do botão ao passar o mouse */
+}
+
+footer {
+  background-color: #333; /* Cor de fundo do rodapé */
+  color: white; /* Cor do texto do rodapé */
   padding: 10px 0;
-}
-.header h1, .footer p {
-  margin: 0;
-}
-.main-content {
-  padding: 20px 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: calc(100vh - 120px); /* 100vh - altura do cabeçalho e rodapé */
-}
-img {
-  max-width: 100%; /* Responsivo */
+  text-align: center;
+  position: fixed; /* Fixa o rodapé na parte inferior */
+  bottom: 0; /* Alinha o rodapé ao final da janela */
+  width: 100%; /* Largura total */
 }
 
+.footer-content {
+  max-width: 800px; /* Largura máxima do conteúdo do rodapé */
+  margin: 0 auto; /* Centraliza o conteúdo horizontalmente */
+}

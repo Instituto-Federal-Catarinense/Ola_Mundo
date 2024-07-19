@@ -3,21 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> title </title>
+    <title>Carros 5</title>
     <link href="/stylesheets/style.css" rel="stylesheet">
-
 </head>
 <body>
-    <h1><%= title %></h1>
-    <p>Bem-vindo à página inicial!</p>
+
+<header>
+    <div class="header-content">
+        <h1>Site de Carros</h1>
+    </div>
+</header>
+
+<div class="main-content">
+    <h2>Bem-vindo à página inicial!</h2>
     
     <div class="btn-container">
         <a href="/carro" class="b0">Carros</a>
     </div>
+</div>
+
+<footer>
+    <div class="footer-content">
+        <p>&copy; <%= new Date().getFullYear() %> Site de Carros. Todos os direitos reservados.</p>
+    </div>
+</footer>
 
 </body>
 </html>
-
 
 
 

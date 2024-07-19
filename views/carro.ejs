@@ -3,18 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><%= title %></title>
+    <title>Título da Página</title>
+    <style>
+        /* Reset default margin and padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Basic styling for the layout */
+        .container {
+            max-width: 600px; /* Ajuste conforme necessário */
+            margin: 20px auto; /* Centraliza o container na página */
+            display: flex;
+            align-items: center;
+        }
+
+        .car-image {
+            width: 400px; /* A imagem ocupa 100% da largura do container pai */
+            max-width: 300px; /* Limita a largura máxima da imagem */
+            height: auto; /* Altura ajustada automaticamente para manter a proporção */
+            border: 5px solid black; /* Borda preta ao redor da imagem */
+            border-radius: 5px; /* Borda arredondada opcional */
+            margin-right: 20px; /* Espaço entre a imagem e o texto */
+        }
+
+        .car-info {
+            flex: 1; /* Ocupa o espaço restante */
+        }
+
+        h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        .btn-container {
+            margin-top: 20px;
+            padding: 10px;
+            border: 2px solid black; /* Borda ao redor da caixa de botões */
+            border-radius: 5px; /* Borda arredondada */
+            text-align: center; /* Centraliza o conteúdo dos botões */
+            background-color: grey;
+        }
+
+        .btn-container h3 {
+            margin-bottom: 10px; /* Espaço abaixo do título "Outros Carros" */
+        }
+
+        .btn-container a {
+            display: inline-block; /* Transforma em bloco e mantém em linha */
+            margin: 5px; /* Espaçamento entre os botões */
+            border: 2px solid black;
+            width: 200px; /* Ajuste conforme necessário */
+            text-align: center;
+            text-decoration: none;
+            padding: 5px;
+            border-radius: 5px; /* Borda arredondada para os botões */
+            align-items: center;
+            background-color: black; /* Cor de fundo preta */
+            color: white; /* Cor do texto branca */
+        }
+
+        .btn-container a:last-child {
+            margin-bottom: 0; /* Remove o espaço abaixo do último botão */
+        }
+    </style>
 </head>
 <body>
-    <h1><%= title %></h1>
-    <img src="<%= imageUrl %>" alt="Carro Imagem">
-   
-    <div class="btn-container">
-      <a href="/carro/supra" class="b1">Supra-MK4</a>
-      <a href="/carro/bmw" class="b2">BMW M3-GTR</a>
-      <a href="/carro/fusca" class="b3">Fusca</a>
-      <a href="/carro/ford-GT" class="b4">Ford-GT</a>
-      <a href="/carro/impala67" class="b5">Impala67</a>
-  </div>
+
+<div class="container">
+    <img src="/foto/porsche.jpg" alt="Carro Imagem" class="car-image">
+    <div class="car-info">
+        <h1>Porsche 911 carrera</h1>
+        <p>Em 1948, Ferdinand Porsche Júnior (filho de Ferdinand), e conhecido carinhosamente como Ferry, construiu a partir do Volkswagen um carro esportivo em Gmünd na Áustria, com o nome de Cisitalia. Nascia assim o primeiro carro esportivo do mundo, o 356, um roadster extremamente leve produzido em alumínio.</p>
+    </div>
+</div>
+
+<div class="btn-container">
+    <h3>Outros Carros</h3>
+    <a href="/" class="b1">Página Inícial</a>
+    <a href="/carro/supra" class="b8">Supra-MK4</a>
+    <a href="/carro/bmw" class="b2">BMW M3-GTR</a>
+    <a href="/carro/fusca" class="b3">Fusca</a>
+    <a href="/carro/ford" class="b4">Ford-GT</a>
+    <a href="/carro/impala" class="b5">Impala67</a>
+</div>
+
 </body>
 </html>
