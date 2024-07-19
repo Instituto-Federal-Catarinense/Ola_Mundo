@@ -14,14 +14,11 @@ router.get('/supra', function(req, res, next) {
 });
 
 router.get('/bmw', function(req, res, next) {
-  res.render('bmw', { 
-    title: 'O BMW M3 Competition, combina as proporções robustas e distintas do seu design de três seções e 4 portas com o estilo esportivo típico de um veículo M. Com os seus impressionantes 510 cv de potência e um torque de 650 Nm.',
-    imageUrl: '/foto/bmw2.jpeg'
-  });
+  res.render('bmw',{title:"BMW"});
 });
 
 router.get('/fusca', function(req, res, next) {
-  res.render('fusca', { 
+  res.render('carro', { 
     title: 'Dia Nacional do Fusca: relembre a história do clássico... O Volkswagen Fusca surgiu de uma encomenda de Adolf Hitler, que queria um carro popular para os alemães. O projeto foi feito por Ferdinand Porsche, e a produção marcou a criação da Volkswagen. A Segunda Guerra atrapalhou os planos e somente no final a década de 1940 que o modelo de fato engrenou.',
     imageUrl: '/foto/fusca.jpg'
   });
