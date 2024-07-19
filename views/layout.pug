@@ -34,7 +34,7 @@ html(lang="pt-BR")
     header.header
       nav.navbar.navbar-expand-lg.navbar-dark.bg-dark
         .container
-          a.navbar-brand(href="/") Index
+          a.navbar-brand(href="/") Inicio
           button.navbar-toggler(type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation")
             span.navbar-toggler-icon
           #navbarNav.collapse.navbar-collapse
@@ -43,10 +43,12 @@ html(lang="pt-BR")
                 a.nav-link(href="/users") Usuários
               li.nav-item
                 a.nav-link(href="/esportes") Esportes
+              li.nav-item
+                a.nav-link(href="/musicas") Musicas
 
     // Conteúdo Principal
     main.main-content
-      .container.text-center
+      .container.text-centerEsportes
         block content
 
     // Rodapé
