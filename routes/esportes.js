@@ -25,4 +25,25 @@ router.get('/handebol', function(req, res, next) {
   res.render('handebol', { title: 'Handebol' });
 });
 
+router.get('/subrota1', function(req, res, next) {
+  res.render('subrota1', { title: 'Subrota1' });
+});
+
+router.get('/subrota2', function(req, res, next) {
+  res.render('subrota2', { title: 'Subrota2' });
+});
+
+router.get('/subrota3', function(req, res, next) {
+  res.render('subrota3', { title: 'Subrota3' });
+});
+
+router.get('/subrota4', function(req, res, next) {
+  res.render('subrota4', { title: 'Subrota4' });
+});
+
+router.get('/subrota5', function(req, res, next) {
+  res.render('subrota5', { title: 'Subrota5' });
+});
+
+
 module.exports = router;
