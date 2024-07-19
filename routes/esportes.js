@@ -17,4 +17,12 @@ router.get('/volei', function(req, res, next) {
   res.render('volei');  // Renderiza a página Pug para Vôlei
 });
 
+router.get('/tenis', function(req, res, next) {
+  res.render('tenis');  // Renderiza a página Pug para Vôlei
+});
+
+router.get('/basquete', function(req, res, next) {
+  res.render('basquete');  // Renderiza a página Pug para Vôlei
+});
+
 module.exports = router;
