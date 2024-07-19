@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Titãs - Melhores Músicas</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <style>
+        
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        .navbar {
+      margin-bottom: 20px;
+    }
+        .header {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: #fff;
+        }
+        .content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+        }
+        .music-list {
+            flex: 1;
+            padding: 20px;
+            margin: 10px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 600px;
+        }
+        .music-list h2 {
+            text-align: center;
+        }
+        .music-list ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .music-list li {
+            margin: 10px 0;
+            text-align: center;
+        }
+        .music-list a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        .music-list a:hover {
+            text-decoration: underline;
+        }
+        .footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Music Hub</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="http://localhost:3000/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/musica/ACDC">AC/DC</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/musica/metalica">Metalica</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/musica/blacksabbath">Black Sabbath</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/musica/ledzeppelin">Led Zeppelin</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/musica/titas">Titãs</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+    <header class="header">
+        <h1>Titãs</h1>
+    </header>
+    <main class="content">
+        <section class="music-list">
+            <h2>Melhores Músicas</h2>
+            <ul>
+                <% const musicas = [
+                    { title: " Epitáfio", url: "https://youtu.be/I29JUuotXG4" },
+                    { title: "Porque Eu Sei Que É Amor", url: "https://youtu.be/v6h6Hpie7Ao" },
+                    { title: "Flores", url: "https://youtu.be/3Zj9oWuX_sc" },
+                    { title: "Lugar Nenhum", url: "https://youtu.be/xh39SR91cCs" },
+                    { title: "Isso", url: "hhttps://youtu.be/81MvpI7hVEg" }
+                ]; %>
+                <% musicas.forEach(musica => { %>
+                    <li><a href="<%= musica.url %>" target="_blank"><%= musica.title %></a></li>
+                <% }); %>
+            </ul>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>&copy; 2024 Titãs Fans</p>
+    </footer>
+</body>
+</html>
