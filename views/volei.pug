@@ -1,0 +1,29 @@
+extends layout
+
+block content
+    doctype html
+    html(lang="pt-br")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        title Vôlei
+        link(rel='stylesheet', href='/stylesheets/style.css')
+
+    body
+        header
+        nav.navbar
+            ul.nav-list
+            li.nav-item
+                a.nav-link(href="/") Início
+            li.nav-item
+                a.nav-link(href="/esportes") Esportes
+            li.nav-item
+                a.nav-link(href="#") Estilos Musicais
+
+        main.container
+        section
+            h2 Vôlei
+            p Informações sobre Vôlei...
+
+        footer.footer
+        p &copy; 2024 Meu Site
