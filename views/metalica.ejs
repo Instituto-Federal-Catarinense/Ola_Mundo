@@ -1,16 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Metallica - Melhores Músicas</title>
-    <style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Metalica - Melhores Músicas</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <style>
+        
         body {
             font-family: Arial, sans-serif;
             background-color: #f4f4f4;
             margin: 0;
             padding: 20px;
         }
+        .navbar {
+      margin-bottom: 20px;
+    }
         .header {
             text-align: center;
             padding: 20px;
@@ -62,6 +68,35 @@
     </style>
 </head>
 <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Music Hub</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="http://localhost:3000/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/musica/ACDC">AC/DC</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/musica/metalica">Metalica</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/musica/blacksabbath">Black Sabbath</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/musica/ledzeppelin">Led Zeppelin</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/musica/titas">Titãs</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
     <header class="header">
         <h1>Metallica</h1>
     </header>
