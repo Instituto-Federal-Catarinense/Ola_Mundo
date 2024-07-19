@@ -24,6 +24,11 @@ router.get('/volei', function(req, res, next) {
   router.get('/danca', function(req, res, next) {
     res.render('danca');
   });
+
+
+  router.get('/hoquei', function(req, res, next) {
+    res.render('hoquei');
+  });
   
 
 module.exports = router;
