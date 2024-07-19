@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página de Esportes</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-100">
+
+  <header class="bg-gray-900 text-white py-4">
+    <div class="container mx-auto">
+      <h1 class="text-center text-3xl">Página de Esportes</h1>
+    </div>
+    <nav class="bg-gray-800">
+      <div class="container mx-auto">
+        <div class="flex items-center justify-between">
+          <div class="flex-shrink-0">
+            <a href="/" class="text-white text-lg font-semibold uppercase">Página Principal</a>
+          </div>
+          <div class="block lg:hidden">
+            <button id="menu-toggle"
+              class="flex items-center px-3 py-2 border rounded text-gray-200 border-gray-400 hover:text-white hover:border-white">
+              <svg class="fill-current h-3 w-3" viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path
+                  d="M0 0h20v2H0V0zm0 6h20v2H0V6zm0 6h20v2H0v-2zm0 6h20v2H0v-2z"/></svg>
+            </button>
+          </div>
+          <div
+            class="hidden lg:flex lg:items-center lg:w-auto lg:space-x-6 lg:justify-end lg:flex-1 lg:text-right lg:pr-4">
+            <a href="/esportes/futebol"
+              class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-gray-300 mr-4">Futebol</a>
+            <a href="/esportes/volei"
+              class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-gray-300 mr-4">Vôlei</a>
+            <a href="/esportes/judo"
+              class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-gray-300 mr-4">Judô</a>
+            <a href="/esportes/basquete"
+              class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-gray-300 mr-4">Basquete</a>
+            <a href="/musicas/"
+              class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-gray-300">Música</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <section class="py-5">
+    <div class="container mx-auto">
+      <h2 class="text-center text-2xl">Bem-vindo à Página de Esportes</h2>
+      <p class="text-center">Aqui você encontra informações sobre diversos esportes.</p>
+      <img src="imagens/esportes.jpg" alt="Imagem de esportes" class="mx-auto mt-4">
+    </div>
+  </section>
+
+</body>
+
+</html>
