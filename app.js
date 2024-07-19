@@ -8,6 +8,7 @@ var mustacheExpress = require('mustache-express');
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var esportesRouter = require('./routes/esportes');
+var musicasRouter = require('./routes/musicas'); // Adicionando o roteador de músicas
 
 var app = express();
 
@@ -25,6 +26,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/esportes', esportesRouter);
+app.use('/musicas', musicasRouter); // Adicionando a nova rota de músicas
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
