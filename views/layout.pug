@@ -1,7 +1,51 @@
 doctype html
-html
+html(lang='pt-br')
   head
-    title= title
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    title #{title}
+    link(rel='stylesheet', href='https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css')
     link(rel='stylesheet', href='/stylesheets/style.css')
+
   body
-    block content
+    header.header
+      .container
+        .row.align-items-center
+          .col-md-6
+            h1.logo Logo da Empresa
+          .col-md-6.text-right
+            nav
+              ul.nav.justify-content-end
+                li.nav-item
+                  a.nav-link(href='/') Home
+                li.nav-item
+                  a.nav-link(href='/esportes') Esportes
+                li.nav-item
+                  a.nav-link(href='/esportes/surf') Surf
+                li.nav-item
+                  a.nav-link(href='/esportes/futebol') Futebol
+                li.nav-item
+                  a.nav-link(href='/esportes/volei') Vôlei
+                li.nav-item
+                  a.nav-link(href='/esportes/basquete') Basquete
+                li.nav-item
+                  a.nav-link(href='/esportes/handebol') Handebol
+
+    main.container
+      block content
+
+    footer.footer.bg-dark.text-light.py-4
+      .container
+        .row.justify-content-between.align-items-center
+          .col-md-6
+            p.mb-0 © #{new Date().getFullYear()} Nome da Empresa. Todos os direitos reservados.
+          .col-md-6.text-right
+            ul.list-inline.mb-0
+              li.list-inline-item
+                a(href='#') Termos de Uso
+              li.list-inline-item
+                a(href='#') Política de Privacidade
+
+  script(src='https://code.jquery.com/jquery-3.5.1.slim.min.js')
+  script(src='https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js')
+  script(src='https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js')
