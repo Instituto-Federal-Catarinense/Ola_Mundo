@@ -3,27 +3,26 @@ var router = express.Router();
 
 /* GET users listing. */
 router.get('/', function(req, res, next) {
-  res.render('musica', {title:'suasdas', img:'imagens/piano.jpg'});
+  res.render('musica', {title:'musica', img:'/imagens/musica.webp'});
 });
 
 router.get('/violao', function(req, res, next) {
-  res.send('Você está na página sobre violaon');
+  res.render('musica', {title:'violao', img:'/imagens/baden.jpeg'});
 });
 
 router.get('/piano', function(req, res, next) {
-  res.send('Você está na página sobre pianinhes');
+  res.render('musica', {title:'piano', img:'/imagens/piano.jpg'});
 });
 
 router.get('/tantan', function(req, res, next) {
-  res.send('Você está na página sobre pats puts pasts pa puts pa pa puts');
+  res.render('musica', {title:'tantan', img:'/imagens/gustavolima.jpeg'});
 });
 
 router.get('/viola', function(req, res, next) {
-  res.send('Você está na página sobre violers da maldade');
+  res.render('musica', {title:'viola da maldade', img:'/imagens/viola.jpeg'});
 });
 
 router.get('/violino', function(req, res, next) {
-  res.send('Você está na página sobre vionelers');
+  res.render('musica', {title:'violino inocente', img:'/imagens/paganini.jpg'});
 });
-
 module.exports = router;
