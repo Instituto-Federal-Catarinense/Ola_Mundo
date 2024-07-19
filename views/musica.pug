@@ -1,0 +1,80 @@
+doctype html
+html(lang="pt-br")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Meu App Node.js com Pug e Bootstrap
+    link(rel="stylesheet", href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css") 
+    
+  body
+    nav.navbar.navbar-expand-lg.navbar-light.bg-light
+      .container
+        a.navbar-brand(href="#") Meu App Node.js
+        button.navbar-toggler(type="button", data-toggle="collapse", data-target="#navbarSupportedContent", aria-controls="navbarSupportedContent", aria-expanded="false", aria-label="Toggle navigation")
+          span.navbar-toggler-icon
+        .collapse.navbar-collapse(id="navbarSupportedContent")
+          ul.navbar-nav.ml-auto
+            li.nav-item
+              a.nav-link(href="#") Início
+            li.nav-item
+              a.nav-link(href="#") Sobre
+            li.nav-item
+              a.nav-link(href="#") Contato
+
+    .container.mt-4
+      .row
+        .col-md-4
+          section#pop.text-center
+            h2
+              a(href="/musica/pop") Pop
+            p
+              | O pop é um gênero musical que se originou na década de 1950, conhecido por suas melodias pegajosas e apelo popular.
+            a(href="/pop")
+    
+
+        .col-md-4
+          section#rock.text-center
+            h2
+              a(href="/musica/rock") Rock
+            p
+              | O rock é um gênero musical que se desenvolveu no final da década de 1940 e início da década de 1950, caracterizado pelo uso de instrumentos elétricos e uma forte ênfase no ritmo e na melodia.
+            a(href="/rock")
+             
+
+        .col-md-4
+          section#eletronica.text-center
+            h2
+              a(href="/musica/eletronica")  Eletrônica
+            p
+              | A música eletrônica é um estilo de música produzido usando tecnologia eletrônica, como sintetizadores e computadores. É conhecida por suas batidas dançantes e texturas sonoras únicas.
+            a(href="/eletronica")
+          
+
+        .col-md-4
+          section#hiphop.text-center
+            h2
+              a(href="/musica/hiphop") Hip Hop
+            p
+              | O hip hop é um gênero musical e cultural que se originou no Bronx, em Nova York, na década de 1970. É conhecido por sua batida rítmica e letras faladas ou cantadas ritmicamente.
+            a(href="/hiphop")
+            
+
+        .col-md-4
+          section#jazz.text-center
+            h2
+              a(href="/musica/jazz") Jazz
+            p
+              | O jazz é um gênero musical que se originou no final do século XIX nos Estados Unidos. É conhecido por sua improvisação, ritmo sincopado e complexidade harmônica.
+            a(href="/jazz")
+            
+
+    // Rodapé sobre música
+    footer.footer.bg-dark.text-white.py-4
+      .container
+        p.text-center
+          | Este é um rodapé sobre música. Aqui você pode colocar informações adicionais, links úteis, etc.
+
+    // Scripts do Bootstrap (jQuery e Popper.js são necessários para alguns componentes do Bootstrap)
+    script(src="https://code.jquery.com/jquery-3.5.1.slim.min.js")
+    script(src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js")
+    script(src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js")
