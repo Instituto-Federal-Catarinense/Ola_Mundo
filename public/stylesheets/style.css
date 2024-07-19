@@ -7,7 +7,7 @@ body {
 }
 
 header {
-  background-color: #007bff;
+  background-color: #b700ff;
   color: white;
   padding: 10px 0;
   text-align: center;
@@ -18,7 +18,7 @@ main {
 }
 
 footer {
-  background-color: #007bff;
+  background-color: #b700ff;
   color: white;
   text-align: center;
   padding: 10px 0;
@@ -28,7 +28,7 @@ footer {
 }
 
 a {
-  color: #007bff;
+  color: #b700ff;
   text-decoration: none;
 }
 
@@ -45,7 +45,7 @@ body {
 }
 
 header {
-  background-color: #007bff;
+  background-color: #b700ff;
   color: white;
   padding: 10px 0;
   text-align: center;
@@ -56,7 +56,7 @@ main {
 }
 
 footer {
-  background-color: #007bff;
+  background-color: #b700ff;
   color: white;
   text-align: center;
   padding: 10px 0;
@@ -66,7 +66,7 @@ footer {
 }
 
 a {
-  color: #007bff;
+  color: #b700ff;
   text-decoration: none;
 }
 
@@ -82,7 +82,7 @@ body {
 }
 
 header {
-  background-color: #007bff;
+  background-color: #b700ff;
   color: white;
   padding: 10px 0;
   text-align: center;
@@ -93,7 +93,7 @@ main {
 }
 
 footer {
-  background-color: #007bff;
+  background-color: #b700ff;
   color: white;
   text-align: center;
   padding: 10px 0;
@@ -103,7 +103,7 @@ footer {
 }
 
 a {
-  color: #007bff;
+  color: #b700ff;
   text-decoration: none;
 }
 
@@ -151,7 +151,7 @@ body {
 }
 
 header {
-  background-color: #007bff;
+  background-color: #b700ff;
   color: white;
   padding: 10px 0;
   text-align: center;
@@ -162,7 +162,7 @@ main {
 }
 
 footer {
-  background-color: #007bff;
+  background-color: #b700ff;
   color: white;
   text-align: center;
   padding: 10px 0;
@@ -172,7 +172,7 @@ footer {
 }
 
 a {
-  color: #007bff;
+  color: #b700ff;
   text-decoration: none;
 }
 
@@ -220,7 +220,7 @@ body {
 }
 
 header {
-  background-color: #007bff;
+  background-color: #b700ff;
   color: white;
   padding: 10px 0;
   text-align: center;
@@ -231,17 +231,17 @@ main {
 }
 
 footer {
-  background-color: #007bff;
+  background-color: #b700ff;
   color: white;
   text-align: center;
-  padding: 10px 0;
+  padding: 0px 0;
   position: absolute;
   bottom: 0;
   width: 100%;
 }
 
 a {
-  color: #007bff;
+  color: #b700ff;
   text-decoration: none;
 }
 
@@ -271,7 +271,7 @@ h3 {
 }
 
 section {
-  margin-bottom: 30px;
+  margin-bottom: 8px;
 }
 
 section.info, section.rules {

@@ -8,12 +8,13 @@ var logger = require('morgan');
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var esportesRouter = require('./routes/esportes');
+var musicasRouter = require ('./routes/musicas');
 
 var app = express();
 
 // Configuração do motor de visualização
 app.set('views', path.join(__dirname, 'views'));
-app.set('view engine', 'ejs'); // Oia o ejs ai fei.
+app.set('view engine', 'ejs'); // Alterado para EJS
 
 // Configurações de middleware
 app.use(logger('dev'));
@@ -26,9 +27,10 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/esportes', esportesRouter);
+app.use('/musicas', musicasRouter);
 
 // Captura 404 e encaminha para o manipulador de erros
-app.use(function(req, res, next) {  
+app.use(function(req, res, next) {
   next(createError(404));
 });
 
@@ -38,9 +40,9 @@ app.use(function(err, req, res, next) {
   res.locals.message = err.message;
   res.locals.error = req.app.get('env') === 'development' ? err : {};
 
-  // Renderiza a página de erro
+  // Renderiza a página de erro usando o template EJS
   res.status(err.status || 500);
-  res.render('error');
+  res.render('error'); // Renderiza o template 'error.ejs'
 });
 
 module.exports = app;
