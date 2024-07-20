@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/stylesheets/style.css" rel="stylesheet">
+    <title><%= title %></title>
+</head>
+<style>
+    /* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Basic styling for the layout */
+.container {
+    max-width: 800px; /* Adjust as needed */
+    margin: 20px auto; /* Center the container */
+    display: flex;
+    align-items: center;
+}
+.pista-image {
+    width: 50%;
+    height: 50%;
+    border: 5px solid black; /* Black border around the image */
+    border-radius: 5px; /* Optional: Add border radius for rounded corners */
+    margin-right: 20px; /* Space between image and text */
+}
+.pista-info {
+    flex: 1; /* Take remaining space */
+}
+h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+.caixa {
+    margin-top: 20px;
+    padding: 10px;
+    border: 2px solid black; /* Borda ao redor da caixa de botões */
+    border-radius: 5px; /* Borda arredondada */
+    text-align: center; /* Centraliza o conteúdo dos botões */
+    background-color: grey;
+}
+.caixa a {
+    color: white;
+    display: inline-block; /* Transforma em bloco e mantém em linha */
+    margin: 5px; /* Espaçamento entre os botões */
+    border: 2px solid black;
+    width: 200px; /* Ajuste conforme necessário */
+    text-align: center;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 5px; /* Borda arredondada para os botões */
+    align-items: center;
+    background-color: black; /*  <h1>Porsche 911 carrera</h1>
+    <p>Em 1948, Ferdinand Porsche Júnior (filho de Ferdinand), e conhecido carinhosamente como Ferry, construiu a partir do Volkswagen um carro esportivo em Gmünd na Áustria, com o nome de Cisitalia. Nascia assim o primeiro carro esportivo do mundo, o 356, um roadster extremamente leve produzido em alumínio.</p>
+    margin-bottom: 0; /* Remove o espaço abaixo do último botão */
+}
+</style>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Pistas de Corrida</h1>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="pista-info">
+            <h1>Monza</h1>
+                <p>O Autódromo Nacional de Monza é uma pista de automobilismo localizada próxima à cidade de Monza, na Itália, ao norte de Milão. É um dos circuitos mais tradicionais para a prática do automobilismo no mundo.</p>
+                    <img src="/fotos/monza.jpg" alt="Monza" class="pista-image">
+        </div>
+    </div>
+
+    <div class="caixa">
+        <a href="/pista" class="bot01">Outros</a>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; <%= new Date().getFullYear() %> Site de Carros. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>

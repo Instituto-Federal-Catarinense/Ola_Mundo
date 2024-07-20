@@ -1,38 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title><%= title %></title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carros 5</title>
+    <link href="/stylesheets/style.css" rel="stylesheet">
 </head>
 <body>
-  <!-- Incluindo o layout, se necessário -->
-  <%- include('layout') %>
-
-  <div>
-    <h1><%= title %></h1>
-    <p>Bem-vindo à página do <%= title %>. Escolha uma das opções abaixo:</p>
-    <div>
-      <button onclick="navigate('carro')">Carro</button>
-     <!-- <button onclick="navigate('moto')">Moto</button>
-      <button onclick="navigate('pista')">Pista</button>
-      <button onclick="navigate('mecanica')">Mecânica</button> -->
+<header>
+    <div class="header-content">
+        <h1>Site de Carros</h1>
     </div>
-    <div id="content">
-      <!-- Conteúdo será carregado dinamicamente aqui -->
+</header>
+<div class="main-content">
+    <h2>Bem-vindo à página inicial!</h2>
+    
+    <div class="btn-container">
+        <a href="/carro" class="b0">Carros</a>
     </div>
-  </div>
+</div>
 
-  <script>
-    function navigate(section) {
-      fetch(`/section/${section}`)
-        .then(response => response.text())
-        .then(html => {
-          document.getElementById('content').innerHTML = html;
-        })
-        .catch(error => console.error('Erro ao carregar conteúdo', error));
-    }
-  </script>
+<div class="main-content">
+    <h2>Bem-vindo à página inicial!</h2>
+
+    <div class="btn-container">
+        <a href="/pista" class="b0">Pistas</a>
+    </div>
+</div>
+
+<footer>
+    <div class="footer-content">
+        <p>&copy; <%= new Date().getFullYear() %> Site de Carros. Todos os direitos reservados.</p>
+    </div>
+</footer>
 </body>
 </html>

@@ -6,48 +6,36 @@ var logger = require('morgan');
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var carroRouter = require('./routes/carro');
-var carroRouter = require('./routes/moto');
-var carroRouter = require('./routes/pista');
+var pistaRouter = require('./routes/pista');
 
 var app = express();
 
-// Configuração do motor de visualização
+// view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
-
-// Rota para renderizar carro.ejs
-app.get('/carro', (req, res) => {
-  res.render('carro', { title: 'Informações sobre Carros' }); // Passa o título como variável para o template
-});
-app.get('/moto', (req, res) => {
-  res.render('moto', { title: 'Informações sobre Motos' }); // Passa o título como variável para o template
-});
-app.get('/pista', (req, res) => {
-  res.render('pista', { title: 'Informações sobre Pista' }); // Passa o título como variável para o template
-});
-
+// serve static files
+app.use(express.static(path.join(__dirname, 'public')));
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
-app.use(express.static(path.join(__dirname, 'public')));
+// Definindo as rotas
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/carro', carroRouter);
-app.use('/carro', motoRouter);
-app.use('/carro', pistaRouter);
+app.use('/pista', pistaRouter);
 
-// Captura 404 e encaminha para o manipulador de erros
+// Catch 404 and forward to error handler
 app.use(function(req, res, next) {
   next(createError(404));
 });
-
-// Manipulador de erros
+// Error handler
 app.use(function(err, req, res, next) {
+  // Set locals, only providing error in development
   res.locals.message = err.message;
   res.locals.error = req.app.get('env') === 'development' ? err : {};
+  // Render the error page
   res.status(err.status || 500);
   res.render('error');
 });
-
 module.exports = app;

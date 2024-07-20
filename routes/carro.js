@@ -1,52 +1,29 @@
-var express = require('express');
-var router = express.Router();
+const express = require('express');
+const router = express.Router();
 
-/* GET página inicial de carros. */
+/* GET carro listing. */
 router.get('/', function(req, res, next) {
-  res.render('carro', {
-    title: 'Página de Carros',
-    imageUrl: '/fotos/ayrtonsenna.jpg'  // caminho relativo ao diretório 'public'
-  });
+  res.render('carro', {title:"Porsche"});
 });
 
-/* GET página de Formula 1. */
-router.get('/formula1', function(req, res, next) {
-  res.render('carro', {
-    title: 'Formula 1',
-    imageUrl: '/fotos/fernandoalonso.webp'  // caminho relativo ao diretório 'public'
-  });
+router.get('/supra', function(req, res, next) {
+  res.render('supra', {title:"Toyota"});
 });
 
-/* GET página de Nissan GT-R. */
-router.get('/nissangtr', function(req, res, next) {
-  res.render('carro', {
-    title: 'Nissan GT-R',
-    imageUrl: '/fotos/lewishamilton.webp'  // caminho relativo ao diretório 'public'
-  });
+router.get('/bmw', function(req, res, next) {
+  res.render('bmw',{title:"BMW"});
 });
 
-/* GET página de Toyota AE-86. */
-router.get('/toyotaae', function(req, res, next) {
-  res.render('carro', {
-    title: 'Toyota Corolla Trueno AE-86',
-    imageUrl: '/fotos/motogp.jpg'  // Exemplo de imagem para a página de Moto
-  });
+router.get('/fusca', function(req, res, next) {
+  res.render('fusca', {title:"Fusca"});
 });
 
-/* GET página de Mazda RX-7 FC. */
-router.get('/mazdarx', function(req, res, next) {
-  res.render('carro', {
-    title: 'Mazda RX-7 FC',
-    imageUrl: '/fotos/pista.jpg'  // Exemplo de imagem para a página de Pista
-  });
+router.get('/ford', function(req, res, next) {
+  res.render('ford', {title:"Ford-GT"});
 });
 
-/* GET página de Ford Mustang 68. */
-router.get('/fordmus', function(req, res, next) {
-  res.render('carro', {
-    title: 'Ford Mustang 68',
-    imageUrl: '/fotos/pista.jpg'  // Exemplo de imagem para a página de Pista
-  });
+router.get('/impala', function(req, res, next) {
+  res.render('impala', {title:"Impala-67"});
 });
 
 module.exports = router;
