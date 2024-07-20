@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>MPB</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- Bootstrap JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <style>
+        /* Estilos para ajustar o tamanho do carrossel */
+        #myCarousel {
+            width: 50%; /* Defina a largura desejada */
+            margin: 0 auto; /* Centraliza o carrossel na página */
+        }
+        .carousel-inner iframe {
+            width: 100%; /* Ajusta a largura do iframe para ocupar todo o espaço do slide */
+            height: 400px; /* Defina a altura desejada para os slides */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Música Popular Brasileira</h1>
+    </header>
+    <main>
+        <h2>Bem-vindo ao MPB!</h2>
+        <p>Só as massa</p>
+
+        <div class="menu-container">
+            <ul class="menu-list">
+                <li>
+                    <a href="/">Voltar para a Página Inicial</a>
+                </li>
+                <li>
+                    <a href="/musica/jazz">Ir para o Jazz</a>
+                </li>
+                <li>
+                    <a href="/musica/rock">Ir para a Rock</a>
+                </li>
+                <li>
+                    <a href="/musica/pop">Ir para a Pop</a>
+                </li>
+                <li>
+                    <a href="/musica/kpop">Ir para a K-Pop</a>
+                </li>
+            </ul>
+        </div>
+        
+        <!-- Bootstrap Carousel -->
+        <div class="container">
+            <br>
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                </ol>
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <iframe src="https://www.youtube.com/embed/wo4pWZApd2Y" frameborder="0" allowfullscreen></iframe>
+                    </div>
+
+                    <div class="item">
+                        <iframe src="https://www.youtube.com/embed/2uqSZoxwey8" frameborder="0" allowfullscreen></iframe>
+                    </div>
+
+                    <div class="item">
+                        <iframe src="https://www.youtube.com/embed/A9kTV-wpiWk" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+
+                <!-- Left and right controls -->
+                <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+        
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
