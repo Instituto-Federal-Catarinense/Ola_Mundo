@@ -12,12 +12,12 @@
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
-  background-color: #f0f0f0; /* Cor de fundo do corpo da página */
+  background-color: #ffffff; /* Cor de fundo do corpo da página */
 }
 
 header {
-  background-color: #333; /* Cor de fundo do cabeçalho */
-  color: white; /* Cor do texto do cabeçalho */
+  background-color: #000000; /* Cor de fundo do cabeçalho */
+  color: rgb(139, 139, 139); /* Cor do texto do cabeçalho */
   padding: 10px 0;
   text-align: center;
 }
@@ -32,8 +32,8 @@ header {
   max-width: 800px; /* Largura máxima do conteúdo principal */
   margin: 20px auto; /* Centraliza o conteúdo principal com margens */
   padding: 20px; /* Espaçamento interno do conteúdo principal */
-  background-color: #fff; /* Cor de fundo do conteúdo principal */
-  border: 1px solid #ddd; /* Borda ao redor do conteúdo principal */
+  background-color: #6d6d6d; /* Cor de fundo do conteúdo principal */
+  border: 1px solid #000000; /* Borda ao redor do conteúdo principal */
   border-radius: 5px; /* Borda arredondada */
 }
 
@@ -49,7 +49,7 @@ header {
   text-decoration: none;
   background-color: #000000; /* Cor de fundo do botão */
   color: white; /* Cor do texto do botão */
-  border: 1px solid #007bff; /* Borda do botão */
+  border: 1px solid #000000; /* Borda do botão */
   border-radius: 5px; /* Borda arredondada do botão */
   transition: background-color 0.3s ease, color 0.3s ease; /* Transição suave */
 }
