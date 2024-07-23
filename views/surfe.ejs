@@ -1,0 +1,50 @@
+<%- include('layout') %>
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gabriel Medina: A Carreira do Campeão</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+  <style>
+    .carousel {
+      width: 100%;
+      height: 500px;
+      overflow: hidden;
+    }
+    .carousel img {
+      width: 100%;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+  <div class="container mt-5">
+    <h1 class="text-center">Gabriel Medina: A Carreira do Campeão</h1>
+    <div class="carousel mt-4">
+      <div>
+        <img src="https://imagens.ebc.com.br/QFhxq0w7TqKdw9mP3Cae1UosDQY=/1170x700/smart/https://agenciabrasil.ebc.com.br/sites/default/files/thumbnails/image/gabriel_medina.png?itok=nlDBsEq5" alt="Medina Campeão">
+      </div>
+      <div>
+        <img src="https://s2.glbimg.com/dVRhgEyGiEZLZglAohOnNRhlxZ8=/0x0:1024x683/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_c1db82fe2c6f4db4904c1cf09a2a9855/internal_photos/bs/2023/T/x/AzXhdfTLST9jTruSbtBA/2015-07-29t000000z-2085247427-gf10000160240-rtrmadp-3-surfing-usa-evans-4-.jpg" alt="Medina Surfando">
+      </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $('.carousel').slick({
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      });
+    });
+  </script>
+</body>
+</html>
