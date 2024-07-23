@@ -5,8 +5,9 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
 var indexRouter = require('./routes/index');
-var esportesRouter = require('./routes/esportes');
 var usersRouter = require('./routes/users');
+var esportesRouter = require('./routes/esportes');
+var musicasRouter = require('./routes/musicas'); // Adicionando o roteador de músicas
 
 var app = express();
 
@@ -21,8 +22,9 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
-app.use('/esportes', esportesRouter);
 app.use('/users', usersRouter);
+app.use('/esportes', esportesRouter);
+app.use('/musicas', musicasRouter); // Adicionando a nova rota de músicas
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
@@ -37,7 +39,7 @@ app.use(function(err, req, res, next) {
 
   // render the error page
   res.status(err.status || 500);
-  res.render('error');
+  res.render('error', { message: err.message, error: err });
 });
 
 module.exports = app;

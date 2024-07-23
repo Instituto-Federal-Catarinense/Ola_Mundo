@@ -1,181 +1,40 @@
+<%- include('layout') %>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gabriel Medina: O Surfista Campeão</title>
+  <title>Gabriel Medina: A Carreira do Campeão</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
   <style>
-    /* Estilos CSS para a página */
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      background: #e0f7fa;
-      color: #00796b;
-    }
-
-    header {
-      background: #00796b;
-      color: white;
-      padding: 20px 0;
-    }
-
-    header .container {
-      width: 80%;
-      margin: 0 auto;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    header h1 {
-      margin: 0;
-      font-size: 2em;
-    }
-
-    nav ul {
-      list-style-type: none;
-      padding: 0;
-      margin: 0;
-      display: flex;
-    }
-
-    nav ul li {
-      margin: 0 15px;
-    }
-
-    nav ul li a {
-      color: white;
-      text-decoration: none;
-    }
-
-    nav ul li a:hover {
-      text-decoration: underline;
-    }
-
     .carousel {
-      width: 80%;
-      margin: 20px auto;
+      width: 100%;
+      height: 500px;
+      overflow: hidden;
     }
-
-    .carousel-item img {
+    .carousel img {
       width: 100%;
       height: auto;
-      border-radius: 10px;
-    }
-
-    main .container {
-      width: 80%;
-      margin: 20px auto;
-    }
-
-    .section-title {
-      margin-top: 30px;
-      font-size: 28px;
-      color: #00796b;
-      text-align: center;
-      font-weight: bold;
-    }
-
-    .bio {
-      background: white;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    }
-
-    .bio h2 {
-      margin-top: 0;
-      color: #00796b;
-    }
-
-    .timeline {
-      background: white;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-      margin-top: 20px;
-    }
-
-    .timeline h2 {
-      font-size: 24px;
-      color: #00796b;
-    }
-
-    .timeline ul {
-      list-style-type: none;
-      padding: 0;
-      margin: 0;
-    }
-
-    .timeline ul li {
-      padding: 10px;
-      border-bottom: 1px solid #00796b;
-      color: #00796b;
-    }
-
-    .timeline ul li:last-child {
-      border-bottom: none;
-    }
-
-    .gallery {
-      background: white;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-      margin-top: 20px;
-    }
-
-    .gallery h2 {
-      font-size: 24px;
-      color: #00796b;
-      text-align: center;
-      margin-bottom: 20px;
-    }
-
-    .gallery-item {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin-bottom: 15px;
-    }
-
-    .gallery-item img {
-      width: 100%;
-      max-width: 300px;
-      height: auto;
-      border-radius: 10px;
-    }
-
-    footer {
-      background: #00796b;
-      color: white;
-      padding: 20px;
-      text-align: center;
-      margin-top: 20px;
-    }
-
-    footer .container {
-      width: 80%;
-      margin: 0 auto;
-    }
-
-    footer a {
-      color: #e0f7fa;
-      text-decoration: none;
-      margin: 0 10px;
-    }
-
-    footer a:hover {
-      text-decoration: underline;
     }
   </style>
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js" defer></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" defer></script>
+</head>
+<body>
+  <div class="container mt-5">
+    <h1 class="text-center">Gabriel Medina: A Carreira do Campeão</h1>
+    <div class="carousel mt-4">
+      <div>
+        <img src="https://imagens.ebc.com.br/QFhxq0w7TqKdw9mP3Cae1UosDQY=/1170x700/smart/https://agenciabrasil.ebc.com.br/sites/default/files/thumbnails/image/gabriel_medina.png?itok=nlDBsEq5" alt="Medina Campeão">
+      </div>
+      <div>
+        <img src="https://s2.glbimg.com/dVRhgEyGiEZLZglAohOnNRhlxZ8=/0x0:1024x683/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_c1db82fe2c6f4db4904c1cf09a2a9855/internal_photos/bs/2023/T/x/AzXhdfTLST9jTruSbtBA/2015-07-29t000000z-2085247427-gf10000160240-rtrmadp-3-surfing-usa-evans-4-.jpg" alt="Medina Surfando">
+      </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
   <script>
     $(document).ready(function(){
       $('.carousel').slick({
@@ -184,102 +43,8 @@
         speed: 500,
         slidesToShow: 1,
         slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 3000,
-        arrows: true
       });
     });
   </script>
-</head>
-<body>
-  <header>
-    <div class="container">
-      <h1>Gabriel Medina: O Surfista Campeão</h1>
-      <nav>
-        <ul>
-          <li><a href="/">Home</a></li>
-          <li><a href="/about">Sobre</a></li>
-          <li><a href="/career">Carreira</a></li>
-          <li><a href="/achievements">Conquistas</a></li>
-          <li><a href="/contact">Contato</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-
-  <div class="carousel">
-    <div class="carousel-item">
-      <img src="https://veja.abril.com.br/wp-content/uploads/2021/07/Gabriel-Medina.jpeg?crop=1&resize=1212,909" alt="Gabriel Medina surfando">
-    </div>
-    <div class="carousel-item">
-      <img src="/images/gabriel_medina2.jpg" alt="Gabriel Medina no pódio">
-    </div>
-    <div class="carousel-item">
-      <img src="/images/gabriel_medina3.jpg" alt="Gabriel Medina em ação">
-    </div>
-    <div class="carousel-item">
-      <img src="/images/gabriel_medina4.jpg" alt="Gabriel Medina em um evento de surfe">
-    </div>
-  </div>
-
-  <main>
-    <div class="container">
-      <div class="bio">
-        <h2>Biografia</h2>
-        <p>Gabriel Medina nasceu em 22 de dezembro de 1993, em São Sebastião, São Paulo. Desde jovem, Medina mostrou um talento extraordinário para o surfe, conquistando vários títulos no Circuito Mundial de Surf. Em 2014, ele se tornou o primeiro brasileiro a ganhar o título mundial de surfe, e desde então tem sido uma figura proeminente no surfe profissional, inspirando muitos com seu talento e dedicação ao esporte.</p>
-      </div>
-
-      <div class="timeline">
-        <h2>Linha do Tempo da Carreira</h2>
-        <ul>
-          <li>
-            <strong>2014: Campeão Mundial de Surf</strong>
-            <p>Gabriel Medina venceu o World Surf League (WSL) Championship Tour, tornando-se o primeiro brasileiro a conquistar o título de Campeão Mundial de Surf.</p>
-          </li>
-          <li>
-            <strong>2015: Vencedor do Triple Crown</strong>
-            <p>Medina venceu a prestigiada Triple Crown of Surfing, composta por três das mais importantes competições de surfe no Havai.</p>
-          </li>
-          <li>
-            <strong>2018: Vitória no Pipeline Masters</strong>
-            <p>Gabriel Medina conquistou uma grande vitória no Pipeline Masters, uma das etapas mais desafiadoras do Circuito Mundial.</p>
-          </li>
-          <li>
-            <strong>2021: Campeão Mundial pela 2ª vez</strong>
-            <p>Medina se tornou bicampeão mundial ao vencer novamente o World Surf League Championship Tour.</p>
-          </li>
-        </ul>
-      </div>
-
-      <div class="gallery">
-        <h2>Conquistas</h2>
-        <div class="gallery-item">
-          <img src="/images/medina_world_title.jpg" alt="Gabriel Medina com o título de campeão mundial">
-        </div>
-        <div class="gallery-item">
-          <img src="/images/medina_triple_crown.jpg" alt="Gabriel Medina com o troféu da Triple Crown">
-        </div>
-        <div class="gallery-item">
-          <img src="/images/medina_pipeline_masters.jpg" alt="Gabriel Medina no Pipeline Masters">
-        </div>
-        <div class="gallery-item">
-          <img src="/images/medina_award_ceremony.jpg" alt="Gabriel Medina na cerimônia de premiação">
-        </div>
-      </div>
-    </div>
-  </main>
-
-  <footer>
-    <div class="container">
-      <p>© 2024 Gabriel Medina Fan Page | 
-        <a href="/privacy">Privacy Policy</a> | 
-        <a href="/terms">Terms of Service</a> | 
-        <a href="https://www.facebook.com" target="_blank">Facebook</a> 
-        <a href="https://www.twitter.com" target="_blank">Twitter</a> 
-        <a href="https://www.instagram.com" target="_blank">Instagram</a> 
-        <a href="mailto:contact@gabrielmedinafanpage.com">contact@gabrielmedinafanpage.com</a>
-      </p>
-    </div>
-  </footer>
 </body>
 </html>

@@ -1,14 +1,24 @@
-%- include('layout') %
+<%- include('layout') %>
 
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>%= title %</title>
+  <title>Index</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body>
-  <h1>%= title %</h1>
-  <p>Welcome to %= title %</p>
+  <div class="container mt-5">
+    <h1 class="text-center">Bem-vindo ao site do Internacional e músicas mais conhecidas!</h1>
+    <p class="text-center">Aqui você encontrará informações sobre o Internacional e músicas icônicas.</p>
+    <div class="text-center mt-4">
+      <a href="/esportes" class="btn btn-primary">Esportes</a>
+      <a href="/musicas" class="btn btn-primary">Músicas</a>
+    </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>

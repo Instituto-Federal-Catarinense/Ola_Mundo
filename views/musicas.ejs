@@ -1,0 +1,50 @@
+<%- include('layout') %>
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Músicas Mais Conhecidas</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    .music-card {
+      margin-bottom: 20px;
+    }
+    .music-card img {
+      width: 100%;
+      height: auto;
+    }
+    .music-card-title {
+      font-size: 1.2em;
+      font-weight: bold;
+    }
+    .music-card-artist {
+      font-size: 1em;
+      color: #6c757d;
+    }
+  </style>
+</head>
+<body>
+  <div class="container mt-5">
+    <h1 class="text-center">Músicas Mais Conhecidas</h1>
+    <div class="row">
+      <% musicas.forEach(function(musica) { %>
+      <div class="col-md-4 music-card">
+        <div class="card">
+          <img class="card-img-top" src="https://via.placeholder.com/300x200" alt="<%= musica.name %>">
+          <div class="card-body">
+            <h5 class="music-card-title"><%= musica.name %></h5>
+            <p class="music-card-artist">Artista: <%= musica.artist %></p>
+            <a href="<%= musica.url %>" class="btn btn-primary">Ver mais</a>
+          </div>
+        </div>
+      </div>
+      <% }); %>
+    </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
