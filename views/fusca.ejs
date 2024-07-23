@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/stylesheets/style.css" rel="stylesheet">
+    <title><%= title %></title>
+</head>
+<style>
+    /* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic styling for the layout */
+.container {
+    max-width: 500px; /* Adjust as needed */
+    margin: 20px ; /* Center the container */
+    display: flex;
+    align-items: center;
+
+}
+
+.car-image {
+    width: 60%;
+    height: 60%;
+    border: 5px solid black; /* Black border around the image */
+    border-radius: 5px; /* Optional: Add border radius for rounded corners */
+    margin-right: 20px; /* Space between image and text */
+}
+
+.car-info {
+    flex: 1; /* Take remaining space */
+
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+.caixa {
+    margin-top: 20px;
+    padding: 10px;
+    border: 2px solid black; /* Borda ao redor da caixa de botões */
+    border-radius: 5px; /* Borda arredondada */
+    text-align: center; /* Centraliza o conteúdo dos botões */
+    background-color: grey;
+}
+.caixa a {
+    display: inline-block; /* Transforma em bloco e mantém em linha */
+    margin: 5px; /* Espaçamento entre os botões */
+    border: 2px solid black;
+    width: 200px; /* Ajuste conforme necessário */
+    text-align: center;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 5px; /* Borda arredondada para os botões */
+    align-items: center;
+    background-color: black; /* Cor de fundo preta */
+    color: white; /* Cor do texto branca */
+}
+
+.caixa a:last-child {
+    margin-bottom: 0; /* Remove o espaço abaixo do último botão */
+}
+</style>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Site de Carros</h1>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="car-info">
+             <h1>Fusca bolado</h1>
+                <p>Dia Nacional do Fusca: relembre a história do clássico... O Volkswagen Fusca surgiu de uma encomenda de Adolf Hitler, que queria um carro popular para os alemães. O projeto foi feito por Ferdinand Porsche, e a produção marcou a criação da Volkswagen. A Segunda Guerra atrapalhou os planos e somente no final a década de 1940 que o modelo de fato engrenou.</p>
+        </div>
+            <img src="/foto/fusca.jpg" alt="Fusca Imagem" class="car-image">
+    </div>
+
+    <div class="caixa">
+        <a href="/carro" class="bot01">Outros</a>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; <%= new Date().getFullYear() %> Site de Carros. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
