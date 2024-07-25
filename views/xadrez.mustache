@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{pageTitle}}</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+        header {
+            background-color: #4caf50;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+            margin-bottom: 20px;
+        }
+        main {
+            width: 80%;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+        h1, h2 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+        h2 {
+            border-bottom: 2px solid #333;
+            padding-bottom: 5px;
+        }
+        p {
+            margin-bottom: 10px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        li {
+            margin-bottom: 5px;
+        }
+       
+    </style>
+</head>
+<body>
+    <header>
+        <h1>{{pageTitle}}</h1>
+        <p>{{headerDescription}}</p>
+        <img src="{{imageUrl}}" width="500" height="250" alt="{{imageAlt}}">
+        <button onclick="window.history.back()">Voltar</button>
+    </header>
+    <main id="content">
+        <!-- O conteúdo será injetado aqui pelo JavaScript -->
+    </main>
+    <footer>
+        <p>{{footerText}}</p>
+    </footer>
+
+    <!-- Mustache.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/4.2.0/mustache.min.js"></script>
+
+    <!-- Template Mustache -->
+    <script id="template" type="x-tmpl-mustache">
+        {{#sections}}
+        <section id="{{id}}">
+            <h2>{{title}}</h2>
+            {{#paragraphs}}
+            <p>{{.}}</p>
+            {{/paragraphs}}
+            {{#listItems}}
+            <ul>
+                {{#listItems}}
+                <li>{{.}}</li>
+                {{/listItems}}
+            </ul>
+            {{/listItems}}
+        </section>
+        {{/sections}}
+    </script>
+
+    <!-- JSON Data -->
+    <script>
+        const data = {
+            "pageTitle": "Xadrez",
+            "headerDescription": "Descubra tudo sobre o jogo de estratégia mais antigo do mundo!",
+            "imageUrl": "https://files.tecnoblog.net/wp-content/uploads/2017/12/xadrez-1060x725.jpg",
+            "imageAlt": "Imagem de xadrez",
+            "sections": [
+                {
+                    "id": "o-que-e-xadrez",
+                    "title": "O que é xadrez?",
+                    "paragraphs": [
+                        "Xadrez é um jogo de tabuleiro para dois jogadores, que se enfrentam em um tabuleiro quadriculado de 64 casas alternadamente claras e escuras. Cada jogador controla 16 peças, incluindo um rei, uma rainha, torres, bispos, cavalos e peões."
+                    ]
+                },
+                {
+                    "id": "historia-do-xadrez",
+                    "title": "História do xadrez",
+                    "paragraphs": [
+                        "O xadrez tem uma história que remonta a mais de 1500 anos. Originou-se na Índia antiga e se espalhou pelo mundo através das rotas comerciais e culturais."
+                    ]
+                },
+                {
+                    "id": "regras-basicas-do-xadrez",
+                    "title": "Regras básicas do xadrez",
+                    "listItems": [
+                        "Cada peça move-se de maneira específica: o rei pode mover-se para qualquer casa adjacente, a rainha move-se horizontal, vertical ou diagonalmente, as torres movem-se horizontal ou verticalmente, os bispos movem-se diagonalmente, os cavalos movem-se em forma de 'L', e os peões movem-se para frente uma casa (ou duas na primeira jogada) e capturam diagonalmente.",
+                        "O objetivo do jogo é dar xeque-mate ao rei adversário, ou seja, colocar o rei em uma posição onde ele não possa escapar de ser capturado.",
+                        "Xeque e xeque-mate são termos usados para descrever a situação em que o rei está ameaçado ou capturado, respectivamente.",
+                        "O jogo também pode terminar em empate por acordo mútuo, por repetição de jogadas, por falta de material para dar mate, ou por empate por afogamento."
+                    ]
+                },
+                {
+                    "id": "grandes-competicoes-do-xadrez",
+                    "title": "Grandes competições de xadrez",
+                    "paragraphs": [
+                        "O xadrez é celebrado mundialmente por competições como o Campeonato Mundial de Xadrez, os Torneios de Candidatos, e diversos torneios de elite ao redor do mundo."
+                    ]
+                }
+            ],
+        
+        };
+
+        // Renderizar o template com Mustache
+        window.onload = function() {
+            const template = document.getElementById('template').innerHTML;
+            const rendered = Mustache.render(template, data);
+            document.getElementById('content').innerHTML = rendered;
+        };
+    </script>
+</body>
+</html>

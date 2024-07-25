@@ -7,7 +7,7 @@ router.get('/', function(req, res, next) {
 });
 
 router.get('/futebol', function(req, res, next) {
-    res.render('futebol');
+    res.render('futebol', {title:"Minha pagina"});
   });
 
   router.get('/volei', function(req, res, next) {

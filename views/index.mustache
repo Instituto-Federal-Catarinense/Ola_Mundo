@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seu Título Aqui</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            color: #333;
+            text-align: center;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 1rem 0;
+        }
+        main {
+            margin: 20px;
+        }
+        h1 {
+            color: #4CAF50;
+            margin-bottom: 10px;
+        }
+        p {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Seu Título Aqui</h1>
+    </header>
+    <main>
+        <p>Bem-vindo Seu Título Aqui</p>
+    </main>
+    
+    <!-- Mustache.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/4.2.0/mustache.min.js"></script>
+
+    <!-- Template Mustache -->
+    <script id="template" type="x-tmpl-mustache">
+        <h1>{{title}}</h1>
+        <p>Bem-vindo {{title}}</p>
+    </script>
+
+    <!-- JSON Data -->
+    <script>
+        const data = {
+            "title": "Seu Título Aqui"
+        };
+
+        // Renderizar o template com Mustache
+        window.onload = function() {
+            const template = document.getElementById('template').innerHTML;
+            const rendered = Mustache.render(template, data);
+            document.querySelector('main').innerHTML = rendered;
+        };
+    </script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paris, França</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f2f2f2;
+            color: #333;
+            margin: 0 auto;
+            max-width: 800px;
+            padding: 20px;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        main {
+            background-color: white;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        section {
+            margin-bottom: 20px;
+        }
+        h1 {
+            color: white;
+            margin-bottom: 10px;
+        }
+        h2 {
+            color: #4CAF50;
+            margin-bottom: 10px;
+        }
+        p {
+            margin-bottom: 10px;
+        }
+        img {
+            display: block; 
+            margin: 0 auto; 
+            max-width: 100%; 
+            border-radius: 10px; 
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Paris, França</h1>
+        <img src="https://oficinadeinverno.com.br/cdn/shop/articles/eiffel-tower-sunrise1.jpg?v=1659494576&width=800" width="500" height="250" alt="Paris">
+        <p>Descubra a beleza e o encanto da cidade das luzes</p>
+        <button onclick="window.history.back()">Voltar</button>
+    </header>
+    <main>
+        <section id="paris">
+            <h2>Arquitetura Icônica</h2>
+            <p>Paris é conhecida por sua arquitetura icônica, como a Torre Eiffel, o Louvre, a Catedral de Notre-Dame e os Champs-Élysées.</p>
+        </section>
+        <section id="cultura">
+            <h2>Cultura Vibrante</h2>
+            <p>A cidade oferece uma rica cultura, desde sua gastronomia refinada até sua história rica em arte, moda e música.</p>
+        </section>
+        <section id="rio-sena">
+            <h2>Passeio pelo Rio Sena</h2>
+            <p>Um passeio pelo rio Sena é uma experiência imperdível, proporcionando vistas deslumbrantes dos principais pontos turísticos de Paris.</p>
+        </section>
+    </main>
+</body>
+</html>
