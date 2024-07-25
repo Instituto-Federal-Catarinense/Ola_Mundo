@@ -1,24 +1,29 @@
 var express = require('express');
 var router = express.Router();
 
-/* GET home page. */
+/* GET esportes page. */
 router.get('/', function(req, res, next) {
-    res.render('esportes');
-});
-router.get('/volei', function(req, res, next) {
-    res.render('volei');
+  res.render('esportes', { title: 'Esportes' });
 });
 
-router.get('/futebol', function(req, res, next) {
-    res.render('futebol');
+router.get('/Volei', function(req, res, next) {
+  res.render('volei', { title: 'Voleibol' });
 });
 
-router.get('/handball', function(req, res, next) {
-    res.render('handball');
+router.get('/VoleiDeAreia', function(req, res, next) {
+  res.render('voleiDeAreia', { title: 'Voleibol de Praia' });
 });
 
-router.get('/basquete', function(req, res, next) {
-    res.render('basquete');
+router.get('/Basquete', function(req, res, next) {
+  res.render('basquete', { title: 'Basquete' });
+});
+
+router.get('/Futebol', function(req, res, next) {
+  res.render('futebol', { title: 'Futebol' });
+});
+
+router.get('/Resumo', function(req, res, next) {
+  res.render('Resumo', { title: 'Resumo' });
 });
 
 module.exports = router;
