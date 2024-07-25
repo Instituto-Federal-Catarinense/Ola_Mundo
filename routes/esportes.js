@@ -1,7 +1,7 @@
 var express = require('express');
 var router = express.Router();
 
-// Rota principal para renderizar a página inicial (esportes.pug)
+// Rota principal para renderizar a página inicial (esportes.mustache)
 router.get('/', function(req, res, next) {
   res.render('esportes');
 });

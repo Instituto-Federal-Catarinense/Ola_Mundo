@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>{{title}}</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background-color: #f8f9fa;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #007bff;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    main {
+      width: 80%;
+      margin: 80px auto 20px; /* Ajuste para evitar que o conteúdo fique sob o cabeçalho */
+      background-color: white;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    footer {
+      text-align: center;
+      padding: 10px 0;
+      background-color: #007bff;
+      color: white;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">Grêmio Foot-Ball Porto Alegrense</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="/esportes/rebaixamento/1991">Temporada 1991</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/esportes/rebaixamento/2004">Temporada 2004</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/esportes/rebaixamento/2012">Temporada 2012</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    {{{content}}} <!-- Conteúdo dinâmico renderizado aqui -->
+  </main>
+  <footer>
+    <p>© 2024 Grêmio Foot-Ball Porto Alegrense. Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>
