@@ -12,6 +12,8 @@
     "express-mustache": "^1.0.4",
     "http-errors": "~1.6.3",
     "morgan": "~1.9.1",
+    "mustache": "^4.2.0",
+    "mustache-express": "^1.3.2",
     "pug": "2.0.0-beta11"
   }
 }
