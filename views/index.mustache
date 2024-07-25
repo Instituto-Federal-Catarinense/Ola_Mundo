@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Estilos personalizados -->
+    <style>
+        /* Estilos adicionais personalizados */
+        /* Aqui você pode adicionar estilos específicos se necessário */
+    </style>
+</head>
+<body>
+    <!-- Conteúdo principal -->
+    {{> layout }}
+    {{#title}}
+    <h1 class="text-center mt-5">Bem-vindo ao meu site!</h1>
+    <p class="text-center">Este conteúdo acima pertence a página inicial.</p>
+    {{/title}}
+
+
+    <!-- JavaScript e bibliotecas -->
+    <!-- jQuery, Popper.js e Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
