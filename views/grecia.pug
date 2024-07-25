@@ -1,0 +1,54 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Exemplo de Pug com Navbar e Carrossel
+    link(rel="stylesheet", href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css")
+  body
+    header
+      nav.navbar.navbar-expand-lg.navbar-light.bg-light
+        .container
+          a.navbar-brand(href="#") Navbar
+          button.navbar-toggler(type="button", data-toggle="collapse", data-target="#navbarNav", aria-controls="navbarNav", aria-expanded="false", aria-label="Toggle navigation")
+            span.navbar-toggler-icon
+          .collapse.navbar-collapse#navbarNav
+            ul.navbar-nav.ml-auto
+              li.nav-item
+                a.nav-link(href="index") Início
+              li.nav-item
+                a.nav-link(href="/paises/italia") Italia
+              li.nav-item
+                a.nav-link(href="/paises/espanha") Espanha
+              li.nav-item
+                a.nav-link(href="/paises/inglaterra") Inglaterra
+              li.nav-item
+                a.nav-link(href="/paises/estadosunidos") Estados Unidos
+                li.nav-item
+                a.nav-link(href="/paises/grecia") Grecia
+
+    .container.mt-4
+      .row
+        .col-md-8
+          .carousel.slide(data-ride="carousel", id="carouselExampleSlidesOnly")
+            .carousel-inner
+              .carousel-item.active
+                img.d-block.w-100(src="https://s4.static.brasilescola.uol.com.br/be/2021/10/bandeira-da-grecia.jpg", alt="First slide")
+              .carousel-item
+                img.d-block.w-100(src="https://lh7-us.googleusercontent.com/QxJFdfLPRsVcNDXajA7Cmxvupp_16oL9CQLbd12u61TrGR8t-iDlBa5AeHwE9qyDwM_N9GX-qEIYiamUDRMhLj5zoPQ-Bsmb0kGdt-B59cNR4Vu29r3iDkOwVMjZHuQnIluz_HoqAK104_DKp4ccz3Y")
+              .carousel-item
+                img.d-block.w-100(src="https://static.historiadomundo.com.br/2020/04/acropole-atenas.jpg")
+            a.carousel-control-prev(href="#carouselExampleSlidesOnly", role="button", data-slide="prev")
+              span.carousel-control-prev-icon(aria-hidden="true")
+              span.sr-only Previous
+            a.carousel-control-next(href="#carouselExampleSlidesOnly", role="button", data-slide="next")
+              span.carousel-control-next-icon(aria-hidden="true")
+              span.sr-only Next
+
+    footer.footer.bg-light.py-3
+      .container
+        p.text-center © 2024 Todos os direitos reservados.
+
+  script(src="https://code.jquery.com/jquery-3.5.1.slim.min.js")
+  script(src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js")
+  script(src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js")

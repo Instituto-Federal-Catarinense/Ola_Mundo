@@ -1,0 +1,54 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Exemplo de Pug com Navbar e Carrossel
+    link(rel="stylesheet", href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css")
+  body
+    header
+      nav.navbar.navbar-expand-lg.navbar-light.bg-light
+        .container
+          a.navbar-brand(href="#") Navbar
+          button.navbar-toggler(type="button", data-toggle="collapse", data-target="#navbarNav", aria-controls="navbarNav", aria-expanded="false", aria-label="Toggle navigation")
+            span.navbar-toggler-icon
+          .collapse.navbar-collapse#navbarNav
+            ul.navbar-nav.ml-auto
+              li.nav-item
+                a.nav-link(href="index") Início
+              li.nav-item
+                a.nav-link(href="/paises/italia") Italia
+              li.nav-item
+                a.nav-link(href="/paises/espanha") Espanha
+              li.nav-item
+                a.nav-link(href="/paises/inglaterra") Inglaterra
+              li.nav-item
+                a.nav-link(href="/paises/estadosunidos") Estados Unidos
+                li.nav-item
+                a.nav-link(href="/paises/grecia") Grecia
+
+    .container.mt-4
+      .row
+        .col-md-8
+          .carousel.slide(data-ride="carousel", id="carouselExampleSlidesOnly")
+            .carousel-inner
+              .carousel-item.active
+                img.d-block.w-100(src="https://s5.static.brasilescola.uol.com.br/be/2021/12/bandeira-da-italia.jpg", alt="First slide")
+              .carousel-item
+                img.d-block.w-100(src="https://cenciturismo.com.br/wp-content/uploads/2019/06/vista-lateral-do-coliseu-num-dia-ensolarado-1140x760.jpg.webp")
+              .carousel-item
+                img.d-block.w-100(src="https://blog.123milhas.com/wp-content/uploads/2023/03/turismo-na-italia-torre-de-pisa-roma-conexao123-2.jpg")
+            a.carousel-control-prev(href="#carouselExampleSlidesOnly", role="button", data-slide="prev")
+              span.carousel-control-prev-icon(aria-hidden="true")
+              span.sr-only Previous
+            a.carousel-control-next(href="#carouselExampleSlidesOnly", role="button", data-slide="next")
+              span.carousel-control-next-icon(aria-hidden="true")
+              span.sr-only Next
+
+    footer.footer.bg-light.py-3
+      .container
+        p.text-center © 2024 Todos os direitos reservados.
+
+  script(src="https://code.jquery.com/jquery-3.5.1.slim.min.js")
+  script(src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js")
+  script(src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js")

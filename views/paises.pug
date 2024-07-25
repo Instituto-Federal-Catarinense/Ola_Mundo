@@ -15,17 +15,36 @@ html(lang="en")
           .collapse.navbar-collapse#navbarNav
             ul.navbar-nav.ml-auto
               li.nav-item
-                a.nav-link(href="esportes") Esportes
+                a.nav-link(href="index") Início
               li.nav-item
-                a.nav-link(href="futebol") Futebol
+                a.nav-link(href="/paises/italia") Italia
               li.nav-item
-                a.nav-link(href="skate") Skate
+                a.nav-link(href="/paises/espanha") Espanha
               li.nav-item
-                a.nav-link(href="basquete") Basquete
+                a.nav-link(href="/paises/inglaterra") Inglaterra
               li.nav-item
-                a.nav-link(href="poloaquatico") Polo Aquático
+                a.nav-link(href="/paises/estadosunidos") Estados Unidos
                 li.nav-item
-                a.nav-link(href="paises") Paises
+                a.nav-link(href="/paises/grecia") Grecia
+
+    .container.mt-4
+      .row
+        .col-md-8
+          .carousel.slide(data-ride="carousel", id="carouselExampleSlidesOnly")
+            .carousel-inner
+              .carousel-item.active
+                img.d-block.w-100(src="", alt="First slide")
+              .carousel-item
+                img.d-block.w-100(src="")
+              .carousel-item
+                img.d-block.w-100(src="")
+            a.carousel-control-prev(href="#carouselExampleSlidesOnly", role="button", data-slide="prev")
+              span.carousel-control-prev-icon(aria-hidden="true")
+              span.sr-only Previous
+            a.carousel-control-next(href="#carouselExampleSlidesOnly", role="button", data-slide="next")
+              span.carousel-control-next-icon(aria-hidden="true")
+              span.sr-only Next
+
     footer.footer.bg-light.py-3
       .container
         p.text-center © 2024 Todos os direitos reservados.
