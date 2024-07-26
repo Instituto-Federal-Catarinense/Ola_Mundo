@@ -1,20 +1,21 @@
 var express = require('express');
 var router = express.Router();
 
-/* GET users listing. */
+/* GET esportes listing. */
 router.get('/', function(req, res, next) {
   res.render('esportes');
 });
 
 router.get('/futebol', function(req, res, next) {
-    res.send('respond with a resource');
-  });
+  res.render('futebol');
+});
 
-  router.get('/boxe', function(req, res, next) {
-    res.send('respond with a resource');
-  });
+router.get('/boxe', function(req, res, next) {
+  res.render('boxe');
+});
 
-  router.get('/surfe', function(req, res, next) {
-    res.send('respond with a resource');
-  });
+router.get('/surfe', function(req, res, next) {
+  res.render('surfe');
+});
+
 module.exports = router;
