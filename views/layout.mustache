@@ -1,56 +1,32 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Esportes</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/stylesheets/style.css">
-</head>
-<body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Esportes</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="#futebol">Futebol</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#volei">Vôlei</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#basketball">Basquete</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
+doctype html
+html
+  head
+    title= title
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+    link(rel='stylesheet', href='https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css')
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body
+    nav.navbar.navbar-expand-lg.navbar-light.bg-light
+    a.navbar-brand(href='#') Esportes
+    button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarNav', aria-controls='navbarNav', aria-expanded='false', aria-label='Toggle navigation')
+      span.navbar-toggler-icon
+    div.collapse.navbar-collapse#navbarNav
+      ul.navbar-nav.ml-auto
+        li.nav-item
+          a.nav-link(href='#') Futebol
+        li.nav-item
+          a.nav-link(href='#') Basquete
+        li.nav-item
+          a.nav-link(href='#') Tênis
+        li.nav-item
+          a.nav-link(href='#') Natação
+          
+    block content 
 
-    <div class="container mt-4">
-        <div class="row">
-            <div class="col">
-                <h2>Futebol</h2>
-                <p>O futebol é o esporte mais popular do mundo, jogado e assistido por milhões de pessoas em todos os continentes.</p>
-            </div>
-            <div class="col">
-                <h2>Vôlei</h2>
-                <p>O vôlei é um esporte que envolve duas equipes de seis jogadores cada, que tentam marcar pontos ao passar uma bola sobre uma rede.</p>
-            </div>
-            <div class="col">
-                <h2>Basquete</h2>
-                <p>O basquete é um esporte jogado com uma bola e duas cestas, onde o objetivo é marcar pontos ao arremessar a bola na cesta do adversário.</p>
-            </div>
-        </div>
-    </div>
+    script(src='https://code.jquery.com/jquery-3.5.1.slim.min.js')
+    script(src='https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js')
+    script(src='https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js')
 
-    <footer class="footer bg-dark text-white text-center py-3">
-        <p>© 2024 Esportes Inc. Todos os direitos reservados.</p>
-    </footer>
-
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-</body>
-</html>
+footer.footer.bg-dark.text-white.text-center.py-3
+  p © 2024 Esportes Inc. Todos os direitos reservados.
