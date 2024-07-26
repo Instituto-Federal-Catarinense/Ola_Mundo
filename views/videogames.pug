@@ -1,0 +1,45 @@
+extends layout
+
+block content
+  h1= title
+  p Bem-vindo à página #{title}
+
+  // Conteúdo Principal
+  main.main-content
+    .container.text-center
+      // Primeira Linha de Quadrados
+      .row.row-cols-1.row-cols-md-2.row-cols-lg-3.g-4
+        // Quadrado - Xbox
+        .col.mb-4
+          a(href="/videogames/xbox")
+            .border.text-center.p-3
+              img.img-size(src="https://m.media-amazon.com/images/I/51pNvD-nsvL._AC_UF1000,1000_QL80_.jpg" alt="Xbox")
+              h5.text-dark Xbox
+              p.text-muted Xbox é uma linha de consoles de videogame criada pela Microsoft. O console oferece uma ampla gama de jogos e serviços de entretenimento.
+
+        // Quadrado - PS4
+        .col.mb-4
+          a(href="/videogames/ps4")
+            .border.text-center.p-3
+              img.img-size(src="https://gmedia.playstation.com/is/image/SIEPDC/ps4-product-thumbnail-01-en-14sep21?$facebook$" alt="PS4")
+              h5.text-dark PS4
+              p.text-muted PlayStation 4 (PS4) é um console de videogame da Sony, lançado em 2013. É conhecido por seus gráficos impressionantes e uma vasta biblioteca de jogos.
+
+        // Quadrado - Xbox 360
+        .col.mb-4
+          a(href="/videogames/xbox360")
+            .border.text-center.p-3
+              img.img-size(src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Xbox-360-Pro-wController.jpg/220px-Xbox-360-Pro-wController.jpg" alt="Xbox 360")
+              h5.text-dark Xbox 360
+              p.text-muted Xbox 360 é a segunda geração da linha Xbox da Microsoft, lançada em 2005. Foi um dos consoles mais populares de sua geração.
+
+        // Quadrado - PS5
+        .col.mb-4
+          a(href="/videogames/ps5")
+            .border.text-center.p-3
+              img.img-size(src="https://gmedia.playstation.com/is/image/SIEPDC/ps5-product-thumbnail-01-en-14sep21?$facebook$" alt="PS5")
+              h5.text-dark PS5
+              p.text-muted PlayStation 5 (PS5) é o console mais recente da Sony, lançado em 2020. Ele oferece gráficos de próxima geração e tempos de carregamento extremamente rápidos.
+
+    // Rodapé (igual ao layout fornecido)
+  script(src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js")
