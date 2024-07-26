@@ -18,4 +18,8 @@ router.get('/surfe', function(req, res, next) {
   res.render('surfe');
 });
 
+router.get('/', function(req, res, next) {
+  res.render('index', { title: 'Express' });
+});
+
 module.exports = router;
