@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seu Aplicativo</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Seu Aplicativo</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Página Inicial</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/sobre">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contato">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="jumbotron jumbotron-fluid bg-light text-center">
+        <div class="container">
+            <h1 class="display-4">Livros da Collen Hoover</h1>
+            <p class="lead">Selecione um livro para ver seu resumo.</p>
+        </div>
+    </div>
+
+    <div class="container mt-4">
+        <ul class="list-group">
+            {{#livros}}
+            <li class="list-group-item">
+                <a href="/livros/{{slug}}">{{titulo}}</a>
+            </li>
+            {{/livros}}
+        </ul>
+    </div>
+
+    <div class="container mt-4">
+        <ul class="list-group">
+            <li class="list-group-item">
+                <a href="/livros/Ate_o_verao_terminar">Até o verão terminar</a>
+            </li>
+            <li class="list-group-item">
+                <a href="/livros/E_assim_que_acaba">É assim que acaba</a>
+            </li>
+            <li class="list-group-item">
+                <a href="/livros/E_assim_que_comeca">É assim que começa</a>
+            </li>
+            <li class="list-group-item">
+                <a href="/livros/Verity">Verity</a>
+            </li>
+            <li class="list-group-item">
+                <a href="/livros/Todas_as_suas_imperfeicoes">Toas as suas imperfeiçoes</a>
+            </li>
+        </ul>
+    </div>
+
+    <footer class="footer bg-light text-center text-muted py-3">
+        <div class="container">
+            <p>© 2024 Seu Nome de Site</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -22,8 +22,8 @@ router.get('/futsal', function(req, res, next) {
 });
 
 /* GET users listing. */
-router.get('/tenis de mesa', function(req, res, next) {
-  res.render('tenis de mesa');
+router.get('/tenis_de_mesa', function(req, res, next) {
+  res.render('tenis_de_mesa');
 });
 
 /* GET users listing. */
