@@ -1,15 +1,25 @@
-extends layout
+<!DOCTYPE html>
+<html>
+<head>
+  <title>{{title}}</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+</head>
+<body>
+  <h1>{{title}}</h1>
+  <p>Bem-vindo à página de {{title}}</p>
+  <p>Funk</p>
 
-block content
-  h1= title
-  p Bem-vindo à página de #{title}
-  p Funk
-  .container
-    .row
-      .col-md-6.offset-md-3
-        img.img-fluid(src="https://uploads.metroimg.com/wp-content/uploads/2024/03/21113630/capa-1-204.jpg" alt="funk")
-        h2 Futebol
-        p.text-muted Esse aqui anima qualquer adolescente e pré-adulto
-        p.text-muted Aqui você pode adicionar mais detalhes e informações sobre o funk.
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 offset-md-3">
+        <img src="{{imageSrc}}" alt="funk" class="img-fluid">
+        <h2>{{subtitle}}</h2>
+        <p class="text-muted">{{description}}</p>
+        <p class="text-muted">{{additionalInfo}}</p>
+      </div>
+    </div>
+  </div>
 
-  script(src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js")
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
