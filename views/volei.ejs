@@ -1,26 +1,50 @@
-extends layout
-
-block content
-    title Inicio pug 
-    a( href='/esportes') início
-    a( href='/esportes/danca') Dança
-    a( href='/esportes/volei') Vôlei
-    a( href='/esportes/basquete') Basquete
-    a( href='/esportes/golfe') Golfe
-    h1 Voleibol 
-    p Voleibol (chamado frequentemente no Brasil de Vôlei e em Portugal de Vólei) é um esporte praticado <br>
-    p numa quadra dividida em duas partes por uma rede, possuindo duas equipes de seis jogadores em cada lado. <br>
-    p O objetivo da modalidade é fazer a bola passar sobre a rede de modo a que a bola toque no chão dentro da <br>
-    p quadra adversária, ao mesmo tempo que se evita que os adversários consigam fazer o mesmo. <br>
-    p O vôlei foi criado em 9 de fevereiro de 1895 por William George Morgan nos Estados Unidos. <br>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <%- include('../partials/header'); %>
+      </header>
+    <ul id="esportes">
+        <li>
+         <button><a href="/esportes" >Inicio</a></button> 
+        </li>
+        <li>
+          <button><a href='/esportes/danca'>Dança</a></button>
+        </li>
+        <li>
+          <button><a href='/esportes/golfe'>Golfe</a></button>
+        </li>
+        <li>
+          <button><a href='/esportes/basquete'>Basquete</a></button>
+        </li>
+        <li>
+          <button><a href='/esportes/volei'>Vôlei</a></button>
+        </li>
+    </ul>
+    <h1> Voleibol </h1>
+    <p>Voleibol (chamado frequentemente no Brasil de Vôlei e em Portugal de Vólei) é um esporte praticado <br>
+    numa quadra dividida em duas partes por uma rede, possuindo duas equipes de seis jogadores em cada lado. <br>
+    O objetivo da modalidade é fazer a bola passar sobre a rede de modo a que a bola toque no chão dentro da <br>
+    quadra adversária, ao mesmo tempo que se evita que os adversários consigam fazer o mesmo. <br>
+    O vôlei foi criado em 9 de fevereiro de 1895 por William George Morgan nos Estados Unidos. <br>
+    </p> 
+    <h1> Regras:</h1>
+    <p> Cada equipe de voleibol é constituída por 12 jogadores: seis efetivos (sendo um líbero) e seis suplentes. Em quadra, portanto, ficam dois times de seis jogadores. <br>
+    As principais regras do vôlei são: <br> 
+    Cada equipe possui um técnico; <br> 
+    Uma partida é constituída de 3 a 5 sets; <br> 
+    Não existe tempo pré-determinado para cada set; <br> 
+    Cada set tem um máximo de 25 pontos com uma diferença mínima de 2 pontos; <br> 
+    Em caso de empate no final do set (24 x 24), a partida continua até que a diferença de dois pontos seja atingida (26 x 24, 27 x 25, etc.);<br> 
+    Ganha a equipe que vencer três sets;<br> 
+    Se houver empate nos sets (2x2), o 5º set será decisivo. No entanto, este vai somente até 15 pontos e também precisa de uma diferença mínima de 2 ponto<br> 
+    </p> 
+</body>
+</html>
     
-    h1 Regras:
-    p Cada equipe de voleibol é constituída por 12 jogadores: seis efetivos (sendo um líbero) e seis suplentes. Em quadra, portanto, ficam dois times de seis jogadores. <br>
-    p As principais regras do vôlei são: <br> 
-    p Cada equipe possui um técnico; <br> 
-    p Uma partida é constituída de 3 a 5 sets; <br> 
-    p Não existe tempo pré-determinado para cada set; <br> 
-    p Cada set tem um máximo de 25 pontos com uma diferença mínima de 2 pontos; <br> 
-    p Em caso de empate no final do set (24 x 24), a partida continua até que a diferença de dois pontos seja atingida (26 x 24, 27 x 25, etc.);<br> 
-    p Ganha a equipe que vencer três sets;<br> 
-    p Se houver empate nos sets (2x2), o 5º set será decisivo. No entanto, este vai somente até 15 pontos e também precisa de uma diferença mínima de 2 ponto<br> 
+   
