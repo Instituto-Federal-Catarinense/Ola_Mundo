@@ -11,7 +11,7 @@ a {
 table{
   justify-content: center;
 }
-.nsei {
+button {
   background-color: #771edb; /* Green */
   border-radius: 10px;
   color: rgb(255, 255, 255);

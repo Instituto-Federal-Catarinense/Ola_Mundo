@@ -1,36 +1,41 @@
-extends layout 
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Música</title>
+    <%- include('../views/layout'); %>
+</head>
+<body>
+    <h1>Música </h1> 
 
-block content
-    title Inicio pug 
-    h1 Música 
+    <p> A música (do grego μουσική τέχνη - musiké téchne, a arte das musas) é uma <br>
+     forma de arte que se constitui na combinação de vários sons e ritmos, seguindo <br>
+     uma pré-organização ao longo do tempo.<br>
+     É considerada por diversos autores como uma prática cultural e humana. Não se<br>
+     conhece nenhuma civilização ou agrupamento que não possua manifestações musicais<br>
+     próprias.</p>
 
-    p A música (do grego μουσική τέχνη - musiké téchne, a arte das musas) é uma 
-    p forma de arte que se constitui na combinação de vários sons e ritmos, seguindo 
-    p uma pré-organização ao longo do tempo.
-    p É considerada por diversos autores como uma prática cultural e humana. Não se
-    p conhece nenhuma civilização ou agrupamento que não possua manifestações musicais
-    p próprias.
+    <h1>Gêneros Musicais: </h1> 
+    <p>p Assim como existem várias definições para música, existem muitas divisões e<br> 
+     agrupamentos da música em gêneros, estilos e formas. Dividir a música em gêneros<br>
+     é uma tentativa de classificar cada composição de acordo com critérios objetivos, <br>
+     que não são sempre fáceis de definir. <br>
+     Exempos:</p>
 
-    h1 Gêneos Musicais: 
-    p Assim como existem várias definições para música, existem muitas divisões e 
-    p agrupamentos da música em gêneros, estilos e formas. Dividir a música em gêneros
-    p é uma tentativa de classificar cada composição de acordo com critérios objetivos, 
-    p que não são sempre fáceis de definir. 
-    p Exempos:
-    ul 
-        li
-            button
-                a( href='/musicas/pop') Pop
-        li  
-            button
-                a( href='/musicas/rap') Rap
-        li
-            button
-                a( href='/musicas/rock') Rock
-        li
-            button
-                a( href='/musicas/sertanejo') Sertanejo    
-        li 
-            button
-                a( href='/musicas/reggaeton') Reggeaton
+        <ul id="musicas">
+            <li>
+                <button> <a href='/musicas/pop'> Pop</a></button>   </li>   
+            <li>
+                <button> <a href='/musicas/rap'> Rap</a></button>  </li>
+            <li>
+                <button> <a href='/musicas/rock'> Rock</a></button> </li>
+            <li>
+                <button> <a href='/musicas/sertanejo'> Sertanejo</a></button> </li>
+            <li>
+                 <button> <a href='/musicas/reggaeton'> Reggaeton</a></button> </li>
+            </ul>   
+</body>
+</html>
+   
         
