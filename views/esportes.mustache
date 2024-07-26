@@ -1,0 +1,19 @@
+{{> layout}}
+
+{{#content}}
+  <h1>{{title}}</h1>
+
+  <div class="row">
+    {{#cards}}
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img class="card-img-top" src="{{image}}" alt="{{alt}}" style="height: 300px; object-fit: cover;">
+          <div class="card-body">
+            <h5 class="card-title">{{title}}</h5>
+            <p class="card-text">{{description}}</p>
+          </div>
+        </div>
+      </div>
+    {{/cards}}
+  </div>
+{{/content}}

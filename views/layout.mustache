@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{title}}</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/stylesheets/style.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">Meu Site</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div id="navbarSupportedContent" class="collapse navbar-collapse">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="/esportes">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/esportes/futebol">futebol</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/esportes/futvolei">futvolei</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/esportes/basquete">basquete</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/viagem/franca">França</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/viagem/italia">Italia</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/viagem/alemanha">Alemanha</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+
+    {{#content}}
+    {{/content}}
+
+    <footer class="footer bg-dark text-light text-center py-3">
+      <p>Copyright © 2024 site da yasmari. Todos os direitos reservados.</p>
+    </footer>
+  </body>
+</html>
