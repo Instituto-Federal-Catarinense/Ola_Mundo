@@ -1,89 +1,104 @@
-doctype html
-html(lang="en")
-  head
-    meta(charset="UTF-8")
-    meta(name="viewport", content="width=device-width, initial-scale=1.0")
-    title Viagens dos Sonhos
-   style.
-      body {
-        font-family: Arial, sans-serif;
-        line-height: 1.6;
-        margin: 0;
-        padding: 0;
-        background-color: #f0f0f0;
-        color: #333;
-      }
-      header {
-        background-color: #2AD5DB ;
-        color: #fff;
-        text-align: center;
-        padding: 1rem 0;
-        margin-bottom: 20px;
-      }
-      main {
-        width: 80%;
-        margin: 0 auto;
-        background-color: #fff;
-        padding: 20px;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        border-radius: 5px;
-      }
-      h1, h2 {
-        color: #333;
-        text-align: center;
-        margin-bottom: 15px;
-      }
-      h2 {
-        border-bottom: 2px solid #333;
-        padding-bottom: 5px;
-      }
-      p {
-        margin-bottom: 10px;
-      }
-      ul {
-        list-style-type: none;
-        padding: 0;
-        margin: 0;
-      }
-      li {
-        margin-bottom: 5px;
-      }
-      footer {
-        text-align: center;
-        margin-top: 20px;
-        color: #777;
-      }
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viagens - Destinos</title>
+    <style>
+        /* CSS incorporado */
+        body, h1, h2, p, ul, li {
+            margin: 0;
+            padding: 0;
+        }
 
-  body
-    header
-      h1 Viagens dos Sonhos
-      p Descubra destinos incríveis ao redor do mundo
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f2f2f2;
+            color: #333;
+            margin: 0 auto;
+            max-width: 800px;
+            padding: 20px;
+        }
 
-    main
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
 
-    section
+        nav ul {
+            list-style-type: none;
+            text-align: center;
+            padding: 0;
+        }
 
-        h2 Tipos de esportes
-        ul
-          li 
-            <a href="viagens/paris"> Paris</a>
-             h2 Paris, França
-        p Paris, a cidade das luzes, é conhecida por sua arquitetura icônica, culinária sofisticada e cultura vibrante. Visite a Torre Eiffel, o Louvre e desfrute de um passeio pelo rio Sena
-          li 
-            <a href="viagens/dubai"> Dubai </a>
-             h2 Dubai, Emirados Árabes Unidos
-        p Dubai combina modernidade e tradição como poucas cidades. Explore arranha-céus futuristas, shoppings de luxo, desertos fascinantes e praias de águas cristalinas.
+        nav ul li {
+            display: inline-block;
+            margin: 0 10px;
+        }
 
-          li 
-            <a href="viagens/maldivas"> Maldivas </a>
-             h2 Maldivas
-        p As Maldivas são um paraíso tropical com praias de areia branca e águas azul-turquesa. Ideal para lua de mel ou relaxamento, oferece uma experiência de luxo em meio à natureza intocada.
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
 
-          li 
-            <a href="Viagens/brasil"> Brasil </a>
-             h2 Brasil
-        p O Brasil é um país diverso e cheio de contrastes. Desde as praias deslumbrantes do Rio de Janeiro e Florianópolis até a Floresta Amazônica e as festividades do Carnaval, há algo para todos os gostos.
+        nav ul li a:hover {
+            background-color: #45a049;
+        }
 
-    footer
-      p © 2024 Viagens dos Sonhos. Todos os direitos reservados.
-      address Informações de contato: contato@aulaDoJoedio.com
+        main {
+            background-color: white;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        section {
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            color: #4CAF50;
+            margin-bottom: 10px;
+        }
+
+        p {
+            margin-bottom: 10px;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Viagens - Destinos</h1>
+        <nav>
+            <ul>
+                {{#destinos}}
+                <li><a href="{{url}}">{{nome}}</a></li>
+                {{/destinos}}
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="intro">
+            <h2>Por que Viajar?</h2>
+            <p>Viajar é uma das experiências mais enriquecedoras que podemos ter. Expandir nossos horizontes, conhecer novas culturas e explorar paisagens deslumbrantes são apenas algumas das razões pelas quais viajar é tão fascinante.</p>
+            <p>A cada viagem, somos desafiados a sair da nossa zona de conforto, aprender com novas experiências e criar memórias que durarão para sempre.</p>
+        </section>
+    </main>
+    <footer>
+        <address>Informações de contato: contato@AulaDoProfessorJoedio.com</address>
+    </footer>
+</body>
+</html>

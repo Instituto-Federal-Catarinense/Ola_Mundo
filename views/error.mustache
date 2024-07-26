@@ -1,6 +1,37 @@
-extends layout
-
-block content
-  h1= message
-  h2= error.status
-  pre #{error.stack}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Erro</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            color: #333;
+            text-align: center;
+        }
+        h1 {
+            color: #d9534f;
+        }
+        h2 {
+            color: #f0ad4e;
+        }
+        pre {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 10px;
+            overflow-x: auto;
+            white-space: pre-wrap; /* Ensures that long lines break */
+        }
+    </style>
+</head>
+<body>
+    <h1>{{message}}</h1>
+    <h2>{{error.status}}</h2>
+</body>
+</html>
