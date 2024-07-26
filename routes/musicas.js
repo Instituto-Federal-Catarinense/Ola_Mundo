@@ -3,7 +3,7 @@ var router = express.Router();
 
 /* GET página principal de esportes. */
 router.get('/', function (req, res, next) {
-    res.render('musicas', { title: 'Musicas' });
+    res.render('musicas');
 });
 
 /* GET páginas específicas de cada esporte. */
