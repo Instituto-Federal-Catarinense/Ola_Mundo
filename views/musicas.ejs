@@ -5,72 +5,78 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title><%= title %></title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <style>
-    body {
-      font-family: 'Arial', sans-serif;
-      padding-top: 60px; /* Adiciona espaço para a navbar fixa */
-    }
-    .header {
-      background-color: #343a40;
-      color: white;
-      padding: 10px 0;
-      position: fixed; /* Navbar fixa no topo */
-      width: 100%;
-      z-index: 1000; /* Garante que a navbar esteja acima do conteúdo */
-    }
-    .header h1, .footer p {
-      margin: 0;
-      padding: 0 20px;
-    }
-    .main-content {
-      padding: 80px 0 20px; /* Ajuste o padding para evitar sobreposição com a navbar */
-      text-align: center;
-    }
-    .navbar-nav .nav-link {
-      color: white;
-    }
-  </style>
 </head>
 <body>
-  <!-- Cabeçalho com Navbar -->
-  <header class="header">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <div class="container">
-        <a class="navbar-brand" href="/">Index</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" href="/users">Usuários</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/esportes">Esportes</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/musicas">Músicas</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+  <header>
+    <h1><%= title %></h1>
+    <p>Bem-vindo à página <%= title %></p>
   </header>
 
   <!-- Conteúdo Principal -->
   <main class="main-content">
     <div class="container text-center">
-      <%- content %>
+      <!-- Primeira Linha de Quadrados -->
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+        <!-- Quadrado - Funk -->
+        <div class="col mb-4">
+          <a href="/musicas/funk">
+            <div class="border text-center p-4">
+              <img src="https://meupiaui.com/wp-content/uploads/2024/01/Funk-e-Cultura-Como-Entender-Esse-Fenomeno-1-1.webp" class="img-fluid" alt="funk">
+              <h5 class="text-dark">melhor estilo!</h5>
+              <p class="text-muted">Para aquela festinha mais para cima!</p>
+            </div>
+          </a>
+        </div>
+        <!-- Quadrado - Pagode -->
+        <div class="col mb-4">
+          <a href="/musicas/pagode">
+            <div class="border text-center p-4">
+              <img src="https://static.wixstatic.com/media/8bb472_defe4a63b17b4e95b05786d887e0504f~mv2.jpg/v1/fill/w_490,h_316,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/Pagode.jpg" class="img-fluid" alt="pagode">
+              <h5 class="text-dark">Domingueira</h5>
+              <p class="text-muted">Para aquele domingão de churrasco com os amigos</p>
+            </div>
+          </a>
+        </div>
+        <!-- Quadrado - Poesia -->
+        <div class="col mb-4">
+          <a href="/musicas/poesia">
+            <div class="border text-center p-4">
+              <img src="https://miro.medium.com/v2/resize:fit:1400/1*_eRiEgigChk6SP9YQtawXQ.jpeg" class="img-fluid" alt="poesia">
+              <h5 class="text-dark">para quem precisa aquecer o coração</h5>
+              <p class="text-muted">Só para os românticos</p>
+            </div>
+          </a>
+        </div>
+        <!-- Quadrado - Pop -->
+        <div class="col mb-4">
+          <a href="/musicas/pop">
+            <div class="border text-center p-4">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTPXiCsLu5zFm_jtoyrZy1obKfD6lSFxIiGg&s" class="img-fluid" alt="pop">
+              <h5 class="text-dark">só as de fora né</h5>
+              <p class="text-muted">Aquele mais internacional</p>
+            </div>
+          </a>
+        </div>
+        <!-- Quadrado - Romântica -->
+        <div class="col mb-4">
+          <a href="/musicas/romantica">
+            <div class="border text-center p-4">
+              <img src="data:image/jpeg;base64,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
+              <h5 class="text-dark">Sentimentos</h5>
+              <p class="text-muted">Para aqueles momentos especiais</p>
+            </div>
+          </a>
+        </div>
+      </div>
     </div>
   </main>
 
   <!-- Rodapé -->
-  <footer class="footer text-center">
-    <div class="container">
-      <p>&copy; 2024 Meu Site Incrível. Todos os direitos reservados.</p>
-    </div>
+  <footer class="text-center mt-4 py-4">
+    <p>&copy; <%= new Date().getFullYear() %> Seu Nome. Todos os direitos reservados.</p>
   </footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
 </body>
 </html>

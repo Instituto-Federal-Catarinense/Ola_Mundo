@@ -1,15 +1,19 @@
-extends layout
+<%- include('layout') %>
 
-block content
-  h1= title
-  p Bem-vindo à página de #{title}
-  p MATUÊ
-  .container
-    .row
-      .col-md-6.offset-md-3
-        img.img-fluid(src="https://s2-g1.glbimg.com/edM1HJtDGbHdDXZvhIJfUGiyWrA=/0x0:1080x1350/924x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2020/9/G/qfvEJ5Qdiq18A4BKQGJQ/matue4.jpg" alt="trap")
-        h2 TRAPP
-        p.text-muted A musica é um dos movimentos artisticos mais escutados do mundo.
-        p.text-muted Aqui você pode adicionar mais detalhes e informações sobre o MATUE.
+<% block content %>
+  <h1><%= title %></h1>
+  <p>Bem-vindo à página de <%= title %></p>
+  <p>MATUÊ</p>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 offset-md-3">
+        <img class="img-fluid" src="https://s2-g1.glbimg.com/edM1HJtDGbHdDXZvhIJfUGiyWrA=/0x0:1080x1350/924x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2020/9/G/qfvEJ5Qdiq18A4BKQGJQ/matue4.jpg" alt="trap">
+        <h2>TRAPP</h2>
+        <p class="text-muted">A música é um dos movimentos artísticos mais escutados do mundo.</p>
+        <p class="text-muted">Aqui você pode adicionar mais detalhes e informações sobre o MATUE.</p>
+      </div>
+    </div>
+  </div>
 
-  script(src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js")
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<% endblock %>
