@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+<head>
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <style>
+        .content-box {
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            padding: 20px;
+            margin-top: 20px;
+        }
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="/">Inicio</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="/esportes">Esportes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/users">Usuários</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/games">Jogos</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container mt-4">
+        <div class="header-content">
+            <h1>{{ title }}</h1>
+            <a href="/esportes" class="btn btn-secondary">Voltar para Esportes</a>
+        </div>
+        <div class="content-box">
+            <div class="text-center">
+                <img src="https://img.freepik.com/fotos-gratis/jogador-de-futebol-masculino-com-bola-no-campo-de-grama_23-2150821530.jpg?size=338&ext=jpg&ga=GA1.1.2008272138.1721952000&semt=sph" class="img-fluid" alt="Futebol">
+                <p class="mt-4">O futebol é um esporte coletivo jogado entre dois times de 11 jogadores cada. É amplamente considerado o esporte mais popular do mundo. O jogo é jogado em um campo retangular com um gol em cada extremidade. O objetivo do jogo é marcar mais gols que o adversário, conduzindo a bola até a meta oposta. O futebol é conhecido por sua capacidade de unir pessoas de diferentes culturas e é celebrado por sua paixão, habilidade e drama.</p>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+</html>

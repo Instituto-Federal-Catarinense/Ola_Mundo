@@ -8,52 +8,73 @@ html(lang="pt-BR")
     style.
       body {
         font-family: 'Arial', sans-serif;
-        padding-top: 60px; /* Adiciona espaço para a navbar fixa */
       }
-      .header {
-        background-color: #343a40;
+      .navbar-custom {
+        background-color: #007bff; /* Cor de fundo personalizada */
         color: white;
         padding: 10px 0;
         position: fixed; /* Navbar fixa no topo */
         width: 100%;
         z-index: 1000; /* Garante que a navbar esteja acima do conteúdo */
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Sombra suave */
       }
-      .header h1, .footer p {
-        margin: 0;
-        padding: 0 20px;
+      .navbar-custom .navbar-brand {
+        color: white;
+        font-size: 1.5rem; /* Tamanho da fonte do logo */
+        font-weight: bold; /* Negrito */
+      }
+      .navbar-custom .navbar-nav .nav-link {
+        color: white;
+        font-size: 1.1rem; /* Tamanho da fonte dos links */
+        margin: 0 10px; /* Espaçamento entre os links */
+        transition: 0.3s; /* Transição suave */
+      }
+      .navbar-custom .navbar-nav .nav-link:hover {
+        color: #e9ecef; /* Cor do texto ao passar o mouse */
       }
       .main-content {
-        padding: 80px 0 20px; /* Ajuste o padding para evitar sobreposição com a navbar */
+        padding-top: 80px; /* Ajusta o padding para evitar sobreposição com a navbar */
         text-align: center;
       }
-      .navbar-nav .nav-link {
+      .footer {
+        background-color: #343a40;
         color: white;
+        padding: 20px 0;
+      }
+      .img-size {
+        width: 100%;
+        height: 200px; /* Altura desejada para as imagens */
+        object-fit: cover; /* Ajusta o tamanho mantendo a proporção */
       }
   body
     // Cabeçalho com Navbar
-    header.header
-      nav.navbar.navbar-expand-lg.navbar-dark.bg-dark
+    header.navbar-custom
+      nav.navbar.navbar-expand-lg.navbar-dark
         .container
-          a.navbar-brand(href="/") Inicio
+          a.navbar-brand(href="/") Meu Site
           button.navbar-toggler(type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation")
             span.navbar-toggler-icon
           #navbarNav.collapse.navbar-collapse
-            ul.navbar-nav
+            ul.navbar-nav.ms-auto
               li.nav-item
                 a.nav-link(href="/users") Usuários
               li.nav-item
                 a.nav-link(href="/esportes") Esportes
               li.nav-item
-                a.nav-link(href="/musicas") Musicas
+                a.nav-link(href="/videogames") Video Games
 
     // Conteúdo Principal
     main.main-content
-      .container.text-centerEsportes
+      .container.text-center
         block content
 
     // Rodapé
-    footer.footer.text-center
+    footer.bg-dark.text-white.text-center.py-4
       .container
-        p &copy; 2024 Meu Site Incrível. Todos os direitos reservados.
+        p Copyright © 2024. Todos os direitos reservados.
+        p
+          a(href='#' class='text-white') Termos de Uso
+          |  | 
+          a(href='#' class='text-white') Política de Privacidade
 
     script(src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js")

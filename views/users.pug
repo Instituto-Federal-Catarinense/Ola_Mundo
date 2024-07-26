@@ -2,6 +2,95 @@ extends layout
 
 block content
   h1= title
-  p Bem vindo a página #{title}
+  p Bem-vindo à página #{title}
+  
+  // Texto para mudar a cor
+  p#texto-cor Tente mudar a cor do texto!!!
 
+  // Botão para mudar a cor do texto
+  button#btnMudarCorTexto(type='button') Mudar Cor do Texto
 
+  // Estilos CSS diretamente no arquivo Pug
+  style.
+    #texto-cor {
+      font-size: 1.2em;
+      color: red; /* Cor inicial do texto */
+      margin-bottom: 20px;
+    }
+
+    #btnMudarCorTexto {
+      background-color: #007bff;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    #btnMudarCorTexto:hover {
+      background-color: #0056b3;
+    }
+
+    #formCriarUsuario {
+      margin-top: 20px;
+    }
+
+    #nomeUsuario {
+      padding: 8px;
+      width: 200px;
+      margin-right: 10px;
+    }
+
+    #btnAdicionarUsuario {
+      background-color: #28a745;
+      color: white;
+      border: none;
+      padding: 8px 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    #btnAdicionarUsuario:hover {
+      background-color: #218838;
+    }
+
+    #nomes-container {
+      margin-top: 20px;
+    }
+
+  // Formulário para adicionar usuário
+  form(id='formCriarUsuario')
+    input#nomeUsuario(type='text', placeholder='Digite o nome do novo usuário')
+    button#btnAdicionarUsuario(type='button') Adicionar Usuário
+
+  // Container para exibir nomes de usuários
+  div#nomes-container
+
+  script.
+    document.getElementById('btnMudarCorTexto').addEventListener('click', function() {
+      var texto = document.getElementById('texto-cor');
+      if (texto.style.color === 'red') {
+        texto.style.color = 'blue';
+      } else {
+        texto.style.color = 'red';
+      }
+    });
+
+    document.getElementById('btnAdicionarUsuario').addEventListener('click', function() {
+      var nome = document.getElementById('nomeUsuario').value.trim();
+      if (nome !== '') {
+        var p = document.createElement('p');
+        p.textContent = nome;
+        document.getElementById('nomes-container').appendChild(p);
+        document.getElementById('nomeUsuario').value = ''; // Limpa o campo após adicionar
+      }
+    });
+
+    document.getElementById('btnMudarCor').addEventListener('click', function() {
+      var btn = document.getElementById('btnMudarCor');
+      if (btn.style.backgroundColor === 'red') {
+        btn.style.backgroundColor = 'blue';
+      } else {
+        btn.style.backgroundColor = 'red';
+      }
+    });
