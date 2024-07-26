@@ -1,0 +1,66 @@
+{{! Define o título da página }}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{title}}</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+</head>
+<body>
+
+    <header>
+        <h1>{{title}}</h1>
+        <p>Bem-vindo à página {{title}}</p>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <main class="main-content">
+        <div class="container text-center">
+            <!-- Primeira Linha de Quadrados -->
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                <!-- Quadrado - Funk -->
+                <div class="col mb-4">
+                    <a href="/musicas/funk">
+                        <div class="border text-center p-4">
+                            <img class="img-fluid" src="https://meupiaui.com/wp-content/uploads/2024/01/Funk-e-Cultura-Como-Entender-Esse-Fenomeno-1-1.webp" alt="funk">
+                            <h5 class="text-dark">melhor estilo!</h5>
+                            <p class="text-muted">Para aquela festinha mais para cima!</p>
+                        </div>
+                    </a>
+                </div>
+                <!-- Quadrado - Pagode -->
+                <div class="col mb-4">
+                    <a href="/musicas/pagode">
+                        <div class="border text-center p-4">
+                            <img class="img-fluid" src="https://static.wixstatic.com/media/8bb472_defe4a63b17b4e95b05786d887e0504f~mv2.jpg/v1/fill/w_490,h_316,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/Pagode.jpg" alt="pagode">
+                            <h5 class="text-dark">Domingueira</h5>
+                            <p class="text-muted">Para aquele domingão de churrasco com os amigos</p>
+                        </div>
+                    </a>
+                </div>
+                <!-- Quadrado - Poesia -->
+                <div class="col mb-4">
+                    <a href="/musicas/poesia">
+                        <div class="border text-center p-4">
+                            <img class="img-fluid" src="https://miro.medium.com/v2/resize:fit:1400/1*_eRiEgigChk6SP9YQtawXQ.jpeg" alt="poesia">
+                            <h5 class="text-dark">para quem precisa aquecer o coração</h5>
+                            <p class="text-muted">Só para os românticos</p>
+                        </div>
+                    </a>
+                </div>
+                <!-- Quadrado - Pop -->
+                <div class="col mb-4">
+                    <a href="/musicas/pop">
+                        <div class="border text-center p-4">
+                            <img class="img-fluid" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTPXiCsLu5zFm_jtoyrZy1obKfD6lSFxIiGg&s" alt="pop">
+                            <h5 class="text-dark">só as de fora né</h5>
+                            <p class="text-muted">Aquele mais internacional</p>
+                        </div>
+                    </a>
+                </div>
+                <!-- Quadrado - Romântica -->
+                <div class="col mb-4">
+                    <a href="/musicas/romantica">
+                        <div class="border text-center p-4">
+                            <img class="img-fluid" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBw8QEhAPDw8QDw8PDxAPEA8PDQ8ODQ8QFRIWFhURFRUYHiggGBolGxUVITEhJSkrLi4uFx8zODMtNygtLisBCgoKDg0OFxAQFi4iIB0rLS0tKy8tLS0tLS0tKy0tLS0tLSstLS0tLS0tLS0tLS0tLS0tLS0rLSstLSstKystLf/AABEIALcBEwMBIgACEQEDEQH/xAAcAAABBQEBAQAAAAAAAAAAAAABAAIDBgcFBAj/xAA/EAACAQIDBgMFBQUHBQAAAAABAgADEQQFIQYSMUFRcQciYRMjMoGRQqGxwdEUUnKj4SRDc4Ki8PElM1NiY//EABkBAAMBAQEAAAAAAAAAAAAAAAABAgMEBf/EACYRAQEBAAIBBAEDBQAAAAAAAAABAgMRMQQSIUFRIjIzExRCcYH/2gAMAwEAAhEDEQA/AMiiiikrGKCGAKKKKIFDBDAFDBDAyhiigBjhGxwiBwkqSMSRIG9FKXrY0yi0pdtjm1mW15aLR4COtG0OAj5INYQCFo0RmkjTDAYAI4RkeIA1owyQxhiACIwiAwBkNoI8CAcPPqd1PaZhmiWY95rOcJdTMtzpbOY8+RfDiERQkRTVDnxRRS0FDBFADFFFAFDBDEChghgYxRQwAwiAQiIHiSJIxJFgb0UpcdkG80ptKW3ZNvNMtry07DcBHmMwnwiSNJBrRohaNgZ4iMQhMYNhEBhEARjDHmMMQKAxyiIiAMjliAjlhA8GaL5T2mW7QLZzNWzAeUzL9pV8xjnkfStNFC0E0Q5sMEU0QMUUUAUMEMAUMEMQKGCGBjDBDACIRBCIGeI9ZGJIsQeilLRsq3nEq1Myx7NN5xM9+FZaxgvhElaefLz5RPS0j6NGY0RxjYGeIYBCIA0iFRCYBAFGmOvGEwByx9oxY+ANtEBDDGHkxw8pmZbUr5jNQxY8pmabWL5jF9j6VBooWimqHLighmiCiiigBigigBhjZ7cqyqtiW3aKFrfE3BV7mK3ryclt6jyQzQsDsNSp0y1W9V7dSFXsP1lOzjL/AGTGwsLzPPLnV6jbXBvOfdXPhjbx9NGY2UFj0AJM0YlHCSYbCVKjbiKSw4g6W73grUGQ2YWP3RdzwfV676AR6yMGPWAeinO/kDWcSv052cmazrM9eFZa5lbeUdp7TOVkz+Udp1LzOKNMaY4xpgD1iESiGMEYIjFAFIzJDImiB6mSCQLJlMcAmCEwQCLE8DM42vXUzSK/CZ3tgvGH2FIaKJuMU1Q5MUUE0QMUEUAUkw9FqjBEG8zcAI/AYVq1RKS8XYDsOZ+QmjZVs5SpaoLMRYsTvMfr+Uz5OSYbcPDeT/StZdsrvEe1cnqqC3yLGXbCYHcQUqYFJFHwobXPUniZOtJKYnNzXOBSswbgfML8RznHretvSxw4458OdjHxOEf2qFt0G5Fy1NhzDCdXEYLDZlRNWlZagHnX7SnoZ7MDjKWIp3DK6kcRY/KVzMcJVwdT9pwptbVqf2XXmCIS/wDKNZ+/MVOtlVUVhhwt3LWHTufSaFk+SUaFMKNXIBdubH/fKSYd6dQriSgpvUpqbH4gDqR9fynkx+bpScFjuqdCeQ9Y9cmtfCOPhzjvTx51kYv7SmSjqbhl0InIGKR/dYxQrHRMQBZCejdDLildayjdIKkcRqCJyczypdSBcHjzB+UM6+qrfH38xUcyy1qJ6oeDDhaeNZ26mBazewZvJ8VI8AOoE5lSlztY87D8p05335cPJxdX4gU51cr
