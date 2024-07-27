@@ -1,49 +1,29 @@
 var express = require('express');
 var router = express.Router();
 
+/* GET esportes page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Página Inicial' });
+  res.render('esportes', { title: 'Esportes' });
 });
 
-router.get('/surf', function(req, res, next) {
-  res.render('surf', { title: 'Surf' });
+router.get('/Volei', function(req, res, next) {
+  res.render('volei', { title: 'Voleibol' });
 });
 
-router.get('/futebol', function(req, res, next) {
-  res.render('futebol', { title: 'Futebol' });
+router.get('/VoleiDeAreia', function(req, res, next) {
+  res.render('voleiDeAreia', { title: 'Voleibol de Praia' });
 });
 
-router.get('/volei', function(req, res, next) {
-  res.render('volei', { title: 'Vôlei' });
-});
-
-router.get('/basquete', function(req, res, next) {
+router.get('/Basquete', function(req, res, next) {
   res.render('basquete', { title: 'Basquete' });
 });
 
-router.get('/handebol', function(req, res, next) {
-  res.render('handebol', { title: 'Handebol' });
+router.get('/Futebol', function(req, res, next) {
+  res.render('futebol', { title: 'Futebol' });
 });
 
-router.get('/subrota1', function(req, res, next) {
-  res.render('subrota1', { title: 'Subrota1' });
+router.get('/Resumo', function(req, res, next) {
+  res.render('Resumo', { title: 'Resumo' });
 });
-
-router.get('/subrota2', function(req, res, next) {
-  res.render('subrota2', { title: 'Subrota2' });
-});
-
-router.get('/subrota3', function(req, res, next) {
-  res.render('subrota3', { title: 'Subrota3' });
-});
-
-router.get('/subrota4', function(req, res, next) {
-  res.render('subrota4', { title: 'Subrota4' });
-});
-
-router.get('/subrota5', function(req, res, next) {
-  res.render('subrota5', { title: 'Subrota5' });
-});
-
 
 module.exports = router;

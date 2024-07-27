@@ -1,27 +1,47 @@
-const express = require('express');
-const path = require('path');
+var createError = require('http-errors');
+var express = require('express');
+var path = require('path');
+var cookieParser = require('cookie-parser');
+var logger = require('morgan');
+var mustacheExpress = require('mustache-express');
 
-const app = express();
+var indexRouter = require('./routes/index');
+var usersRouter = require('./routes/users');
+var esportesRouter = require('./routes/esportes');
+var musicasRouter = require('./routes/musicas'); // Adicionando o roteador de músicas
 
-// Configuração para o uso de Pug como template engine
-app.set('views', path.join(__dirname, 'views')); // Define o diretório onde os arquivos de template estão localizados
-app.set('view engine', 'pug'); // Define o template engine como Pug
+var app = express();
 
-// Middleware para servir arquivos estáticos (opcional)
+// view engine setup
+app.engine('mustache', mustacheExpress());
+app.set('views', path.join(__dirname, 'views'));
+app.set('view engine', 'mustache');
+
+app.use(logger('dev'));
+app.use(express.json());
+app.use(express.urlencoded({ extended: false }));
+app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-// Exemplo de rota para renderizar uma página
-app.get('/', function(req, res) {
-  res.render('index', { title: 'Página Inicial', message: 'Bem-vindo ao meu site!' });
+app.use('/', indexRouter);
+app.use('/users', usersRouter);
+app.use('/esportes', esportesRouter);
+app.use('/musicas', musicasRouter); // Adicionando a nova rota de músicas
+
+// catch 404 and forward to error handler
+app.use(function(req, res, next) {
+  next(createError(404));
 });
 
-// Exemplo de rota para renderizar outra página
-app.get('/sobre', function(req, res) {
-  res.render('sobre', { title: 'Sobre', message: 'Conheça mais sobre nossa empresa.' });
+// error handler
+app.use(function(err, req, res, next) {
+  // set locals, only providing error in development
+  res.locals.message = err.message;
+  res.locals.error = req.app.get('env') === 'development' ? err : {};
+
+  // render the error page
+  res.status(err.status || 500);
+  res.render('error', { message: err.message, error: err });
 });
 
-// Porta do servidor
-const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => {
-  console.log(`Servidor rodando na porta ${PORT}`);
-});
+module.exports = app;
