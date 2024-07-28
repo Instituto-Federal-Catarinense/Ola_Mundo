@@ -1,6 +1,7 @@
 body {
   padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font: 16px "Lucida Grande", Helvetica, Arial, sans-serif;
+  
 }
 a {
   color: #000000;
@@ -9,12 +10,29 @@ a {
 ul {
   list-style: none;
 }
+h1{
+  margin-left: 50px;
+}
+h2{
+  font-size: 22px;
+  font-weight: bold; 
+  margin-left: 20px;
+}
 h3 {
   font-weight: bold; 
   font-size: 18px;
+  margin-left: 15px;
+}
+.asd{
+  margin-top: -225px;
+  margin-left: 900px;
+}
+.qwe{
+  margin-top: -280px;
+  margin-left: 900px;
 }
 #tds {
-  background-color: #00f7ff; 
+  background-color: #00ccff; 
   border-radius: 10px;
   color: white;
   padding: 10px 20px;
@@ -25,10 +43,21 @@ h3 {
   margin: 4px 2px;
   margin-top: -20px;
 }
+#pgin{
+  background-color: #00ffc8; 
+  border-radius: 10px;
+  color: white;
+  padding: 5px 10px;
+  text-align: center;
+  display: inline-block;
+  font-size: 14px;
+  margin: 2px 2px;
+}
 
 #musicas{
   background-color: #ea00ff; 
   border-radius: 10px;
+  border-color: aquamarine;
   color: white;
   padding: 5px 10px;
   text-align: center;
