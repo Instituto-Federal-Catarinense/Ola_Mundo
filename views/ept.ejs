@@ -8,13 +8,23 @@
     <title>title</title> 
    <link rel='stylesheet', href='/stylesheets/style.css'>
 </head>
-<%- include('../views/layout'); %>
+
 <body>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
    
- 
-    <h1>Rap</h1>
-        <%- include('../views/msc'); %>
-    <iframe width="1280" height="720" src="https://www.youtube.com/embed/XbGs_qK2PQA" title="Eminem - Rap God (Explicit)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  <ul id="esportes">
+    <li>
+        <button> <a href='/esportes/danca'> Dança</a></button>  </li>   
+    <li>
+        <button> <a href='/esportes/volei'> Vôlei</a></button></li> 
+    <li>
+        <button> <a href='/esportes/basquete'> Basquete</a></button></li> 
+    <li>
+        <button> <a href='/esportes/golfe'> Golfe</a></button></li> 
+    <li>
+         <button> <a href='/esportes/hoquei'> Hóquei</a></button>
+    </ul>
+
+  <br>
 </body>
 </html>

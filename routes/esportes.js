@@ -6,19 +6,29 @@ router.get('/', function(req, res, next) {
   res.render('esportes');
 });
 
-router.get('/futebol', function(req, res, next) {
-  res.render('futebol');
+router.get('/volei', function(req, res, next) {
+  res.render('volei');
   });
 
-  router.get('/volei', function(req, res, next) {
-    res.render('volei');
-  });
-
+  
   router.get('/basquete', function(req, res, next) {
     res.render('basquete');
   });
 
-  router.get('/handbol', function(req, res, next) {
-    res.render('handbol');
+  
+  router.get('/golfe', function(req, res, next) {
+    res.render('golfe');
   });
+
+  
+  router.get('/danca', function(req, res, next) {
+    res.render('danca');
+  });
+
+
+  router.get('/hoquei', function(req, res, next) {
+    res.render('hoquei');
+  });
+  
+
 module.exports = router;

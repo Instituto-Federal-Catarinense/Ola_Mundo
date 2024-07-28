@@ -21,7 +21,7 @@ router.get('/pop', function(req, res, next) {
   });
 
   
-  router.get('/sertanjo', function(req, res, next) {
+  router.get('/sertanejo', function(req, res, next) {
     res.render('sertanejo');
   });
   
