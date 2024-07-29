@@ -5,12 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<%- include('../views/layout'); %>
 <body>
-    
-</body>
-</html>
 
-    <h1>Início</h1>
+    <h1>Esportes</h1>
     <p>A relação entre a prática de exercícios físicos e a manutenção da saúde mental 
     <br>tornou-se um consenso entre os profissionais de saúde. Pesquisas mostram que 
     <br>o exercício físico regular pode reduzir o risco de depressão e reduzir a perda 
@@ -21,16 +19,22 @@
     <br>assumiu que estamos vivenciando a prevalência de estilos de vida sedentários. Ou seja,
     <br> a falta de exercícios não é mais apenas um problema estético, mas um grave problema 
     <br>de saúde pública, causando 2 milhões de mortes a cada ano.
-</p> 
-<ul id="esportes">
+</p>
+<nav class="asd">
+    <h3>Alguns exemplos:</h3> 
+<ul>
     <li>
-        <button> <a href='/esportes/danca'> Dança</a></button>  </li>   
+        <button id="pgin"> <a href='/esportes/volei'> Vôlei</a></button></li> 
     <li>
-        <button> <a href='/esportes/volei'> Vôlei</a></button></li> 
+        <button id="pgin"> <a href='/esportes/golfe'> Golfe</a></button></li> 
     <li>
-        <button> <a href='/esportes/basquete'> Basquete</a></button></li> 
+        <button id="pgin"> <a href='/esportes/danca'> Dança</a></button>  </li>   
     <li>
-        <button> <a href='/esportes/golfe'> Golfe</a></button></li> 
+        <button id="pgin"> <a href='/esportes/hoquei'> Hóquei</a></button></li>
     <li>
-         <button> <a href='/esportes/hoquei'> Hóquei</a></button>
+        <button id="pgin"> <a href='/esportes/basquete'> Basquete</a></button></li> 
+</ul>
+</nav>
    
+</body>
+</html>
