@@ -1,7 +1,6 @@
 body {
   padding: 50px;
   font: 16px "Lucida Grande", Helvetica, Arial, sans-serif;
-  
 }
 a {
   color: #000000;
@@ -9,6 +8,9 @@ a {
 }
 ul {
   list-style: none;
+}
+p {
+  text-indent: 20px;
 }
 h1{
   margin-left: 50px;
@@ -53,7 +55,18 @@ h3 {
   font-size: 14px;
   margin: 2px 2px;
 }
-
+h4{
+  width: 450px;
+  height: 250px;
+  margin-top: -250px;
+  margin-left: 700px;
+}
+#vid{
+  width: 450px;
+  height: 250px;
+  margin-top: -200px;
+  margin-left: 700px;
+}
 #musicas{
   background-color: #ee55fc; 
   border-radius: 10px;
