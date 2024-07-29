@@ -28,11 +28,11 @@ h3 {
   margin-left: 900px;
 }
 .qwe{
-  margin-top: -280px;
+  margin-top: -275px;
   margin-left: 900px;
 }
 #tds {
-  background-color: #00ccff; 
+  background-color: #68d6f1; 
   border-radius: 10px;
   color: white;
   padding: 10px 20px;
@@ -55,13 +55,25 @@ h3 {
 }
 
 #musicas{
-  background-color: #ea00ff; 
+  background-color: #ee55fc; 
   border-radius: 10px;
-  border-color: aquamarine;
+  border-color: rgb(0, 0, 0);
   color: white;
   padding: 5px 10px;
   text-align: center;
   display: inline-block;
-  font-size: 14px;
+  font-size: 13px;
+  margin: 2px 2px;
+}
+
+#esportes{
+  background-color: #fd504a; 
+  border-radius: 10px;
+  border-color: rgb(0, 0, 0);
+  color: white;
+  padding: 5px 10px;
+  text-align: center;
+  display: inline-block;
+  font-size: 13px;
   margin: 2px 2px;
 }
