@@ -1,8 +1,92 @@
 body {
   padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font: 16px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+a {
+  color: #000000;
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+p {
+  text-indent: 20px;
+}
+h1{
+  margin-left: 50px;
+}
+h2{
+  font-size: 22px;
+  font-weight: bold; 
+  margin-left: 20px;
+}
+h3 {
+  font-weight: bold; 
+  font-size: 18px;
+  margin-left: 15px;
+}
+.asd{
+  margin-top: -225px;
+  margin-left: 900px;
+}
+.qwe{
+  margin-top: -275px;
+  margin-left: 900px;
+}
+#tds {
+  background-color: #68d6f1; 
+  border-radius: 10px;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  margin-top: -20px;
+}
+#pgin{
+  background-color: #00ffc8; 
+  border-radius: 10px;
+  color: white;
+  padding: 5px 10px;
+  text-align: center;
+  display: inline-block;
+  font-size: 14px;
+  margin: 2px 2px;
+}
+h4{
+  width: 450px;
+  height: 250px;
+  margin-top: -250px;
+  margin-left: 700px;
+}
+#vid{
+  width: 450px;
+  height: 250px;
+  margin-top: -200px;
+  margin-left: 700px;
+}
+#musicas{
+  background-color: #ee55fc; 
+  border-radius: 10px;
+  border-color: rgb(0, 0, 0);
+  color: white;
+  padding: 5px 10px;
+  text-align: center;
+  display: inline-block;
+  font-size: 13px;
+  margin: 2px 2px;
 }
 
-a {
-  color: #00B7FF;
+#esportes{
+  background-color: #fd504a; 
+  border-radius: 10px;
+  border-color: rgb(0, 0, 0);
+  color: white;
+  padding: 5px 10px;
+  text-align: center;
+  display: inline-block;
+  font-size: 13px;
+  margin: 2px 2px;
 }
